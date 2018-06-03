@@ -14,7 +14,6 @@ import de.neemann.digital.lang.Lang;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 
 import static de.neemann.digital.draw.shapes.GenericShape.SIZE;
 import static de.neemann.digital.draw.shapes.GenericShape.SIZE2;
@@ -22,7 +21,7 @@ import static de.neemann.digital.draw.shapes.GenericShape.SIZE2;
 /**
  * Is intended to be stored in a file.
  */
-public class CustomShapeDescription implements Iterable<Drawable> {
+public class CustomShapeDescription implements Drawable {
     /**
      * The default empty shape instance
      */
@@ -51,7 +50,6 @@ public class CustomShapeDescription implements Iterable<Drawable> {
         pins.put(name, new Pin(pos, showLabel));
         return this;
     }
-
 
     /**
      * Adds a polygon to the shape
@@ -92,7 +90,8 @@ public class CustomShapeDescription implements Iterable<Drawable> {
      * @return this for chained calls
      */
     public CustomShapeDescription addPolygon(Polygon poly, int thickness, Color color, boolean filled) {
-        drawables.add(new PolygonHolder(poly, thickness, filled, color));
+        if (poly != null && poly.size() > 1)
+            drawables.add(new PolygonHolder(poly, thickness, filled, color));
         return this;
     }
 
@@ -127,8 +126,9 @@ public class CustomShapeDescription implements Iterable<Drawable> {
     }
 
     @Override
-    public Iterator<Drawable> iterator() {
-        return drawables.iterator();
+    public void drawTo(Graphic graphic, Style highLight) {
+        for (Drawable d : drawables)
+            d.drawTo(graphic, highLight);
     }
 
     /**
@@ -145,6 +145,10 @@ public class CustomShapeDescription implements Iterable<Drawable> {
                 .addPolygon(Polygon.createFromPath("m 20,5 c 30 0 0 30 -30 0 z"), Style.NORMAL.getThickness(), Color.BLACK, false)
                 .addLine(new Vector(0, -SIZE2), new Vector(SIZE * 3, SIZE * 3 - SIZE2), Style.NORMAL.getThickness(), Color.BLACK)
                 .addText(new Vector(20, -25), new Vector(21, -25), "Hi!", Orientation.LEFTCENTER, 20, Color.BLACK);
+    }
+
+    public int size() {
+        return drawables.size();
     }
 
     /**

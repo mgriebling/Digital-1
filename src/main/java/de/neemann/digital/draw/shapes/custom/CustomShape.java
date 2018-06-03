@@ -64,8 +64,7 @@ public class CustomShape implements Shape {
 
     @Override
     public void drawTo(Graphic graphic, Style highLight) {
-        for (Drawable d : shapeDescription)
-            d.drawTo(graphic, highLight);
+        shapeDescription.drawTo(graphic, highLight);
 
         for (Pin p : getPins()) {
             try {

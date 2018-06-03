@@ -5,7 +5,6 @@
  */
 package de.neemann.digital.draw.shapes.custom.svg;
 
-import de.neemann.digital.draw.graphics.Style;
 import de.neemann.digital.draw.graphics.Transform;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
@@ -13,18 +12,18 @@ import org.w3c.dom.Node;
 
 import java.awt.*;
 import java.util.HashMap;
+import java.util.StringTokenizer;
 
 class Context {
 
     private static final HashMap<String, AttrParser> PARSER = new HashMap<>();
-
-
     static {
         PARSER.put("transform", Context::readTransform);
         PARSER.put("fill", (c, value) -> c.fill = getColorFromString(value));
         PARSER.put("stroke", (c, value) -> c.color = getColorFromString(value));
         PARSER.put("stroke-width", (c, value) -> c.thickness = getFloatFromString(value) + 1);
         PARSER.put("font-size", (c, value) -> c.fontSize = getFloatFromString(value) + 1);
+        PARSER.put("style", Context::readStyle);
     }
 
     private Transform tr;
@@ -57,16 +56,34 @@ class Context {
         }
     }
 
+    private static void readStyle(Context context, String style) {
+        StringTokenizer st = new StringTokenizer(style, ";");
+        while (st.hasMoreTokens()) {
+            String[] t = st.nextToken().split(":");
+            if (t.length == 2) {
+                AttrParser p = PARSER.get(t[0].trim());
+                if (p != null)
+                    p.parse(context, t[1].trim());
+            }
+        }
+    }
+
     Transform getTransform() {
         return tr;
     }
 
-    Style getStyle() {
-        Style s = Style.NORMAL;
-        if (fontSize != 0)
-            s = s.deriveFontStyle((int) fontSize, false);
-        return s;
+    public Color getColor() {
+        return color;
     }
+
+    public Color getFilled() {
+        return fill;
+    }
+
+    public int getThickness() {
+        return (int) thickness;
+    }
+
 
     private interface AttrParser {
         void parse(Context c, String value);
@@ -74,32 +91,21 @@ class Context {
 
 
     private static void readTransform(Context c, String value) {
-
+        // ToDo transform is ignored!
     }
-
 
     private static Color getColorFromString(String v) {
         if (v.equalsIgnoreCase("none"))
             return null;
 
-        try {
-            Integer.parseInt(v, 16);
-            v = "#" + v;
-        } catch (Exception e) {
-        }
-        if (v.startsWith("#")) {
-            if (v.length() == 4) {
-                v = "#" + v.charAt(1) + v.charAt(1) + v.charAt(2) + v.charAt(2) + v.charAt(3)
-                        + v.charAt(3);
-            }
+        if (v.startsWith("#"))
             return Color.decode(v);
-        }
+
         try {
             return (Color) Color.class.getField(v).get(null);
         } catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
-            e.printStackTrace();
+            return Color.BLACK;
         }
-        return Color.WHITE;
     }
 
     private static float getFloatFromString(String inp) {

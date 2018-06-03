@@ -240,7 +240,7 @@ public class Polygon implements Iterable<VectorInterface> {
         StringTokenizer tok = new StringTokenizer(path, " ,");
         float x = 0;
         float y = 0;
-        Polygon p = new Polygon();
+        Polygon p = new Polygon(false);
         String lastTok = "";
         while (tok.hasMoreTokens()) {
             final String t = tok.nextToken();
@@ -249,13 +249,13 @@ public class Polygon implements Iterable<VectorInterface> {
                     x = Float.parseFloat(tok.nextToken());
                     y = Float.parseFloat(tok.nextToken());
                     p.add(new VectorFloat(x, y));
-                    lastTok = t;
+                    lastTok = "L";
                     break;
                 case "m":
                     x += Float.parseFloat(tok.nextToken());
                     y += Float.parseFloat(tok.nextToken());
                     p.add(new VectorFloat(x, y));
-                    lastTok = t;
+                    lastTok = "l";
                     break;
                 case "V":
                     y = Float.parseFloat(tok.nextToken());
