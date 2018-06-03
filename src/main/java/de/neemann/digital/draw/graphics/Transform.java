@@ -11,6 +11,22 @@ package de.neemann.digital.draw.graphics;
 public interface Transform {
 
     /**
+     * The identity transform
+     */
+    Transform IDENTITY = new Transform() {
+        @Override
+        public Vector transform(Vector v) {
+            return v;
+        }
+
+        @Override
+        public VectorFloat transform(VectorFloat v) {
+            return v;
+        }
+    };
+
+
+    /**
      * Transforms an integer vector
      *
      * @param v the vector to transform
