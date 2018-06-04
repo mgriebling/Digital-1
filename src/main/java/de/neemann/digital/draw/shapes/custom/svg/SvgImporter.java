@@ -75,8 +75,8 @@ public class SvgImporter {
                 break;
             case "line":
                 csd.addLine(
-                        vec(element.getAttribute("x1"), element.getAttribute("y1"), c),
-                        vec(element.getAttribute("x2"), element.getAttribute("y2"), c),
+                        vec(element.getAttribute("x1"), element.getAttribute("y1"), c).round(),
+                        vec(element.getAttribute("x2"), element.getAttribute("y2"), c).round(),
                         c.getThickness(), c.getColor());
                 break;
             case "rect":
@@ -84,13 +84,23 @@ public class SvgImporter {
                 break;
             case "path":
                 try {
-                    Polygon polygon = new PolygonParser(element.getAttribute("d")).create();
-                    if (c.getFilled() != null)
-                        csd.addPolygon(polygon, c.getThickness(), c.getFilled(), true);
-                    if (c.getColor() != null)
-                        csd.addPolygon(polygon, c.getThickness(), c.getColor(), false);
+                    drawPolygon(csd, c, new PolygonParser(element.getAttribute("d")).create());
                 } catch (PolygonParser.ParserException e) {
                     throw new SvgException("invalid path", e);
+                }
+                break;
+            case "polygon":
+                try {
+                    drawPolygon(csd, c, new PolygonParser(element.getAttribute("points")).parsePolygon());
+                } catch (PolygonParser.ParserException e) {
+                    throw new SvgException("invalid points", e);
+                }
+                break;
+            case "polyline":
+                try {
+                    drawPolygon(csd, c, new PolygonParser(element.getAttribute("points")).parsePolyline());
+                } catch (PolygonParser.ParserException e) {
+                    throw new SvgException("invalid points", e);
                 }
                 break;
             case "circle":
@@ -100,17 +110,33 @@ public class SvgImporter {
         }
     }
 
-    private Vector vec(String xStr, String yStr, Context c) {
+    private void drawPolygon(CustomShapeDescription csd, Context c, Polygon polygon) {
+        if (c.getFilled() != null)
+            csd.addPolygon(polygon.transform(c.getTransform()), c.getThickness(), c.getFilled(), true);
+        if (c.getColor() != null)
+            csd.addPolygon(polygon.transform(c.getTransform()), c.getThickness(), c.getColor(), false);
+    }
+
+    private VectorFloat vec(String xStr, String yStr, Context c) {
+        return c.getTransform().transform(vec(xStr, yStr));
+    }
+
+    private VectorFloat vec(String xStr, String yStr) {
         float x = xStr.isEmpty() ? 0 : Float.parseFloat(xStr);
         float y = yStr.isEmpty() ? 0 : Float.parseFloat(yStr);
-        final VectorFloat v = c.getTransform().transform(new VectorFloat(x, y));
-        return new Vector(v.getX(), v.getY());
+        return new VectorFloat(x, y);
+    }
+
+    private VectorFloat vecD(String xStr, String yStr, Context c) {
+        float x = xStr.isEmpty() ? 0 : Float.parseFloat(xStr);
+        float y = yStr.isEmpty() ? 0 : Float.parseFloat(yStr);
+        return c.getTransform().getMatrix().transformDirection(new VectorFloat(x, y));
     }
 
     private void drawRect(CustomShapeDescription csd, Element element, Context c) {
-        VectorInterface size = vec(element.getAttribute("width"), element.getAttribute("height"), c);
-        VectorInterface pos = vec(element.getAttribute("x"), element.getAttribute("y"), c);
-        VectorInterface rad = vec(element.getAttribute("rx"), element.getAttribute("ry"), c);
+        VectorInterface size = vec(element.getAttribute("width"), element.getAttribute("height"));
+        VectorInterface pos = vec(element.getAttribute("x"), element.getAttribute("y"));
+        VectorInterface rad = vec(element.getAttribute("rx"), element.getAttribute("ry"));
 
         float x = pos.getXFloat();
         float y = pos.getYFloat();
@@ -122,40 +148,40 @@ public class SvgImporter {
             float rx = rad.getXFloat();
             float ry = rad.getYFloat();
             csd.addPolygon(new Polygon(true)
-                    .add(new VectorFloat(x + rx, y))
-                    .add(new VectorFloat(x + rx + w, y))
-                    .add(new VectorFloat(x + width, y + ry))
-                    .add(new VectorFloat(x + width, y + ry + h))
-                    .add(new VectorFloat(x + rx + w, y + height))
-                    .add(new VectorFloat(x + rx, y + height))
-                    .add(new VectorFloat(x, y + ry + h))
-                    .add(new VectorFloat(x, y + ry)), c.getThickness(), c.getColor(), false);
+                    .add(c.tr(new VectorFloat(x + rx, y)))
+                    .add(c.tr(new VectorFloat(x + rx + w, y)))
+                    .add(c.tr(new VectorFloat(x + width, y + ry)))
+                    .add(c.tr(new VectorFloat(x + width, y + ry + h)))
+                    .add(c.tr(new VectorFloat(x + rx + w, y + height)))
+                    .add(c.tr(new VectorFloat(x + rx, y + height)))
+                    .add(c.tr(new VectorFloat(x, y + ry + h)))
+                    .add(c.tr(new VectorFloat(x, y + ry))), c.getThickness(), c.getColor(), false);
         } else
             csd.addPolygon(new Polygon(true)
-                    .add(new VectorFloat(x, y))
-                    .add(new VectorFloat(x + width, y))
-                    .add(new VectorFloat(x + width, y + height))
-                    .add(new VectorFloat(x, y + height)), c.getThickness(), c.getColor(), false);
+                    .add(c.tr(new VectorFloat(x, y)))
+                    .add(c.tr(new VectorFloat(x + width, y)))
+                    .add(c.tr(new VectorFloat(x + width, y + height)))
+                    .add(c.tr(new VectorFloat(x, y + height))), c.getThickness(), c.getColor(), false);
     }
 
     private void drawCircle(CustomShapeDescription csd, Element element, Context c) {
-        Vector r = null;
+        VectorFloat r = null;
         if (element.hasAttribute("r")) {
             final String rad = element.getAttribute("r");
-            r = vec(rad, rad, c);
+            r = vecD(rad, rad, c);
         }
         if (element.hasAttribute("rx")) {
-            r = vec(element.getAttribute("rx"), element.getAttribute("ry"), c);
+            r = vecD(element.getAttribute("rx"), element.getAttribute("ry"), c);
         }
         if (r != null) {
-            Vector pos = vec(element.getAttribute("cx"), element.getAttribute("cy"), c);
-            Vector oben = pos.sub(r);
-            Vector unten = pos.add(r);
+            VectorFloat pos = vec(element.getAttribute("cx"), element.getAttribute("cy"), c);
+            VectorFloat oben = pos.sub(r);
+            VectorFloat unten = pos.add(r);
 
             if (c.getFilled() != null)
-                csd.addCircle(oben, unten, c.getThickness(), c.getFilled(), true);
+                csd.addCircle(oben.round(), unten.round(), c.getThickness(), c.getFilled(), true);
             if (c.getColor() != null)
-                csd.addCircle(oben, unten, c.getThickness(), c.getColor(), false);
+                csd.addCircle(oben.round(), unten.round(), c.getThickness(), c.getColor(), false);
         }
     }
 

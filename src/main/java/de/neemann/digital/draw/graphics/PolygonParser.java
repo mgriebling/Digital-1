@@ -42,15 +42,35 @@ public class PolygonParser {
             command = c;
             return Token.COMMAND;
         } else {
-            int p0 = pos;
-            while (pos < path.length() && isNumChar(path.charAt(pos)))
-                pos++;
-
-            String numStr = path.substring(p0, pos);
-            value = Float.parseFloat(numStr);
+            value = parseNumber();
             return Token.NUMBER;
         }
     }
+
+    private char peekChar() {
+        return path.charAt(pos);
+    }
+
+    private float parseNumber() {
+        int p0 = pos;
+        if (peekChar() == '+' || peekChar() == '-')
+            pos++;
+
+        while (pos < path.length() && (Character.isDigit(peekChar()) || peekChar() == '.'))
+            pos++;
+
+        if (pos < path.length() && (peekChar() == 'e' || peekChar() == 'E')) {
+            pos++;
+            if (peekChar() == '+' || peekChar() == '-')
+                pos++;
+
+            while (pos < path.length() && (Character.isDigit(peekChar()) || peekChar() == '.'))
+                pos++;
+        }
+
+        return Float.parseFloat(path.substring(p0, pos));
+    }
+
 
     private void unreadToken() {
         pos = lastTokenPos;
@@ -65,7 +85,7 @@ public class PolygonParser {
     }
 
     private boolean isNumChar(char c) {
-        return Character.isDigit(c) || c == '.' || c == '-' || c == '+' || c == 'e';
+        return Character.isDigit(c) || c == '.' || c == 'e';
     }
 
     private float nextValue() throws ParserException {
@@ -87,7 +107,7 @@ public class PolygonParser {
     }
 
     /**
-     * Creates a polygon from the given path
+     * Creates a polygon from the given path.
      *
      * @return the polygon
      * @throws ParserException ParserException
@@ -153,7 +173,6 @@ public class PolygonParser {
             }
         }
         return p;
-
     }
 
     private void addArc(Polygon p, VectorFloat rad, float rot, boolean large, boolean sweep, VectorFloat pos) {
@@ -169,4 +188,31 @@ public class PolygonParser {
         }
     }
 
+
+    /**
+     * Parses a polygon.
+     *
+     * @return the polygon
+     * @throws ParserException ParserException
+     */
+    public Polygon parsePolygon() throws ParserException {
+        return parsePolygonPolyline(true);
+    }
+
+    /**
+     * Parses a polyline.
+     *
+     * @return the polygon
+     * @throws ParserException ParserException
+     */
+    public Polygon parsePolyline() throws ParserException {
+        return parsePolygonPolyline(false);
+    }
+
+    private Polygon parsePolygonPolyline(boolean closed) throws ParserException {
+        Polygon p = new Polygon(closed);
+        while (next() != Token.EOF)
+            p.add(new VectorFloat(value, nextValue()));
+        return p;
+    }
 }

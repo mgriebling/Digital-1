@@ -120,4 +120,14 @@ public class VectorFloat implements VectorInterface {
     public int hashCode() {
         return Objects.hash(x, y);
     }
+
+
+    /**
+     * Creates an int vector from this float vector
+     *
+     * @return the int vector
+     */
+    public Vector round() {
+        return new Vector(getX(), getY());
+    }
 }

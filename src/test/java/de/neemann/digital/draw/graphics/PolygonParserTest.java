@@ -20,4 +20,18 @@ public class PolygonParserTest extends TestCase {
         assertEquals(PolygonParser.Token.EOF, pp.next());
     }
 
+    public void testSimpleExp() {
+        PolygonParser pp = new PolygonParser("1e1");
+        assertEquals(PolygonParser.Token.NUMBER, pp.next());
+        assertEquals(10, pp.getValue(), 1e-6);
+        assertEquals(PolygonParser.Token.EOF, pp.next());
+    }
+
+    public void testSimpleExpSign() {
+        PolygonParser pp = new PolygonParser("1e-1");
+        assertEquals(PolygonParser.Token.NUMBER, pp.next());
+        assertEquals(0.1, pp.getValue(), 1e-6);
+        assertEquals(PolygonParser.Token.EOF, pp.next());
+    }
+
 }

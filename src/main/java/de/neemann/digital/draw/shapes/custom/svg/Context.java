@@ -5,7 +5,7 @@
  */
 package de.neemann.digital.draw.shapes.custom.svg;
 
-import de.neemann.digital.draw.graphics.Transform;
+import de.neemann.digital.draw.graphics.*;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
@@ -17,6 +17,7 @@ import java.util.StringTokenizer;
 class Context {
 
     private static final HashMap<String, AttrParser> PARSER = new HashMap<>();
+
     static {
         PARSER.put("transform", Context::readTransform);
         PARSER.put("fill", (c, value) -> c.fill = getColorFromString(value));
@@ -45,7 +46,7 @@ class Context {
         fontSize = parent.fontSize;
     }
 
-    Context(Context parent, Element element) {
+    Context(Context parent, Element element) throws SvgException {
         this(parent);
         final NamedNodeMap attributes = element.getAttributes();
         for (int i = 0; i < attributes.getLength(); i++) {
@@ -56,7 +57,7 @@ class Context {
         }
     }
 
-    private static void readStyle(Context context, String style) {
+    private static void readStyle(Context context, String style) throws SvgException {
         StringTokenizer st = new StringTokenizer(style, ";");
         while (st.hasMoreTokens()) {
             String[] t = st.nextToken().split(":");
@@ -84,14 +85,52 @@ class Context {
         return (int) thickness;
     }
 
-
-    private interface AttrParser {
-        void parse(Context c, String value);
+    public VectorInterface tr(VectorInterface vector) {
+        return vector.transform(tr);
     }
 
 
-    private static void readTransform(Context c, String value) {
-        // ToDo transform is ignored!
+    private interface AttrParser {
+        void parse(Context c, String value) throws SvgException;
+    }
+
+    private static void readTransform(Context c, String value) throws SvgException {
+        StringTokenizer st = new StringTokenizer(value, "(),");
+        Transform t = null;
+        final String trans = st.nextToken();
+        switch (trans) {
+            case "translate":
+                t = new TransformTranslate(new VectorFloat(Float.parseFloat(st.nextToken()), Float.parseFloat(st.nextToken())));
+                break;
+            case "scale":
+                final float xs = Float.parseFloat(st.nextToken());
+                final float ys = Float.parseFloat(st.nextToken());
+                t = new TransformMatrix(xs, 0, 0, ys, 0, 0);
+                break;
+            case "matrix":
+                t = new TransformMatrix(
+                        Float.parseFloat(st.nextToken()),
+                        Float.parseFloat(st.nextToken()),
+                        Float.parseFloat(st.nextToken()),
+                        Float.parseFloat(st.nextToken()),
+                        Float.parseFloat(st.nextToken()),
+                        Float.parseFloat(st.nextToken()));
+                break;
+            case "rotate":
+                float w = Float.parseFloat(st.nextToken());
+                if (st.hasMoreTokens()) {
+                    t = TransformMatrix.rotate(w);
+                    float xc = Float.parseFloat(st.nextToken());
+                    float yc = Float.parseFloat(st.nextToken());
+                    t = Transform.mul(new TransformTranslate(xc, yc), t);
+                    t = Transform.mul(t, new TransformTranslate(-xc, -yc));
+                } else
+                    t = TransformMatrix.rotate(w);
+                break;
+            default:
+                throw new SvgException("unknown transform: " + value, null);
+        }
+        c.tr = Transform.mul(c.tr, t);
     }
 
     private static Color getColorFromString(String v) {
