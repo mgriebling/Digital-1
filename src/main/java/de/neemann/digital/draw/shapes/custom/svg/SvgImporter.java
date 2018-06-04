@@ -43,6 +43,7 @@ public class SvgImporter {
     /**
      * Parses and draws the svg file.
      *
+     * @return the custom shape description
      * @throws SvgException SvgException
      */
     public CustomShapeDescription create() throws SvgException {
@@ -57,7 +58,7 @@ public class SvgImporter {
         }
     }
 
-    private void create(CustomShapeDescription csd, NodeList gList, Context c) {
+    private void create(CustomShapeDescription csd, NodeList gList, Context c) throws SvgException {
         for (int i = 0; i < gList.getLength(); i++) {
             final Node node = gList.item(i);
             if (node instanceof Element)
@@ -65,7 +66,7 @@ public class SvgImporter {
         }
     }
 
-    private void create(CustomShapeDescription csd, Element element, Context parent) {
+    private void create(CustomShapeDescription csd, Element element, Context parent) throws SvgException {
         Context c = new Context(parent, element);
         switch (element.getNodeName()) {
             case "a":
@@ -82,11 +83,15 @@ public class SvgImporter {
                 drawRect(csd, element, c);
                 break;
             case "path":
-                final Polygon polygon = Polygon.createFromPath(element.getAttribute("d"));
-                if (c.getFilled() != null)
-                    csd.addPolygon(polygon, c.getThickness(), c.getFilled(), true);
-                if (c.getColor() != null)
-                    csd.addPolygon(polygon, c.getThickness(), c.getColor(), false);
+                try {
+                    Polygon polygon = new PolygonParser(element.getAttribute("d")).create();
+                    if (c.getFilled() != null)
+                        csd.addPolygon(polygon, c.getThickness(), c.getFilled(), true);
+                    if (c.getColor() != null)
+                        csd.addPolygon(polygon, c.getThickness(), c.getColor(), false);
+                } catch (PolygonParser.ParserException e) {
+                    throw new SvgException("invalid path", e);
+                }
                 break;
             case "circle":
             case "ellipse":
