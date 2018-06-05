@@ -22,7 +22,7 @@ public class SvgImporterTest extends TestCase {
     }
 
     public void testDebug() throws Exception {
-        CustomShapeDescription csd = new SvgImporter(new File("/home/hneemann/temp/Digital/svg/rot.svg")).create();
+        CustomShapeDescription csd = new SvgImporter(new File("/home/hneemann/temp/Digital/svg/tuba.svg")).create();
     }
 
     void scan(File f) throws Exception {
@@ -33,7 +33,7 @@ public class SvgImporterTest extends TestCase {
             assertTrue("empty file", csd.size() > 0);
 
             File tempFile = new File(tempFolder, f1.getName()+".png");
-            try (Graphic gr = new GraphicsImage(new FileOutputStream(tempFile), "png", 2)) {
+            try (Graphic gr = new GraphicsImage(new FileOutputStream(tempFile), "png", 1)) {
                 GraphicMinMax mm = new GraphicMinMax();
                 csd.drawTo(mm, null);
                 gr.setBoundingBox(mm.getMin(), mm.getMax());

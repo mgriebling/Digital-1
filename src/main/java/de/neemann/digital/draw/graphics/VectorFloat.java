@@ -122,11 +122,7 @@ public class VectorFloat implements VectorInterface {
     }
 
 
-    /**
-     * Creates an int vector from this float vector
-     *
-     * @return the int vector
-     */
+    @Override
     public Vector round() {
         return new Vector(getX(), getY());
     }

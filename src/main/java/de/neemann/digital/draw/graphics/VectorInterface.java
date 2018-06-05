@@ -66,4 +66,11 @@ public interface VectorInterface {
      * @return the norm of this vector
      */
     VectorFloat norm();
+
+    /**
+     * Rounds the cvector to an int vector
+     *
+     * @return an int vector
+     */
+    Vector round();
 }

@@ -18,6 +18,7 @@ class Context {
 
     private static final HashMap<String, AttrParser> PARSER = new HashMap<>();
 
+
     static {
         PARSER.put("transform", Context::readTransform);
         PARSER.put("fill", (c, value) -> c.fill = getColorFromString(value));
@@ -25,6 +26,7 @@ class Context {
         PARSER.put("stroke-width", (c, value) -> c.thickness = getFloatFromString(value) + 1);
         PARSER.put("font-size", (c, value) -> c.fontSize = getFloatFromString(value) + 1);
         PARSER.put("style", Context::readStyle);
+        PARSER.put("text-anchor", (c, value) -> c.textAnchor = value);
     }
 
     private Transform tr;
@@ -32,10 +34,12 @@ class Context {
     private Color color;
     private float thickness;
     private float fontSize;
+    private String textAnchor;
 
     Context() {
         tr = Transform.IDENTITY;
         thickness = 1;
+        color = Color.BLACK;
     }
 
     private Context(Context parent) {
@@ -85,8 +89,26 @@ class Context {
         return (int) thickness;
     }
 
+    public Orientation getTextOrientation() {
+        if (textAnchor == null)
+            return Orientation.LEFTBOTTOM;
+
+        switch (textAnchor) {
+            case "end":
+                return Orientation.RIGHTBOTTOM;
+            case "middle":
+                return Orientation.CENTERBOTTOM;
+            default:
+                return Orientation.LEFTBOTTOM;
+        }
+    }
+
     public VectorInterface tr(VectorInterface vector) {
         return vector.transform(tr);
+    }
+
+    public float getFontSize() {
+        return fontSize;
     }
 
 

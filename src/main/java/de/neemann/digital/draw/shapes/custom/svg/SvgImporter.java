@@ -107,6 +107,9 @@ public class SvgImporter {
             case "ellipse":
                 drawCircle(csd, element, c);
                 break;
+            case "text":
+                drawText(csd, c, element);
+                break;
         }
     }
 
@@ -182,6 +185,30 @@ public class SvgImporter {
                 csd.addCircle(oben.round(), unten.round(), c.getThickness(), c.getFilled(), true);
             if (c.getColor() != null)
                 csd.addCircle(oben.round(), unten.round(), c.getThickness(), c.getColor(), false);
+        }
+    }
+
+    private void drawText(CustomShapeDescription csd, Context c, Element element) throws SvgException {
+        VectorFloat p = vec(element.getAttribute("x"), element.getAttribute("y"));
+        VectorInterface pos0 = p.transform(c.getTransform());
+        VectorInterface pos1 = p.add(new VectorFloat(1, 0)).transform(c.getTransform());
+
+        drawTextElement(csd, c, element, pos0, pos1);
+    }
+
+    private void drawTextElement(CustomShapeDescription csd, Context c, Element element, VectorInterface pos0, VectorInterface pos1) throws SvgException {
+        NodeList nodes = element.getElementsByTagName("*");
+        if (nodes.getLength() == 0) {
+            String text = element.getTextContent();
+            csd.addText(pos0.round(), pos1.round(), text, c.getTextOrientation(), (int) c.getFontSize(), c.getColor());
+        } else {
+            for (int i = 0; i < nodes.getLength(); i++) {
+                Node n = nodes.item(i);
+                if (n instanceof Element) {
+                    Element el = (Element) n;
+                    drawTextElement(csd, new Context(c, el), el, pos0, pos1);
+                }
+            }
         }
     }
 
