@@ -15,7 +15,6 @@ import de.neemann.digital.draw.elements.Pins;
 import de.neemann.digital.draw.graphics.Graphic;
 import de.neemann.digital.draw.graphics.Orientation;
 import de.neemann.digital.draw.graphics.Style;
-import de.neemann.digital.draw.shapes.Drawable;
 import de.neemann.digital.draw.shapes.InteractorInterface;
 import de.neemann.digital.draw.shapes.Shape;
 

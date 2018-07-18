@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2016 Helmut Neemann
+ * Use of this source code is governed by the GPL v3 license
+ * that can be found in the LICENSE file.
+ */
 package de.neemann.digital.draw.shapes.custom.svg;
 
 import de.neemann.digital.draw.graphics.Graphic;
@@ -17,13 +22,13 @@ public class SvgImporterTest extends TestCase {
         scan(new File(Resources.getRoot(), "../../main/svg"));
     }
 
-    public void testTemp() throws Exception {
-        scan(new File("/home/hneemann/temp/Digital/svg"));
-    }
+//    public void testTemp() throws Exception {
+//        scan(new File("/home/hneemann/temp/Digital/svg"));
+//    }
 
-    public void testDebug() throws Exception {
-        CustomShapeDescription csd = new SvgImporter(new File("/home/hneemann/temp/Digital/svg/tuba.svg")).create();
-    }
+//    public void testDebug() throws Exception {
+//        CustomShapeDescription csd = new SvgImporter(new File("/home/hneemann/temp/Digital/svg/tuba.svg")).create();
+//    }
 
     void scan(File f) throws Exception {
         File tempFolder = new File(System.getProperty("java.io.tmpdir"));

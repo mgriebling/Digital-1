@@ -147,6 +147,9 @@ public class CustomShapeDescription implements Drawable {
                 .addText(new Vector(20, -25), new Vector(21, -25), "Hi!", Orientation.LEFTCENTER, 20, Color.BLACK);
     }
 
+    /**
+     * @return the number of elements in this shape
+     */
     public int size() {
         return drawables.size();
     }

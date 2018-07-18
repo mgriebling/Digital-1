@@ -56,6 +56,6 @@ public class TransformRotate implements Transform {
 
     @Override
     public TransformMatrix getMatrix() {
-        return new TransformMatrix(cos, sin, -sin, cos, 0, 0);
+        return new TransformMatrix(cos, sin, -sin, cos, translation.getXFloat(), translation.getYFloat());
     }
 }
