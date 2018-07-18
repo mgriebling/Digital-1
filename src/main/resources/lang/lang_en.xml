@@ -670,6 +670,14 @@
     <string name="elem_Relay_pin_in2">On of the inputs to control the relay.</string>
     <string name="elem_Relay_pin_out1">One of the switch outputs.</string>
     <string name="elem_Relay_pin_out2">One of the switch outputs.</string>
+    <string name="elem_RelayDT">Double Throw Relay</string>
+    <string name="elem_RelayDT_tt">A relay is a switch which can be controlled by a coil.
+        If a current flows through the coil, the switch is closed or opened.
+        There is no flyback diode so the current direction does not matter.
+        The switch is actuated if the inputs have different values.
+        The relay behaves similar to an XOr gate.</string>
+    <string name="elem_RelayDT_pin_in1">On of the inputs to control the relay.</string>
+    <string name="elem_RelayDT_pin_in2">On of the inputs to control the relay.</string>
     <string name="elem_PFET">P-Channel FET</string>
     <string name="elem_PFET_tt">P-Channel Field Effect Transistor.
         The bulk is connected to the pos. voltage rail and the transistor is simulated without a body diode.</string>
@@ -847,6 +855,7 @@
     <string name="err_pinIsNotANumber_N">The pin nummer {0} is not a integer!</string>
     <string name="err_vhdlExporting">Error during export to VHDL.</string>
     <string name="err_vhdlNoEntity_N">No VHDL code for {0} available!</string>
+    <string name="err_verilogNoElement_N">No Verilog code for {0} available!</string>
     <string name="err_vhdlPin_N_hasNoNumber">Pin {0} has no number!</string>
     <string name="err_vhdlErrorWritingTestBench">Error creating a test bench!</string>
     <string name="err_vhdlValuesOfType_N_notAllowed">Values of typ {0} are not allowed!</string>
@@ -893,17 +902,22 @@
     <string name="err_exitValueNotNull_N_O">Application exit status was not 0 but {0}:
         {1}</string>
     <string name="err_canOnlyExportExternalVHDL">External code can only be exported if it is VHDL!</string>
+    <string name="err_canOnlyExportExternalVerilog">External code can only be exported if it is Verilog!</string>
     <string name="err_ifExternalComponentIsUsedTwiceCodeMustBeIdentical_N">If an external component is used multiple times, the code must be identical! Effects: {0}</string>
     <string name="err_writingToStdOut_O">Could not write to stdOut:
         {0}</string>
     <string name="err_ghdlNotInstalled">
         The VHDL simulator ghdl does not seem to be installed. Install ghdl (http://ghdl.free.fr/) and try again. If there are still problems, check the path to the ghdl executable in the Digital settings.
     </string>
+    <string name="err_iverilogNotInstalled">
+        The Verilog simulator Icarus does not seem to be installed. Install ghdl (http://iverilog.icarus.com/) and try again. If there are still problems, check the path to the iverilog executable in the Digital settings.
+    </string>
     <string name="err_errorAnalysingCircuit_N">Error analysing the circuit: {0}</string>
     <string name="err_romNeedsALabelToBeExported">Every ROM needs a unique label to be exported!</string>
     <string name="err_counterNeedsMoreBits">The counter needs at least two bits.</string>
     <string name="err_namesAreNotUnique_N">The name "{0}" is  not unique!</string>
     <string name="err_clocksNotAllowedInAsyncMode">Clock elements can not be used in asynchronous mode.</string>
+    <string name="err_verilogExporting">Error during export to Verilog.</string>
 
     <string name="key_AddrBits">Address Bits</string><!-- ROM, RAMDualPort, RAMSinglePort, RAMSinglePortSel, EEPROM -->
     <string name="key_AddrBits_tt">Number of address bits used.</string>
@@ -1028,6 +1042,8 @@
     <string name="key_ExpressionFormat_tt">Screen format of expressions.</string>
     <string name="key_relayNormallyClosed">Relay is normally closed.</string><!-- Relay -->
     <string name="key_relayNormallyClosed_tt">If set the relay is closed if the input is low.</string>
+    <string name="key_poles">Pole count</string><!-- Relay -->
+    <string name="key_poles_tt">Number of poles available.</string>
     <string name="key_commonCathode">Common Cathode</string><!-- Seven-Seg -->
     <string name="key_commonCathode_tt">If selected the common cathode input is also simulated.</string>
     <string name="key_ledPersistence">Avoid Flicker</string><!-- Seven-Seg, LedMatrix -->
@@ -1103,6 +1119,7 @@
     <string name="key_applicationType_tt">Defines which application to use.</string>
     <string name="key_applicationType_Generic">Generic</string>
     <string name="key_applicationType_GHDL">GHDL</string>
+    <string name="key_applicationType_IVERILOG">IVerilog</string>
     <string name="key_externalInputs">Inputs</string>
     <string name="key_externalInputs_tt">The inputs of the external process.
         It is a comma-separated list of signal names. For each signal name, with a colon separated, a number of bits
@@ -1116,6 +1133,9 @@
     <string name="key_ghdlPath">GHDL</string>
     <string name="key_ghdlPath_tt">Path to the executable ghdl file. Only necessary if you want to use ghdl to simulate
         components defined with vhdl.</string>
+    <string name="key_iverilogPath">IVerilog</string>
+    <string name="key_iverilogPath_tt">Path to the Icarus verilog installation folder. Only necessary if you want to use iverilog to simulate
+        components defined with verilog.</string>
     <string name="key_maxValue">Maximum Value</string>
     <string name="key_maxValue_tt">If a zero is entered, the maximum possible value is used (all bits are one).</string>
 
@@ -1136,6 +1156,18 @@
 
     <string name="key_useDefShape">Use Default Shape</string>
     <string name="key_useDefShape_tt">Use the default shape instead of using the DIL or custom shape configured in the circuit.</string>
+
+    <string name="key_textOrientation">Orientation</string>
+    <string name="key_textOrientation_tt">Position of the coordinate relative to the text.</string>
+    <string name="key_textOrientation_LEFTBOTTOM">left bottom</string>
+    <string name="key_textOrientation_CENTERBOTTOM">center bottom</string>
+    <string name="key_textOrientation_RIGHTBOTTOM">right bottom</string>
+    <string name="key_textOrientation_RIGHTCENTER">right center</string>
+    <string name="key_textOrientation_RIGHTTOP">right top</string>
+    <string name="key_textOrientation_CENTERTOP">center top</string>
+    <string name="key_textOrientation_LEFTTOP">left top</string>
+    <string name="key_textOrientation_LEFTCENTER">left center</string>
+    <string name="key_textOrientation_CENTERCENTER">center center</string>
 
     <string name="mod_insertWire">Inserted wire.</string>
     <string name="mod_insertCopied">Insert from clipboard.</string>
@@ -1332,6 +1364,8 @@
     <string name="menu_addPowerSupply_tt">Adds a power supply to the circuit.</string>
     <string name="menu_exportVHDL">Export to VHDL</string>
     <string name="menu_exportVHDL_tt">Exports the circuit to VHDL</string>
+    <string name="menu_exportVerilog">Export to Verilog</string>
+    <string name="menu_exportVerilog_tt">Exports the circuit to Verilog</string>
     <string name="menu_pdfDocumentation">Documentation</string>
     <string name="menu_openPdfDocumentation">Open {0}</string>
     <string name="msg_errorOpeningDocumentation">Error opening a PDF file!</string>
@@ -1403,6 +1437,7 @@
     </string>
     <string name="msg_duplicateLibraryFiles">There are several files with identical file names, which can not be
         uniquely assigned! Affected are:</string>
+    <string name="msg_and_N_More">and {0} more.</string>
     <string name="msg_fileNotImportedYet">The file has not yet been imported.</string>
     <string name="msg_fileExists">The file {0} already exists! Do you want to overwrite the file?</string>
     <string name="msg_test_missingLines">(To many entries!)</string>
@@ -1465,8 +1500,9 @@ Make sure the flash process is complete before closing this dialog!</string>
     <string name="menu_runAllTests_tt">Executes all tests in the current folder.</string>
     <string name="msg_testPassed_N">{0} test rows passed</string>
     <string name="msg_testFile">File Tested</string>
+    <string name="msg_truthTable">Truth Table</string>
 
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="rot_0">0°</string>
     <string name="rot_180">180°</string>
     <string name="rot_270">270°</string>

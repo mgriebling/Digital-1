@@ -58,7 +58,7 @@ public class VHDLSimulatorTest extends TestCase {
         File examples = new File(Resources.getRoot(), "/dig/hdl");
         try {
             int tested = new FileScanner(this::checkVHDLExport).noOutput().scan(examples);
-            assertEquals(46, tested);
+            assertEquals(47, tested);
         } catch (FileScanner.SkipAllException e) {
             // if ghdl is not installed its also ok
         }
@@ -76,7 +76,7 @@ public class VHDLSimulatorTest extends TestCase {
     }
 
     public void testProcessorInSimulator() throws Exception {
-        File file = new File(Resources.getRoot(), "../../main/dig/processor/VHDLExample.dig");
+        File file = new File(Resources.getRoot(), "../../main/dig/processor/HDLExample.dig");
         try {
             checkVHDLExport(file);
         } catch (FileScanner.SkipAllException e) {

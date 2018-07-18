@@ -13,6 +13,7 @@ import de.neemann.digital.core.extern.Application;
 import de.neemann.digital.core.io.InValue;
 import de.neemann.digital.core.memory.DataField;
 import de.neemann.digital.core.memory.rom.ROMManger;
+import de.neemann.digital.draw.graphics.Orientation;
 import de.neemann.digital.draw.graphics.Style;
 import de.neemann.digital.draw.library.ElementLibrary;
 import de.neemann.digital.draw.model.InverterConfig;
@@ -139,6 +140,13 @@ public final class Keys {
                     .setComboBoxValues(new Integer[]{14, 17, 20, 24, 36, 48, 60})
                     .setMin(10)
                     .setMax(70);
+
+    /**
+     * text orientation
+     */
+    public static final Key<Orientation> TEXT_ORIENTATION
+            = new Key.KeyEnum<>("textOrientation", Orientation.LEFTTOP, Orientation.values()).setSecondary();
+
 
     /**
      * The size of a LED
@@ -437,6 +445,16 @@ public final class Keys {
     public static final Key<Boolean> RELAY_NORMALLY_CLOSED
             = new Key<>("relayNormallyClosed", false).allowGroupEdit();
 
+
+    /**
+     * Number of poles in the double throw relay
+     */
+    public static final Key<Integer> POLES
+            = new Key.KeyInteger("poles", 1)
+            .setComboBoxValues(new Integer[]{1, 2, 3, 4})
+            .setMin(1).allowGroupEdit();
+
+
     /**
      * flag used by a barrel shifter to select the shift mode
      */
@@ -515,7 +533,7 @@ public final class Keys {
             new Key.KeyInteger("pinCount", 0)
                     .setMin(0)
                     .setDependsOn(IS_DIL)
-            .setSecondary();
+                    .setSecondary();
 
 
     /**
@@ -609,6 +627,12 @@ public final class Keys {
      */
     public static final Key<File> SETTINGS_GHDL_PATH
             = new Key.KeyFile("ghdlPath", new File("ghdl")).setSecondary();
+
+    /**
+     * Path to iverilog installation directory
+     */
+    public static final Key<File> SETTINGS_IVERILOG_PATH
+            = new Key.KeyFile("iverilogPath", new File("iverilog")).setSecondary();
 
     /**
      * Avoid component tooltips in the main panel

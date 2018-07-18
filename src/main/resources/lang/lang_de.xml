@@ -672,6 +672,14 @@
     <string name="elem_Relay_pin_in2">Ein Steuereingang des Relais.</string>
     <string name="elem_Relay_pin_out1">Einer der Ausgänge des gesteuerten Schalters.</string>
     <string name="elem_Relay_pin_out2">Einer der Ausgänge des gesteuerten Schalters.</string>
+    <string name="elem_RelayDT">Relais mit Wechselkontakt</string>
+    <string name="elem_RelayDT_tt">Ein Relais ist ein Schalter, welcher über eine Spule umgeschaltet werden kann.
+        Wenn ein Strom durch das Relais fließt, wird der Schalter geöffnet bzw. geschlossen.
+        Es gibt keine Freilaufdiode, sodass die Stromrichtung keine Rolle spielt.
+        Der Schalter wird betätigt, wenn die Eingänge unterschiedliche Werte haben.
+        Das Relais verhält sich damit ähnlich wie ein XOr Gatter.</string>
+    <string name="elem_RelayDT_pin_in1">Ein Steuereingang des Relais.</string>
+    <string name="elem_RelayDT_pin_in2">Ein Steuereingang des Relais.</string>
     <string name="elem_PFET">P-Kanal FET</string>
     <string name="elem_PFET_tt">P-Kanal Feldeffekttransistor.
         Der Bulk ist mit der pos. Versorgung verbunden. Der Transistor wird ohne eine Body-Diode simuliert.</string>
@@ -851,6 +859,7 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="err_pinIsNotANumber_N">Die Pinnummer {0} ist keine Zahl!</string>
     <string name="err_vhdlExporting">Fehler beim Export zu VHDL.</string>
     <string name="err_vhdlNoEntity_N">Kein VHDL Code für {0} verfügbar!</string>
+    <string name="err_verilogNoElement_N">Kein Verilog Code für {0} verfügbar!</string>
     <string name="err_vhdlPin_N_hasNoNumber">Der Pin {0} hat keine Nummer!</string>
     <string name="err_vhdlErrorWritingTestBench">Fehler beim erzeugen des Testfalls!</string>
     <string name="err_vhdlValuesOfType_N_notAllowed">Werte vom Typ {0} sind nicht erlaubt!</string>
@@ -898,16 +907,21 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="err_exitValueNotNull_N_O">Rückgabewert der Anwendung war nicht 0 sondern {0}:
         {1}</string>
     <string name="err_canOnlyExportExternalVHDL">Externer Code kann nur exportiert werden, wenn es sich um VHDL handelt!</string>
+    <string name="err_canOnlyExportExternalVerilog">Externer Code kann nur exportiert werden, wenn es sich um Verilog handelt!</string>
     <string name="err_ifExternalComponentIsUsedTwiceCodeMustBeIdentical_N">Wird eine externes Element mehrfach verwendet, muss der Code identisch sein! Betrifft {0}</string>
     <string name="err_writingToStdOut_O">Konnte nicht auf stdOut schreiben:
         {0}</string>
     <string name="err_ghdlNotInstalled">
         Der VHDL Simulator ghdl scheint nicht installiert zu sein. Installieren Sie ghdl (http://ghdl.free.fr/) und versuchen Sie es erneut. Sollte es immer noch Probleme geben, überprüfen Sie den Pfad zur ausfühbaren ghdl-Datei in den Digital-Einstellungen.
     </string>
+    <string name="err_iverilogNotInstalled">
+        Der Verilog Simulator Icarus scheint nicht installiert zu sein. Installieren Sie Icarus (http://iverilog.icarus.com/) und versuchen Sie es erneut. Sollte es immer noch Probleme geben, überprüfen Sie den Pfad zur ausfühbaren iverilog-Datei in den Digital-Einstellungen.
+    </string>
     <string name="err_errorAnalysingCircuit_N">Fehler bei der Analyse der Schaltung: {0}</string>
     <string name="err_romNeedsALabelToBeExported">Jedes ROM braucht eine eindeutige Bezeichnung um exportiert zu werden!</string>
     <string name="err_counterNeedsMoreBits">Der Zähler benötigt mindestens zwei Bits.</string>
     <string name="err_clocksNotAllowedInAsyncMode">Taktelemente können im asynchronen Modus nicht verwendet werden.</string>
+    <string name="err_verilogExporting">Fehler beim Export zu Verilog.</string>
     <string name="err_parsingSVG">Fehler beim Einlesen der SVG-Datei.</string>
 
     <string name="key_AddrBits">Adress-Bits</string><!-- ROM, RAMDualPort, RAMSinglePort, RAMSinglePortSel, EEPROM -->
@@ -1034,6 +1048,8 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="key_ExpressionFormat_tt">Anzeigeformat der Ausdrücke.</string>
     <string name="key_relayNormallyClosed">Relais ist ein Öffner</string><!-- Relay -->
     <string name="key_relayNormallyClosed_tt">Wenn gesetzt, ist das Relais unbestromt geschlossen.</string>
+    <string name="key_poles">Pole</string><!-- Relay -->
+    <string name="key_poles_tt">Anzahl der Schaltkontakte des Relais.</string>
     <string name="key_commonCathode">Gemeinsame Kathode</string><!-- Seven-Seg -->
     <string name="key_commonCathode_tt">Wenn gesetzt, hat die Anzeige einen Anschluss mit einer gemeinsamen Kathode.</string>
     <string name="key_ledPersistence">Flimmern vermeiden</string><!-- Seven-Seg, LedMatrix -->
@@ -1112,6 +1128,7 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="key_applicationType_tt">Gibt an, welche Anwendung gestartet werden soll, um den Code auszuführen.</string>
     <string name="key_applicationType_Generic">Generisch</string>
     <string name="key_applicationType_GHDL">GHDL</string>
+    <string name="key_applicationType_IVERILOG">IVerilog</string>
     <string name="key_externalInputs">Eingänge</string>
     <string name="key_externalInputs_tt">Die Eingänge des externen Prozesses. Es handelt sich um eine kommaseparierte
         Liste mit Signalnamen. Bei jedem Signalnamen kann, mit einem Doppelpunkt getrennt, eine Bitanzahl angegeben werden.
@@ -1125,6 +1142,9 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="key_ghdlPath">GHDL</string>
     <string name="key_ghdlPath_tt">Pfad der ausführbaren ghdl-Datei. Nur wichtig, wenn ghdl zur Interpretation von
         VHDL-Code verwendet werden soll.</string>
+    <string name="key_iverilogPath">IVerilog</string>
+    <string name="key_iverilogPath_tt">Pfad zum Icarus-Verilog-Installationsordner. Nur notwendig, wenn Sie iverilog
+        verwenden möchten, um mit Verilog definierte Komponenten zu simulieren.</string>
     <string name="key_maxValue">Maximalwert</string>
     <string name="key_maxValue_tt">Wird hier eine Null eingetragen, wird der maximal mögliche Wert verwendet (Alle Bits sind Eins).</string>
 
@@ -1145,6 +1165,18 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="key_useDefShape">Verwende einfache Form</string>
     <string name="key_useDefShape_tt">Verwendet die einfache Form zur Darstellung. Hat nur einen Effekt, wenn die
         Schaltung eine Benutzerdefinierte Form oder eine DIL Form verwendet.</string>
+
+    <string name="key_textOrientation">Ausrichtung</string>
+    <string name="key_textOrientation_tt">Lage der Koordinate relativ zum Text.</string>
+    <string name="key_textOrientation_LEFTBOTTOM">links unten</string>
+    <string name="key_textOrientation_CENTERBOTTOM">mitte unten</string>
+    <string name="key_textOrientation_RIGHTBOTTOM">rechts unten</string>
+    <string name="key_textOrientation_RIGHTCENTER">rechts mitte</string>
+    <string name="key_textOrientation_RIGHTTOP">rechts oben</string>
+    <string name="key_textOrientation_CENTERTOP">mitte oben</string>
+    <string name="key_textOrientation_LEFTTOP">links oben</string>
+    <string name="key_textOrientation_LEFTCENTER">links mitte</string>
+    <string name="key_textOrientation_CENTERCENTER">mitte mitte</string>
 
     <string name="mod_insertWire">Leitung eingefügt.</string>
     <string name="mod_insertCopied">Aus Zwischenablage eingefügt.</string>
@@ -1340,6 +1372,8 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="menu_addPowerSupply_tt">Erweitert die Schaltung um eine Spannungsversorung.</string>
     <string name="menu_exportVHDL">Export zu VHDL</string>
     <string name="menu_exportVHDL_tt">Exportiert die Schaltung zu VHDL</string>
+    <string name="menu_exportVerilog">Export zu Verilog</string>
+    <string name="menu_exportVerilog_tt">Exportiert die Schaltung zu Verilog</string>
     <string name="menu_karnaughMap">KV-Tafel</string>
     <string name="menu_karnaughMap_tt">Zeigt eine KV-Tafel der Tabelle an.</string>
     <string name="menu_pdfDocumentation">Dokumentation</string>
@@ -1417,6 +1451,7 @@ eine &lt;a href=&quot;https://github.com/hneemann/[[name]]/issues/new?labels=enh
     </string>
     <string name="msg_duplicateLibraryFiles">Es gibt mehrere Dateien mit identischen Dateinamen, welche nicht eindeutig
         zugeordnet werden können! Betroffen sind:</string>
+    <string name="msg_and_N_More">und {0} weitere.</string>
     <string name="msg_fileNotImportedYet">Die Datei wurde noch nicht importiert.</string>
     <string name="msg_fileExists">Die Datei {0} existiert schon! Soll die Datei überschrieben werden?</string>
     <string name="msg_isLocked">Die Bearbeitung der Schaltung ist gesperrt. Sie können die Sperrung unter
@@ -1475,6 +1510,7 @@ Stellen Sie sicher, dass der Flash-Vorgang abgeschlossen ist, bevor Sie diesen D
     <string name="menu_runAllTests_tt">Führt alle Tests im aktuellen Verzeichnis aus.</string>
     <string name="msg_testPassed_N">{0} Testzeilen überprüft</string>
     <string name="msg_testFile">Testdatei</string>
+    <string name="msg_truthTable">Wahrheitstabelle</string>
 
     <string name="ok">Ok</string>
     <string name="rot_0">0°</string>
