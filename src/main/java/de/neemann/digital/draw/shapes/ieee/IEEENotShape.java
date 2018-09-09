@@ -44,7 +44,7 @@ public class IEEENotShape implements Shape {
         if (pins == null) {
             pins = new Pins();
             pins.add(new Pin(new Vector(0, 0), inputs.get(0)));
-            pins.add(new Pin(new Vector(SIZE * 2, 0), outputs.get(0)));
+            pins.add(new Pin(new Vector(SIZE * 3, 0), outputs.get(0)));
         }
         return pins;
     }
@@ -58,11 +58,11 @@ public class IEEENotShape implements Shape {
     public void drawTo(Graphic graphic, Style highLight) {
         graphic.drawPolygon(
                 new Polygon(true)
-                        .add(1, -SIZE2 - 2)
-                        .add(SIZE - 1, 0)
-                        .add(1, SIZE2 + 2), Style.NORMAL
+                        .add(1, -SIZE - 2)
+                        .add(SIZE*2 - 1, 0)
+                        .add(1, SIZE + 2), Style.NORMAL
         );
-        graphic.drawCircle(new Vector(SIZE + 1, -SIZE2 + 1),
-                new Vector(SIZE * 2 - 1, SIZE2 - 1), Style.NORMAL);
+        graphic.drawCircle(new Vector(SIZE*2 + 1, -SIZE2 + 1),
+                new Vector(SIZE * 3 - 1, SIZE2 - 1), Style.NORMAL);
     }
 }

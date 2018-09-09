@@ -21,6 +21,11 @@ public class GraphicSVG implements Graphic {
     private final File source;
     private final int svgScale;
     private BufferedWriter w;
+    
+    @Override
+    public boolean isFlagSet(String name) {
+        return name.equals(LATEX);
+    }
 
     /**
      * Creates a new instance.

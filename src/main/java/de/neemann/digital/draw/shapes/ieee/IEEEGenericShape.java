@@ -75,8 +75,8 @@ public abstract class IEEEGenericShape implements Shape {
         if (invert) {
             int o = inputs.size() / 2 * SIZE;
             for (int i = 0; i < outputs.size(); i++)
-                graphic.drawCircle(new Vector(SIZE * 3 + 1, i * SIZE - SIZE2 + 1 + o),
-                        new Vector(SIZE * 4 - 1, i * SIZE + SIZE2 - 1 + o), Style.NORMAL);
+                graphic.drawCircle(new Vector(SIZE * 4 + 1, i * SIZE - SIZE2 + 1 + o),
+                        new Vector(SIZE * 5 - 1, i * SIZE + SIZE2 - 1 + o), Style.NORMAL);
         }
     }
 

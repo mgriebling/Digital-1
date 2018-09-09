@@ -65,7 +65,7 @@ public class GenericShape implements Shape {
      * @param showPinLabels true if pin names visible
      */
     public GenericShape(String name, PinDescriptions inputs, PinDescriptions outputs, String label, boolean showPinLabels) {
-        this(name, inputs, outputs, label, showPinLabels, inputs.size() == 1 && outputs.size() == 1 && !showPinLabels ? 1 : 3);
+        this(name, inputs, outputs, label, showPinLabels, inputs.size() == 1 && outputs.size() == 1 && !showPinLabels ? 2 : 4);
     }
 
     /**
@@ -132,7 +132,7 @@ public class GenericShape implements Shape {
      * @return the pins
      */
     public static Pins createPins(PinDescriptions inputs, PinDescriptions outputs, boolean invert, InverterConfig ic) {
-        return createPins(inputs, outputs, invert, 3, true, ic);
+        return createPins(inputs, outputs, invert, 4, true, ic);
     }
 
     /**
