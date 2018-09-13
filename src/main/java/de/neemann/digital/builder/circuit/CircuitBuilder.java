@@ -220,7 +220,7 @@ public class CircuitBuilder implements BuilderInterface<CircuitBuilder> {
 
     private void createInputBus(Collection<Variable> inputs, Circuit circuit) {
         HashMap<String, Integer> varPos = new HashMap<>();
-        int dx = -inputs.size() * SIZE * 3;
+        int dx = -inputs.size() * SIZE * 5;
         pos -= SIZE;
         for (Variable v : inputs) {
             VisualElement visualElement;
@@ -236,31 +236,31 @@ public class CircuitBuilder implements BuilderInterface<CircuitBuilder> {
                         .set(Keys.LABEL, v.getIdentifier());
                 checkPinNumber(visualElement);
             }
-            visualElement.setPos(new Vector(dx, -SIZE * 5));
+            visualElement.setPos(new Vector(dx, -SIZE * 6));
             circuit.add(visualElement);
 
-            circuit.add(new Wire(new Vector(dx, -SIZE * 5), new Vector(dx, pos)));
+            circuit.add(new Wire(new Vector(dx, -SIZE * 6), new Vector(dx, pos)));
 
             if (isNotNeeded(v.getIdentifier())) {
                 visualElement = new VisualElement(de.neemann.digital.core.basic.Not.DESCRIPTION.getName()).setShapeFactory(shapeFactory);
                 visualElement.getElementAttributes()
                         .set(Keys.ROTATE, new Rotation(3));
-                visualElement.setPos(new Vector(dx + SIZE, -SIZE * 3));
+                visualElement.setPos(new Vector(dx + SIZE*2, -SIZE * 4));
                 circuit.add(visualElement);
 
-                circuit.add(new Wire(new Vector(dx, -SIZE * 4), new Vector(dx + SIZE, -SIZE * 4)));
-                circuit.add(new Wire(new Vector(dx + SIZE, -SIZE * 3), new Vector(dx + SIZE, -SIZE * 4)));
-                circuit.add(new Wire(new Vector(dx + SIZE, -SIZE), new Vector(dx + SIZE, pos)));
+                circuit.add(new Wire(new Vector(dx, -SIZE * 5), new Vector(dx + SIZE*2, -SIZE * 5)));
+                circuit.add(new Wire(new Vector(dx + SIZE*2, -SIZE * 4), new Vector(dx + SIZE*2, -SIZE * 5)));
+                circuit.add(new Wire(new Vector(dx + SIZE*2, -SIZE), new Vector(dx + SIZE*2, pos)));
             }
 
             varPos.put(v.getIdentifier(), dx);
-            dx += SIZE * 2;
+            dx += SIZE * 5;
         }
 
         for (FragmentVariable f : fragmentVariables) {
             Vector p = f.getCircuitPos();
             int in = varPos.get(f.getVariable().getIdentifier());
-            if (f.isInvert()) in += SIZE;
+            if (f.isInvert()) in += SIZE*2;
             circuit.add(new Wire(p, new Vector(in, p.y)));
         }
     }
