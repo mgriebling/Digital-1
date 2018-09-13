@@ -220,7 +220,7 @@ public class CircuitBuilder implements BuilderInterface<CircuitBuilder> {
 
     private void createInputBus(Collection<Variable> inputs, Circuit circuit) {
         HashMap<String, Integer> varPos = new HashMap<>();
-        int dx = -inputs.size() * SIZE * 2;
+        int dx = -inputs.size() * SIZE * 3;
         pos -= SIZE;
         for (Variable v : inputs) {
             VisualElement visualElement;
