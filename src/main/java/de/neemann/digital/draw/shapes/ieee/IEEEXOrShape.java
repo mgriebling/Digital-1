@@ -23,7 +23,7 @@ public class IEEEXOrShape extends IEEEGenericShape {
     private static final Polygon POLYGON = createPoly();
     private static final Polygon POLYGON2 = createPoly2();
 
-    private static Polygon createPoly() {       
+    private static Polygon createPoly() {
         return new Polygon(true)
                 .add(SIZE+SIZE2, SIZE * 2 + SIZE2)
                 .add(SIZE2, SIZE * 2 + SIZE2)
@@ -46,7 +46,7 @@ public class IEEEXOrShape extends IEEEGenericShape {
                         new Vector(SIZE2, 0),
                         new Vector(0, -SIZE2));
     }
-    
+
      private final boolean center;
 
     /**

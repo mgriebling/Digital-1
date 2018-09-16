@@ -21,7 +21,7 @@ public final class GraphicsImage extends GraphicSwing implements Closeable {
     private final String format;
     private final float scale;
     private BufferedImage bi;
-    
+
     @Override
     public boolean isFlagSet(String name) {
         return name.equals(LATEX);

@@ -41,7 +41,7 @@
           <string>$S_i$</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="300"/>
+      <pos x="560" y="300"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -51,7 +51,7 @@
           <string>$BO_i$</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="340"/>
+      <pos x="560" y="340"/>
     </visualElement>
     <visualElement>
       <elementName>HalfSub.dig</elementName>
@@ -108,8 +108,8 @@
       <p2 x="340" y="320"/>
     </wire>
     <wire>
-      <p1 x="520" y="340"/>
-      <p2 x="540" y="340"/>
+      <p1 x="540" y="340"/>
+      <p2 x="560" y="340"/>
     </wire>
     <wire>
       <p1 x="220" y="420"/>
@@ -133,7 +133,7 @@
     </wire>
     <wire>
       <p1 x="440" y="300"/>
-      <p2 x="540" y="300"/>
+      <p2 x="560" y="300"/>
     </wire>
     <wire>
       <p1 x="240" y="320"/>

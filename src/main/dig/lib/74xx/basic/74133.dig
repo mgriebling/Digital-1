@@ -42,7 +42,7 @@
           <string>9</string>
         </entry>
       </elementAttributes>
-      <pos x="480" y="360"/>
+      <pos x="500" y="360"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -286,8 +286,8 @@
       <p2 x="380" y="580"/>
     </wire>
     <wire>
-      <p1 x="460" y="360"/>
-      <p2 x="480" y="360"/>
+      <p1 x="480" y="360"/>
+      <p2 x="500" y="360"/>
     </wire>
     <wire>
       <p1 x="220" y="360"/>
@@ -338,4 +338,5 @@
       <p2 x="380" y="580"/>
     </wire>
   </wires>
+  <measurementOrdering/>
 </circuit>
