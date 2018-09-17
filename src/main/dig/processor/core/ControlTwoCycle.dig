@@ -178,7 +178,7 @@ realisiert, und nicht durch 24 einzelne Schaltnetze.}}</string>
           <string>imm</string>
         </entry>
       </elementAttributes>
-      <pos x="420" y="340"/>
+      <pos x="440" y="340"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -407,7 +407,7 @@ data bus.
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes/>
-      <pos x="320" y="320"/>
+      <pos x="340" y="320"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
@@ -490,7 +490,7 @@ eines Befehlswortes konfiguriert.}}</string>
     </wire>
     <wire>
       <p1 x="280" y="320"/>
-      <p2 x="320" y="320"/>
+      <p2 x="340" y="320"/>
     </wire>
     <wire>
       <p1 x="260" y="160"/>
@@ -513,7 +513,7 @@ eines Befehlswortes konfiguriert.}}</string>
       <p2 x="860" y="260"/>
     </wire>
     <wire>
-      <p1 x="380" y="260"/>
+      <p1 x="400" y="260"/>
       <p2 x="420" y="260"/>
     </wire>
     <wire>
@@ -553,8 +553,8 @@ eines Befehlswortes konfiguriert.}}</string>
       <p2 x="680" y="360"/>
     </wire>
     <wire>
-      <p1 x="300" y="360"/>
-      <p2 x="320" y="360"/>
+      <p1 x="320" y="360"/>
+      <p2 x="340" y="360"/>
     </wire>
     <wire>
       <p1 x="240" y="360"/>
@@ -601,7 +601,7 @@ eines Befehlswortes konfiguriert.}}</string>
       <p2 x="480" y="180"/>
     </wire>
     <wire>
-      <p1 x="740" y="180"/>
+      <p1 x="760" y="180"/>
       <p2 x="860" y="180"/>
     </wire>
     <wire>
@@ -609,8 +609,8 @@ eines Befehlswortes konfiguriert.}}</string>
       <p2 x="860" y="340"/>
     </wire>
     <wire>
-      <p1 x="380" y="340"/>
-      <p2 x="420" y="340"/>
+      <p1 x="420" y="340"/>
+      <p2 x="440" y="340"/>
     </wire>
     <wire>
       <p1 x="300" y="120"/>

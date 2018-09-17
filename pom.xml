@@ -83,6 +83,7 @@
                     <compilerArgs>
                         <!--arg>-g:none</arg-->
                     </compilerArgs>
+                    <showDeprecation>true</showDeprecation>
                 </configuration>
             </plugin>
 

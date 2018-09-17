@@ -55,7 +55,7 @@
           <string>9,10,11,12</string>
         </entry>
       </elementAttributes>
-      <pos x="460" y="280"/>
+      <pos x="480" y="280"/>
     </visualElement>
     <visualElement>
       <elementName>XOr</elementName>
@@ -74,8 +74,8 @@
       <p2 x="380" y="260"/>
     </wire>
     <wire>
-      <p1 x="440" y="280"/>
-      <p2 x="460" y="280"/>
+      <p1 x="460" y="280"/>
+      <p2 x="480" y="280"/>
     </wire>
     <wire>
       <p1 x="360" y="300"/>

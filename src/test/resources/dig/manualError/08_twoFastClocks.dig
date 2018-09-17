@@ -11,7 +11,7 @@
     <visualElement>
       <elementName>Out</elementName>
       <elementAttributes/>
-      <pos x="420" y="260"/>
+      <pos x="440" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>Clock</elementName>
@@ -59,8 +59,8 @@ two fast clocks are used.</string>
       <p2 x="340" y="240"/>
     </wire>
     <wire>
-      <p1 x="400" y="260"/>
-      <p2 x="420" y="260"/>
+      <p1 x="420" y="260"/>
+      <p2 x="440" y="260"/>
     </wire>
     <wire>
       <p1 x="320" y="280"/>

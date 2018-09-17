@@ -125,7 +125,7 @@
           <string>15</string>
         </entry>
       </elementAttributes>
-      <pos x="920" y="440"/>
+      <pos x="940" y="440"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -521,7 +521,7 @@
       <p2 x="600" y="240"/>
     </wire>
     <wire>
-      <p1 x="340" y="400"/>
+      <p1 x="360" y="400"/>
       <p2 x="580" y="400"/>
     </wire>
     <wire>
@@ -577,8 +577,8 @@
       <p2 x="860" y="120"/>
     </wire>
     <wire>
-      <p1 x="760" y="440"/>
-      <p2 x="920" y="440"/>
+      <p1 x="780" y="440"/>
+      <p2 x="940" y="440"/>
     </wire>
     <wire>
       <p1 x="380" y="220"/>

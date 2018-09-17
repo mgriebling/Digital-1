@@ -25,14 +25,12 @@ public class IEEEAndShape extends IEEEGenericShape {
     private static Polygon createPoly() {
         return new Polygon(true)
                 .add(SIZE*2 + SIZE2, SIZE * 2 + SIZE2)
-                .add(1+SIZE2, SIZE * 2 + SIZE2)
-                .add(1+SIZE2, -SIZE2)
+                .add(1, SIZE * 2 + SIZE2)
+                .add(1, -SIZE2)
                 .add(SIZE*2 + SIZE2, -SIZE2)
                 .add(new Vector(SIZE * 3, -SIZE2), new Vector(SIZE * 4, 0), new Vector(SIZE * 4 - 1, SIZE))
                 .add(new Vector(SIZE * 4 - 1, SIZE * 2), new Vector(SIZE * 3, SIZE * 2 + SIZE2), new Vector(SIZE*2 + SIZE2, SIZE * 2 + SIZE2));
     }
-
-       private final boolean center;
 
     /**
      * Creates a new instance
@@ -44,15 +42,10 @@ public class IEEEAndShape extends IEEEGenericShape {
      */
     public IEEEAndShape(PinDescriptions inputs, PinDescriptions outputs, boolean invert, ElementAttributes attr) {
         super(inputs, outputs, invert, attr);
-        center = (inputs.size() & 1) != 0;
     }
 
     @Override
     protected void drawIEEE(Graphic graphic) {
-        graphic.drawLine(new Vector(0, 0), new Vector(SIZE2, 0), Style.WIRE);
-        graphic.drawLine(new Vector(0, SIZE * 2), new Vector(SIZE2, SIZE * 2), Style.WIRE);
-        if (center)
-            graphic.drawLine(new Vector(0, SIZE), new Vector(SIZE2+3, SIZE), Style.WIRE);
         graphic.drawPolygon(POLYGON, Style.NORMAL);
     }
 

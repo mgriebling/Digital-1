@@ -21,7 +21,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="480" y="180"/>
+      <pos x="500" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -31,7 +31,7 @@
           <string>Z</string>
         </entry>
       </elementAttributes>
-      <pos x="480" y="220"/>
+      <pos x="500" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
@@ -55,28 +55,28 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="460" y="180"/>
-      <p2 x="480" y="180"/>
+      <p1 x="480" y="180"/>
+      <p2 x="500" y="180"/>
     </wire>
     <wire>
       <p1 x="380" y="200"/>
       <p2 x="400" y="200"/>
     </wire>
     <wire>
-      <p1 x="440" y="200"/>
-      <p2 x="460" y="200"/>
-    </wire>
-    <wire>
-      <p1 x="460" y="220"/>
-      <p2 x="480" y="220"/>
-    </wire>
-    <wire>
-      <p1 x="460" y="180"/>
-      <p2 x="460" y="200"/>
-    </wire>
-    <wire>
       <p1 x="460" y="200"/>
-      <p2 x="460" y="220"/>
+      <p2 x="480" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="220"/>
+      <p2 x="500" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="180"/>
+      <p2 x="480" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="200"/>
+      <p2 x="480" y="220"/>
     </wire>
   </wires>
   <measurementOrdering/>

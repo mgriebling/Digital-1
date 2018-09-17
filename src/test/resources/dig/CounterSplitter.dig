@@ -23,7 +23,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <int>0</int>
+          <long>0</long>
         </entry>
       </elementAttributes>
       <pos x="160" y="220"/>
@@ -65,7 +65,7 @@
           <int>10</int>
         </entry>
       </elementAttributes>
-      <pos x="400" y="180"/>
+      <pos x="420" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -75,14 +75,14 @@
           <int>10</int>
         </entry>
       </elementAttributes>
-      <pos x="480" y="200"/>
+      <pos x="500" y="200"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <int>0</int>
+          <long>0</long>
         </entry>
       </elementAttributes>
       <pos x="160" y="320"/>
@@ -109,7 +109,7 @@
     </wire>
     <wire>
       <p1 x="340" y="180"/>
-      <p2 x="400" y="180"/>
+      <p2 x="420" y="180"/>
     </wire>
     <wire>
       <p1 x="160" y="180"/>
@@ -132,12 +132,12 @@
       <p2 x="320" y="200"/>
     </wire>
     <wire>
-      <p1 x="460" y="200"/>
-      <p2 x="480" y="200"/>
+      <p1 x="480" y="200"/>
+      <p2 x="500" y="200"/>
     </wire>
     <wire>
-      <p1 x="380" y="200"/>
-      <p2 x="400" y="200"/>
+      <p1 x="400" y="200"/>
+      <p2 x="420" y="200"/>
     </wire>
     <wire>
       <p1 x="140" y="200"/>
@@ -156,8 +156,8 @@
       <p2 x="180" y="220"/>
     </wire>
     <wire>
-      <p1 x="380" y="220"/>
-      <p2 x="400" y="220"/>
+      <p1 x="400" y="220"/>
+      <p2 x="420" y="220"/>
     </wire>
     <wire>
       <p1 x="300" y="220"/>
@@ -177,11 +177,15 @@
     </wire>
     <wire>
       <p1 x="140" y="140"/>
-      <p2 x="380" y="140"/>
+      <p2 x="400" y="140"/>
     </wire>
     <wire>
       <p1 x="160" y="260"/>
       <p2 x="160" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="140"/>
+      <p2 x="400" y="200"/>
     </wire>
     <wire>
       <p1 x="260" y="200"/>
@@ -202,10 +206,6 @@
     <wire>
       <p1 x="300" y="220"/>
       <p2 x="300" y="300"/>
-    </wire>
-    <wire>
-      <p1 x="380" y="140"/>
-      <p2 x="380" y="200"/>
     </wire>
   </wires>
 </circuit>

@@ -7,19 +7,16 @@
       <elementName>XOr</elementName>
       <elementAttributes/>
       <pos x="640" y="420"/>
-      <rotate>0</rotate>
     </visualElement>
     <visualElement>
       <elementName>XOr</elementName>
       <elementAttributes/>
       <pos x="740" y="440"/>
-      <rotate>0</rotate>
     </visualElement>
     <visualElement>
       <elementName>Delay</elementName>
       <elementAttributes/>
       <pos x="580" y="420"/>
-      <rotate>0</rotate>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -30,7 +27,6 @@
         </entry>
       </elementAttributes>
       <pos x="520" y="420"/>
-      <rotate>0</rotate>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -41,7 +37,6 @@
         </entry>
       </elementAttributes>
       <pos x="840" y="460"/>
-      <rotate>0</rotate>
     </visualElement>
     <visualElement>
       <elementName>Data</elementName>
@@ -56,7 +51,6 @@
         </entry>
       </elementAttributes>
       <pos x="440" y="260"/>
-      <rotate>0</rotate>
     </visualElement>
   </visualElements>
   <wires>
@@ -77,11 +71,11 @@
       <p2 x="580" y="420"/>
     </wire>
     <wire>
-      <p1 x="700" y="440"/>
+      <p1 x="720" y="440"/>
       <p2 x="740" y="440"/>
     </wire>
     <wire>
-      <p1 x="800" y="460"/>
+      <p1 x="820" y="460"/>
       <p2 x="840" y="460"/>
     </wire>
     <wire>

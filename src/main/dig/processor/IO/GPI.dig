@@ -86,7 +86,7 @@
           <int>16</int>
         </entry>
       </elementAttributes>
-      <pos x="640" y="80"/>
+      <pos x="660" y="80"/>
     </visualElement>
     <visualElement>
       <elementName>Splitter</elementName>
@@ -154,7 +154,7 @@
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="560" y="80"/>
+      <pos x="580" y="80"/>
     </visualElement>
     <visualElement>
       <elementName>Ground</elementName>
@@ -182,19 +182,19 @@
     </wire>
     <wire>
       <p1 x="480" y="80"/>
-      <p2 x="540" y="80"/>
+      <p2 x="560" y="80"/>
     </wire>
     <wire>
-      <p1 x="580" y="80"/>
-      <p2 x="640" y="80"/>
+      <p1 x="600" y="80"/>
+      <p2 x="660" y="80"/>
     </wire>
     <wire>
       <p1 x="440" y="160"/>
       <p2 x="460" y="160"/>
     </wire>
     <wire>
-      <p1 x="540" y="260"/>
-      <p2 x="560" y="260"/>
+      <p1 x="560" y="260"/>
+      <p2 x="580" y="260"/>
     </wire>
     <wire>
       <p1 x="380" y="100"/>
@@ -217,8 +217,8 @@
       <p2 x="460" y="140"/>
     </wire>
     <wire>
-      <p1 x="560" y="100"/>
-      <p2 x="560" y="260"/>
+      <p1 x="580" y="100"/>
+      <p2 x="580" y="260"/>
     </wire>
     <wire>
       <p1 x="440" y="160"/>

@@ -25,7 +25,7 @@ used to test comments.</string>
           <int>1</int>
         </entry>
       </elementAttributes>
-      <pos x="160" y="20"/>
+      <pos x="180" y="20"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -73,7 +73,7 @@ also with a longer text</string>
           <int>1</int>
         </entry>
       </elementAttributes>
-      <pos x="160" y="100"/>
+      <pos x="180" y="100"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -95,12 +95,12 @@ also with a longer text</string>
     <visualElement>
       <elementName>D_FF</elementName>
       <elementAttributes/>
-      <pos x="80" y="20"/>
+      <pos x="100" y="20"/>
     </visualElement>
     <visualElement>
       <elementName>D_FF</elementName>
       <elementAttributes/>
-      <pos x="80" y="80"/>
+      <pos x="100" y="80"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -120,7 +120,7 @@ also with a longer text</string>
           <string>_aa</string>
         </entry>
       </elementAttributes>
-      <pos x="60" y="-20"/>
+      <pos x="80" y="-20"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -130,68 +130,68 @@ also with a longer text</string>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="60" y="-20"/>
-      <p2 x="40" y="0"/>
+      <p1 x="80" y="-20"/>
+      <p2 x="60" y="0"/>
     </wire>
     <wire>
       <p1 x="-60" y="80"/>
       <p2 x="-40" y="80"/>
     </wire>
     <wire>
-      <p1 x="40" y="80"/>
-      <p2 x="80" y="80"/>
+      <p1 x="60" y="80"/>
+      <p2 x="100" y="80"/>
     </wire>
     <wire>
-      <p1 x="140" y="20"/>
-      <p2 x="160" y="20"/>
+      <p1 x="160" y="20"/>
+      <p2 x="180" y="20"/>
     </wire>
     <wire>
-      <p1 x="40" y="20"/>
-      <p2 x="80" y="20"/>
+      <p1 x="60" y="20"/>
+      <p2 x="100" y="20"/>
     </wire>
     <wire>
-      <p1 x="140" y="100"/>
-      <p2 x="160" y="100"/>
+      <p1 x="160" y="100"/>
+      <p2 x="180" y="100"/>
     </wire>
     <wire>
-      <p1 x="60" y="100"/>
-      <p2 x="80" y="100"/>
+      <p1 x="80" y="100"/>
+      <p2 x="100" y="100"/>
     </wire>
     <wire>
       <p1 x="-60" y="40"/>
       <p2 x="-40" y="40"/>
     </wire>
     <wire>
-      <p1 x="60" y="40"/>
-      <p2 x="80" y="40"/>
+      <p1 x="80" y="40"/>
+      <p2 x="100" y="40"/>
     </wire>
     <wire>
       <p1 x="-60" y="120"/>
-      <p2 x="60" y="120"/>
-    </wire>
-    <wire>
-      <p1 x="20" y="60"/>
-      <p2 x="40" y="60"/>
-    </wire>
-    <wire>
-      <p1 x="40" y="0"/>
-      <p2 x="40" y="20"/>
-    </wire>
-    <wire>
-      <p1 x="40" y="20"/>
-      <p2 x="40" y="60"/>
+      <p2 x="80" y="120"/>
     </wire>
     <wire>
       <p1 x="40" y="60"/>
-      <p2 x="40" y="80"/>
+      <p2 x="60" y="60"/>
     </wire>
     <wire>
-      <p1 x="60" y="40"/>
-      <p2 x="60" y="100"/>
+      <p1 x="80" y="40"/>
+      <p2 x="80" y="100"/>
     </wire>
     <wire>
-      <p1 x="60" y="100"/>
-      <p2 x="60" y="120"/>
+      <p1 x="80" y="100"/>
+      <p2 x="80" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="0"/>
+      <p2 x="60" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="60"/>
+      <p2 x="60" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="20"/>
+      <p2 x="60" y="60"/>
     </wire>
   </wires>
   <measurementOrdering/>

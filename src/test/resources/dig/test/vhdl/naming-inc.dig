@@ -36,7 +36,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="200"/>
+      <pos x="540" y="200"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -61,8 +61,8 @@
       <p2 x="420" y="180"/>
     </wire>
     <wire>
-      <p1 x="480" y="200"/>
-      <p2 x="520" y="200"/>
+      <p1 x="500" y="200"/>
+      <p2 x="540" y="200"/>
     </wire>
     <wire>
       <p1 x="380" y="220"/>

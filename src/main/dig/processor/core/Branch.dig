@@ -96,7 +96,7 @@ relativer Sprung ausgeführt werden.}}</string>
           <string>jmp</string>
         </entry>
       </elementAttributes>
-      <pos x="720" y="160"/>
+      <pos x="740" y="160"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -138,8 +138,8 @@ relativer Sprung ausgeführt werden.}}</string>
       <p2 x="520" y="160"/>
     </wire>
     <wire>
-      <p1 x="680" y="160"/>
-      <p2 x="720" y="160"/>
+      <p1 x="700" y="160"/>
+      <p2 x="740" y="160"/>
     </wire>
     <wire>
       <p1 x="420" y="160"/>

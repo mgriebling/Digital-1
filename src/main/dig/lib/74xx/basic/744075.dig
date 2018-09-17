@@ -42,7 +42,7 @@
           <string>9</string>
         </entry>
       </elementAttributes>
-      <pos x="440" y="220"/>
+      <pos x="460" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -108,7 +108,7 @@
           <string>6</string>
         </entry>
       </elementAttributes>
-      <pos x="440" y="320"/>
+      <pos x="460" y="320"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -174,7 +174,7 @@
           <string>10</string>
         </entry>
       </elementAttributes>
-      <pos x="440" y="420"/>
+      <pos x="460" y="420"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -262,8 +262,8 @@
       <p2 x="360" y="240"/>
     </wire>
     <wire>
-      <p1 x="420" y="320"/>
-      <p2 x="440" y="320"/>
+      <p1 x="440" y="320"/>
+      <p2 x="460" y="320"/>
     </wire>
     <wire>
       <p1 x="340" y="320"/>
@@ -274,8 +274,8 @@
       <p2 x="360" y="400"/>
     </wire>
     <wire>
-      <p1 x="420" y="420"/>
-      <p2 x="440" y="420"/>
+      <p1 x="440" y="420"/>
+      <p2 x="460" y="420"/>
     </wire>
     <wire>
       <p1 x="340" y="420"/>
@@ -302,8 +302,8 @@
       <p2 x="380" y="520"/>
     </wire>
     <wire>
-      <p1 x="420" y="220"/>
-      <p2 x="440" y="220"/>
+      <p1 x="440" y="220"/>
+      <p2 x="460" y="220"/>
     </wire>
     <wire>
       <p1 x="340" y="220"/>

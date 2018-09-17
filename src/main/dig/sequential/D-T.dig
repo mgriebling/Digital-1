@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>1</version>
+  <attributes/>
   <visualElements>
     <visualElement>
       <elementName>NOr</elementName>
       <elementAttributes/>
-      <pos x="1440" y="460"/>
+      <pos x="1500" y="460"/>
     </visualElement>
     <visualElement>
       <elementName>NOr</elementName>
       <elementAttributes/>
-      <pos x="1440" y="580"/>
+      <pos x="1500" y="580"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -40,7 +41,7 @@
           <string>Q</string>
         </entry>
       </elementAttributes>
-      <pos x="1580" y="480"/>
+      <pos x="1660" y="480"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -50,32 +51,32 @@
           <string>~Q</string>
         </entry>
       </elementAttributes>
-      <pos x="1580" y="600"/>
+      <pos x="1660" y="600"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes/>
-      <pos x="1340" y="440"/>
+      <pos x="1380" y="440"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes/>
-      <pos x="1340" y="600"/>
+      <pos x="1380" y="600"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
       <elementAttributes/>
-      <pos x="1200" y="440"/>
+      <pos x="1220" y="440"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes/>
-      <pos x="1240" y="520"/>
+      <pos x="1260" y="520"/>
     </visualElement>
     <visualElement>
       <elementName>Delay</elementName>
       <elementAttributes/>
-      <pos x="1180" y="520"/>
+      <pos x="1200" y="520"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
@@ -99,61 +100,61 @@ C 0 0  1
           </testData>
         </entry>
       </elementAttributes>
-      <pos x="1540" y="640"/>
+      <pos x="1600" y="640"/>
     </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="1420" y="560"/>
-      <p2 x="1540" y="520"/>
+      <p1 x="1480" y="560"/>
+      <p2 x="1620" y="520"/>
     </wire>
     <wire>
-      <p1 x="1540" y="560"/>
-      <p2 x="1420" y="520"/>
+      <p1 x="1620" y="560"/>
+      <p2 x="1480" y="520"/>
     </wire>
     <wire>
-      <p1 x="1520" y="480"/>
-      <p2 x="1540" y="480"/>
+      <p1 x="1600" y="480"/>
+      <p2 x="1620" y="480"/>
     </wire>
     <wire>
-      <p1 x="1320" y="480"/>
-      <p2 x="1340" y="480"/>
+      <p1 x="1360" y="480"/>
+      <p2 x="1380" y="480"/>
     </wire>
     <wire>
-      <p1 x="1540" y="480"/>
-      <p2 x="1580" y="480"/>
+      <p1 x="1620" y="480"/>
+      <p2 x="1660" y="480"/>
     </wire>
     <wire>
       <p1 x="1080" y="640"/>
-      <p2 x="1340" y="640"/>
+      <p2 x="1380" y="640"/>
     </wire>
     <wire>
       <p1 x="1100" y="560"/>
-      <p2 x="1240" y="560"/>
+      <p2 x="1260" y="560"/>
     </wire>
     <wire>
-      <p1 x="1420" y="500"/>
-      <p2 x="1440" y="500"/>
+      <p1 x="1480" y="500"/>
+      <p2 x="1500" y="500"/>
     </wire>
     <wire>
-      <p1 x="1420" y="580"/>
-      <p2 x="1440" y="580"/>
+      <p1 x="1480" y="580"/>
+      <p2 x="1500" y="580"/>
     </wire>
     <wire>
-      <p1 x="1520" y="600"/>
-      <p2 x="1540" y="600"/>
+      <p1 x="1600" y="600"/>
+      <p2 x="1620" y="600"/>
     </wire>
     <wire>
-      <p1 x="1320" y="600"/>
-      <p2 x="1340" y="600"/>
+      <p1 x="1360" y="600"/>
+      <p2 x="1380" y="600"/>
     </wire>
     <wire>
-      <p1 x="1540" y="600"/>
-      <p2 x="1580" y="600"/>
+      <p1 x="1620" y="600"/>
+      <p2 x="1660" y="600"/>
     </wire>
     <wire>
-      <p1 x="1240" y="440"/>
-      <p2 x="1340" y="440"/>
+      <p1 x="1280" y="440"/>
+      <p2 x="1380" y="440"/>
     </wire>
     <wire>
       <p1 x="1060" y="440"/>
@@ -161,63 +162,63 @@ C 0 0  1
     </wire>
     <wire>
       <p1 x="1080" y="440"/>
-      <p2 x="1200" y="440"/>
+      <p2 x="1220" y="440"/>
     </wire>
     <wire>
       <p1 x="1100" y="520"/>
       <p2 x="1120" y="520"/>
     </wire>
     <wire>
-      <p1 x="1220" y="520"/>
-      <p2 x="1240" y="520"/>
+      <p1 x="1240" y="520"/>
+      <p2 x="1260" y="520"/>
     </wire>
     <wire>
-      <p1 x="1160" y="520"/>
-      <p2 x="1180" y="520"/>
+      <p1 x="1180" y="520"/>
+      <p2 x="1200" y="520"/>
     </wire>
     <wire>
-      <p1 x="1400" y="620"/>
-      <p2 x="1440" y="620"/>
+      <p1 x="1460" y="620"/>
+      <p2 x="1500" y="620"/>
     </wire>
     <wire>
-      <p1 x="1400" y="460"/>
-      <p2 x="1440" y="460"/>
+      <p1 x="1460" y="460"/>
+      <p2 x="1500" y="460"/>
     </wire>
     <wire>
-      <p1 x="1300" y="540"/>
-      <p2 x="1320" y="540"/>
+      <p1 x="1340" y="540"/>
+      <p2 x="1360" y="540"/>
     </wire>
     <wire>
       <p1 x="1060" y="540"/>
       <p2 x="1100" y="540"/>
     </wire>
     <wire>
-      <p1 x="1540" y="480"/>
-      <p2 x="1540" y="520"/>
+      <p1 x="1360" y="480"/>
+      <p2 x="1360" y="540"/>
     </wire>
     <wire>
-      <p1 x="1540" y="560"/>
-      <p2 x="1540" y="600"/>
+      <p1 x="1360" y="540"/>
+      <p2 x="1360" y="600"/>
     </wire>
     <wire>
-      <p1 x="1320" y="480"/>
-      <p2 x="1320" y="540"/>
+      <p1 x="1620" y="480"/>
+      <p2 x="1620" y="520"/>
     </wire>
     <wire>
-      <p1 x="1320" y="540"/>
-      <p2 x="1320" y="600"/>
+      <p1 x="1620" y="560"/>
+      <p2 x="1620" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="1480" y="560"/>
+      <p2 x="1480" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="1480" y="500"/>
+      <p2 x="1480" y="520"/>
     </wire>
     <wire>
       <p1 x="1080" y="440"/>
       <p2 x="1080" y="640"/>
-    </wire>
-    <wire>
-      <p1 x="1420" y="560"/>
-      <p2 x="1420" y="580"/>
-    </wire>
-    <wire>
-      <p1 x="1420" y="500"/>
-      <p2 x="1420" y="520"/>
     </wire>
     <wire>
       <p1 x="1100" y="520"/>
@@ -228,4 +229,5 @@ C 0 0  1
       <p2 x="1100" y="560"/>
     </wire>
   </wires>
+  <measurementOrdering/>
 </circuit>

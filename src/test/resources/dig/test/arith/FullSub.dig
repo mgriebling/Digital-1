@@ -60,7 +60,7 @@
           <string>BO_i</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="140"/>
+      <pos x="560" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>Or</elementName>
@@ -75,7 +75,7 @@
           <string>S_i</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="80"/>
+      <pos x="560" y="80"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -106,7 +106,7 @@
     </wire>
     <wire>
       <p1 x="420" y="80"/>
-      <p2 x="540" y="80"/>
+      <p2 x="560" y="80"/>
     </wire>
     <wire>
       <p1 x="320" y="160"/>
@@ -141,8 +141,8 @@
       <p2 x="340" y="140"/>
     </wire>
     <wire>
-      <p1 x="520" y="140"/>
-      <p2 x="540" y="140"/>
+      <p1 x="540" y="140"/>
+      <p2 x="560" y="140"/>
     </wire>
     <wire>
       <p1 x="240" y="160"/>

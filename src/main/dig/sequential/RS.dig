@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>1</version>
+  <attributes/>
   <visualElements>
     <visualElement>
       <elementName>NOr</elementName>
@@ -40,7 +41,7 @@
           <string>Q</string>
         </entry>
       </elementAttributes>
-      <pos x="1640" y="480"/>
+      <pos x="1660" y="480"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -50,7 +51,7 @@
           <string>~Q</string>
         </entry>
       </elementAttributes>
-      <pos x="1640" y="620"/>
+      <pos x="1660" y="620"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -73,10 +74,10 @@
   <wires>
     <wire>
       <p1 x="1460" y="580"/>
-      <p2 x="1580" y="520"/>
+      <p2 x="1600" y="520"/>
     </wire>
     <wire>
-      <p1 x="1580" y="580"/>
+      <p1 x="1600" y="580"/>
       <p2 x="1460" y="520"/>
     </wire>
     <wire>
@@ -84,24 +85,12 @@
       <p2 x="1480" y="640"/>
     </wire>
     <wire>
-      <p1 x="1560" y="480"/>
-      <p2 x="1580" y="480"/>
-    </wire>
-    <wire>
       <p1 x="1580" y="480"/>
-      <p2 x="1640" y="480"/>
+      <p2 x="1600" y="480"/>
     </wire>
     <wire>
-      <p1 x="1560" y="620"/>
-      <p2 x="1580" y="620"/>
-    </wire>
-    <wire>
-      <p1 x="1580" y="620"/>
-      <p2 x="1640" y="620"/>
-    </wire>
-    <wire>
-      <p1 x="1400" y="460"/>
-      <p2 x="1480" y="460"/>
+      <p1 x="1600" y="480"/>
+      <p2 x="1660" y="480"/>
     </wire>
     <wire>
       <p1 x="1460" y="500"/>
@@ -112,12 +101,24 @@
       <p2 x="1480" y="600"/>
     </wire>
     <wire>
-      <p1 x="1580" y="480"/>
-      <p2 x="1580" y="520"/>
+      <p1 x="1580" y="620"/>
+      <p2 x="1600" y="620"/>
     </wire>
     <wire>
-      <p1 x="1580" y="580"/>
-      <p2 x="1580" y="620"/>
+      <p1 x="1600" y="620"/>
+      <p2 x="1660" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="1400" y="460"/>
+      <p2 x="1480" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="1600" y="480"/>
+      <p2 x="1600" y="520"/>
+    </wire>
+    <wire>
+      <p1 x="1600" y="580"/>
+      <p2 x="1600" y="620"/>
     </wire>
     <wire>
       <p1 x="1460" y="580"/>

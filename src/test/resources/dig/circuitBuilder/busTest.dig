@@ -19,7 +19,7 @@
           <string>9,10,11,12</string>
         </entry>
       </elementAttributes>
-      <pos x="20" y="20"/>
+      <pos x="40" y="20"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -93,7 +93,7 @@
           <string>13,14,15,16</string>
         </entry>
       </elementAttributes>
-      <pos x="20" y="100"/>
+      <pos x="40" y="100"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -110,12 +110,12 @@
       <p2 x="-80" y="80"/>
     </wire>
     <wire>
-      <p1 x="-20" y="20"/>
-      <p2 x="20" y="20"/>
+      <p1 x="0" y="20"/>
+      <p2 x="40" y="20"/>
     </wire>
     <wire>
-      <p1 x="0" y="100"/>
-      <p2 x="20" y="100"/>
+      <p1 x="20" y="100"/>
+      <p2 x="40" y="100"/>
     </wire>
     <wire>
       <p1 x="-140" y="40"/>

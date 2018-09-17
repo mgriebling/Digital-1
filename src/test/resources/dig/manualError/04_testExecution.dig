@@ -15,17 +15,17 @@
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="420" y="160"/>
+      <pos x="440" y="160"/>
     </visualElement>
     <visualElement>
       <elementName>VDD</elementName>
       <elementAttributes/>
-      <pos x="420" y="120"/>
+      <pos x="440" y="120"/>
     </visualElement>
     <visualElement>
       <elementName>Ground</elementName>
       <elementAttributes/>
-      <pos x="420" y="200"/>
+      <pos x="440" y="200"/>
     </visualElement>
     <visualElement>
       <elementName>Text</elementName>
@@ -88,21 +88,21 @@ during test execution.</string>
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="400" y="240"/>
+      <pos x="420" y="240"/>
     </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="320" y="160"/>
-      <p2 x="360" y="160"/>
+      <p1 x="340" y="160"/>
+      <p2 x="380" y="160"/>
     </wire>
     <wire>
-      <p1 x="360" y="160"/>
-      <p2 x="400" y="160"/>
+      <p1 x="380" y="160"/>
+      <p2 x="420" y="160"/>
     </wire>
     <wire>
-      <p1 x="360" y="240"/>
-      <p2 x="400" y="240"/>
+      <p1 x="380" y="240"/>
+      <p2 x="420" y="240"/>
     </wire>
     <wire>
       <p1 x="240" y="180"/>
@@ -113,16 +113,16 @@ during test execution.</string>
       <p2 x="260" y="140"/>
     </wire>
     <wire>
-      <p1 x="420" y="120"/>
-      <p2 x="420" y="140"/>
+      <p1 x="440" y="120"/>
+      <p2 x="440" y="140"/>
     </wire>
     <wire>
-      <p1 x="420" y="180"/>
-      <p2 x="420" y="200"/>
+      <p1 x="440" y="180"/>
+      <p2 x="440" y="200"/>
     </wire>
     <wire>
-      <p1 x="360" y="160"/>
-      <p2 x="360" y="240"/>
+      <p1 x="380" y="160"/>
+      <p2 x="380" y="240"/>
     </wire>
   </wires>
   <measurementOrdering/>

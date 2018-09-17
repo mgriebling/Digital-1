@@ -36,7 +36,7 @@
           <string>1Y</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="120"/>
+      <pos x="560" y="120"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -66,7 +66,7 @@
           <string>2Y</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="200"/>
+      <pos x="560" y="200"/>
     </visualElement>
     <visualElement>
       <elementName>XNOr</elementName>
@@ -101,7 +101,7 @@
           <string>3Y</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="280"/>
+      <pos x="560" y="280"/>
     </visualElement>
     <visualElement>
       <elementName>Or</elementName>
@@ -136,7 +136,7 @@
           <string>4Y</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="360"/>
+      <pos x="560" y="360"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -177,20 +177,20 @@
       <p2 x="440" y="340"/>
     </wire>
     <wire>
-      <p1 x="500" y="120"/>
-      <p2 x="540" y="120"/>
+      <p1 x="520" y="120"/>
+      <p2 x="560" y="120"/>
     </wire>
     <wire>
-      <p1 x="520" y="200"/>
-      <p2 x="540" y="200"/>
+      <p1 x="540" y="200"/>
+      <p2 x="560" y="200"/>
     </wire>
     <wire>
-      <p1 x="500" y="280"/>
-      <p2 x="540" y="280"/>
+      <p1 x="520" y="280"/>
+      <p2 x="560" y="280"/>
     </wire>
     <wire>
-      <p1 x="500" y="360"/>
-      <p2 x="540" y="360"/>
+      <p1 x="520" y="360"/>
+      <p2 x="560" y="360"/>
     </wire>
     <wire>
       <p1 x="340" y="360"/>

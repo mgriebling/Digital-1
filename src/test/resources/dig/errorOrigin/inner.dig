@@ -36,7 +36,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="400" y="160"/>
+      <pos x="420" y="160"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
@@ -46,8 +46,8 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="380" y="160"/>
-      <p2 x="400" y="160"/>
+      <p1 x="400" y="160"/>
+      <p2 x="420" y="160"/>
     </wire>
     <wire>
       <p1 x="200" y="180"/>

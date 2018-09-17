@@ -16,7 +16,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="540" y="180"/>
+      <pos x="560" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -46,33 +46,33 @@
           <string>M-*</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="140"/>
+      <pos x="540" y="140"/>
     </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="520" y="140"/>
-      <p2 x="500" y="160"/>
+      <p1 x="540" y="140"/>
+      <p2 x="520" y="160"/>
     </wire>
     <wire>
       <p1 x="380" y="160"/>
       <p2 x="420" y="160"/>
     </wire>
     <wire>
-      <p1 x="480" y="180"/>
-      <p2 x="500" y="180"/>
+      <p1 x="500" y="180"/>
+      <p2 x="520" y="180"/>
     </wire>
     <wire>
-      <p1 x="500" y="180"/>
-      <p2 x="540" y="180"/>
+      <p1 x="520" y="180"/>
+      <p2 x="560" y="180"/>
     </wire>
     <wire>
       <p1 x="380" y="200"/>
       <p2 x="420" y="200"/>
     </wire>
     <wire>
-      <p1 x="500" y="160"/>
-      <p2 x="500" y="180"/>
+      <p1 x="520" y="160"/>
+      <p2 x="520" y="180"/>
     </wire>
   </wires>
 </circuit>

@@ -60,7 +60,7 @@
           <string>6</string>
         </entry>
       </elementAttributes>
-      <pos x="460" y="260"/>
+      <pos x="480" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -102,7 +102,7 @@
           <string>8</string>
         </entry>
       </elementAttributes>
-      <pos x="460" y="380"/>
+      <pos x="480" y="380"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -224,8 +224,8 @@
       <p2 x="340" y="480"/>
     </wire>
     <wire>
-      <p1 x="420" y="260"/>
-      <p2 x="460" y="260"/>
+      <p1 x="440" y="260"/>
+      <p2 x="480" y="260"/>
     </wire>
     <wire>
       <p1 x="140" y="420"/>
@@ -264,8 +264,8 @@
       <p2 x="340" y="280"/>
     </wire>
     <wire>
-      <p1 x="420" y="380"/>
-      <p2 x="460" y="380"/>
+      <p1 x="440" y="380"/>
+      <p2 x="480" y="380"/>
     </wire>
     <wire>
       <p1 x="300" y="220"/>

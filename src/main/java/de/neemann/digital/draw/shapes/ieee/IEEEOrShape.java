@@ -25,11 +25,11 @@ public class IEEEOrShape extends IEEEGenericShape {
     private static Polygon createPoly() {
         return new Polygon(true)
                 .add(SIZE+SIZE2, SIZE * 2 + SIZE2)
-                .add(SIZE2, SIZE * 2 + SIZE2)
-                .add(new Vector(SIZE2+SIZE2, SIZE2*3+4),
-                        new Vector(SIZE2+SIZE2, 6),
-                        new Vector(SIZE2, -SIZE2))
-                .add(SIZE+SIZE2, -SIZE2)
+                .add(0, SIZE * 2 + SIZE2)
+                .add(new Vector(SIZE2, SIZE2*3+4),
+                        new Vector(SIZE2, 6),
+                        new Vector(0, -SIZE2))
+                .add(SIZE, -SIZE2)
                 .add(new Vector(SIZE * 2 + SIZE2, -SIZE2),
                         new Vector(SIZE * 3 + SIZE2, 0),
                         new Vector(SIZE * 4, SIZE))
@@ -54,10 +54,10 @@ public class IEEEOrShape extends IEEEGenericShape {
 
     @Override
     protected void drawIEEE(Graphic graphic) {
-        graphic.drawLine(new Vector(0, 0), new Vector(SIZE2+3, 0), Style.WIRE);
-        graphic.drawLine(new Vector(0, SIZE * 2), new Vector(SIZE2+3, SIZE * 2), Style.WIRE);
+        graphic.drawLine(new Vector(0, 0), new Vector(3, 0), Style.WIRE);
+        graphic.drawLine(new Vector(0, SIZE * 2), new Vector(3, SIZE * 2), Style.WIRE);
         if (center)
-            graphic.drawLine(new Vector(0, SIZE), new Vector(SIZE2+6, SIZE), Style.WIRE);
+            graphic.drawLine(new Vector(0, SIZE), new Vector(6, SIZE), Style.WIRE);
         graphic.drawPolygon(POLYGON, Style.NORMAL);
     }
 }

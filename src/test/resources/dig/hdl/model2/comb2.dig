@@ -41,7 +41,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="20" y="40"/>
+      <pos x="60" y="40"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -51,7 +51,7 @@
     <visualElement>
       <elementName>Or</elementName>
       <elementAttributes/>
-      <pos x="-60" y="20"/>
+      <pos x="-40" y="20"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -77,8 +77,8 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="-100" y="0"/>
-      <p2 x="-80" y="0"/>
+      <p1 x="-80" y="0"/>
+      <p2 x="-60" y="0"/>
     </wire>
     <wire>
       <p1 x="-180" y="-20"/>
@@ -89,20 +89,20 @@
       <p2 x="-160" y="20"/>
     </wire>
     <wire>
-      <p1 x="-80" y="20"/>
-      <p2 x="-60" y="20"/>
+      <p1 x="-60" y="20"/>
+      <p2 x="-40" y="20"/>
     </wire>
     <wire>
-      <p1 x="0" y="40"/>
-      <p2 x="20" y="40"/>
+      <p1 x="40" y="40"/>
+      <p2 x="60" y="40"/>
     </wire>
     <wire>
       <p1 x="-180" y="60"/>
-      <p2 x="-60" y="60"/>
+      <p2 x="-40" y="60"/>
     </wire>
     <wire>
-      <p1 x="-80" y="0"/>
-      <p2 x="-80" y="20"/>
+      <p1 x="-60" y="0"/>
+      <p2 x="-60" y="20"/>
     </wire>
   </wires>
   <measurementOrdering/>

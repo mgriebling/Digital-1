@@ -82,7 +82,7 @@ miteinander vergleicht.}}</string>
           <string>P&lt;Q</string>
         </entry>
       </elementAttributes>
-      <pos x="500" y="100"/>
+      <pos x="520" y="100"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -97,7 +97,7 @@ miteinander vergleicht.}}</string>
           <string>P=Q</string>
         </entry>
       </elementAttributes>
-      <pos x="500" y="160"/>
+      <pos x="520" y="160"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -112,7 +112,7 @@ miteinander vergleicht.}}</string>
           <string>P&gt;Q</string>
         </entry>
       </elementAttributes>
-      <pos x="500" y="220"/>
+      <pos x="520" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -142,20 +142,20 @@ miteinander vergleicht.}}</string>
       <p2 x="260" y="140"/>
     </wire>
     <wire>
-      <p1 x="480" y="160"/>
-      <p2 x="500" y="160"/>
+      <p1 x="500" y="160"/>
+      <p2 x="520" y="160"/>
     </wire>
     <wire>
       <p1 x="160" y="100"/>
       <p2 x="180" y="100"/>
     </wire>
     <wire>
-      <p1 x="240" y="100"/>
+      <p1 x="260" y="100"/>
       <p2 x="280" y="100"/>
     </wire>
     <wire>
-      <p1 x="360" y="100"/>
-      <p2 x="500" y="100"/>
+      <p1 x="380" y="100"/>
+      <p2 x="520" y="100"/>
     </wire>
     <wire>
       <p1 x="180" y="100"/>
@@ -166,28 +166,28 @@ miteinander vergleicht.}}</string>
       <p2 x="280" y="180"/>
     </wire>
     <wire>
-      <p1 x="360" y="180"/>
+      <p1 x="380" y="180"/>
       <p2 x="400" y="180"/>
     </wire>
     <wire>
-      <p1 x="340" y="120"/>
-      <p2 x="360" y="120"/>
+      <p1 x="360" y="120"/>
+      <p2 x="380" y="120"/>
     </wire>
     <wire>
-      <p1 x="340" y="200"/>
-      <p2 x="360" y="200"/>
+      <p1 x="360" y="200"/>
+      <p2 x="380" y="200"/>
     </wire>
     <wire>
       <p1 x="160" y="220"/>
       <p2 x="180" y="220"/>
     </wire>
     <wire>
-      <p1 x="240" y="220"/>
+      <p1 x="260" y="220"/>
       <p2 x="280" y="220"/>
     </wire>
     <wire>
-      <p1 x="360" y="220"/>
-      <p2 x="500" y="220"/>
+      <p1 x="380" y="220"/>
+      <p2 x="520" y="220"/>
     </wire>
     <wire>
       <p1 x="180" y="220"/>
@@ -198,7 +198,7 @@ miteinander vergleicht.}}</string>
       <p2 x="280" y="140"/>
     </wire>
     <wire>
-      <p1 x="360" y="140"/>
+      <p1 x="380" y="140"/>
       <p2 x="400" y="140"/>
     </wire>
     <wire>
@@ -210,20 +210,20 @@ miteinander vergleicht.}}</string>
       <p2 x="180" y="220"/>
     </wire>
     <wire>
-      <p1 x="360" y="100"/>
-      <p2 x="360" y="120"/>
+      <p1 x="380" y="100"/>
+      <p2 x="380" y="120"/>
     </wire>
     <wire>
-      <p1 x="360" y="180"/>
-      <p2 x="360" y="200"/>
+      <p1 x="380" y="180"/>
+      <p2 x="380" y="200"/>
     </wire>
     <wire>
-      <p1 x="360" y="120"/>
-      <p2 x="360" y="140"/>
+      <p1 x="380" y="200"/>
+      <p2 x="380" y="220"/>
     </wire>
     <wire>
-      <p1 x="360" y="200"/>
-      <p2 x="360" y="220"/>
+      <p1 x="380" y="120"/>
+      <p2 x="380" y="140"/>
     </wire>
   </wires>
 </circuit>

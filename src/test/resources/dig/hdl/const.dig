@@ -21,7 +21,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="800" y="300"/>
+      <pos x="820" y="300"/>
     </visualElement>
     <visualElement>
       <elementName>Ground</elementName>
@@ -44,8 +44,8 @@
       <p2 x="700" y="280"/>
     </wire>
     <wire>
-      <p1 x="760" y="300"/>
-      <p2 x="800" y="300"/>
+      <p1 x="780" y="300"/>
+      <p2 x="820" y="300"/>
     </wire>
     <wire>
       <p1 x="680" y="320"/>

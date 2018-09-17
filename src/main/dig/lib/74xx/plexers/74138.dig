@@ -377,7 +377,7 @@
       <p2 x="200" y="140"/>
     </wire>
     <wire>
-      <p1 x="340" y="240"/>
+      <p1 x="360" y="240"/>
       <p2 x="420" y="240"/>
     </wire>
     <wire>
@@ -441,4 +441,5 @@
       <p2 x="220" y="300"/>
     </wire>
   </wires>
+  <measurementOrdering/>
 </circuit>

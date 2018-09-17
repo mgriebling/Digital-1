@@ -72,7 +72,7 @@
     <visualElement>
       <elementName>Terminal</elementName>
       <elementAttributes/>
-      <pos x="660" y="120"/>
+      <pos x="680" y="120"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -106,12 +106,12 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="620" y="240"/>
-      <p2 x="640" y="240"/>
+      <p1 x="640" y="240"/>
+      <p2 x="660" y="240"/>
     </wire>
     <wire>
-      <p1 x="640" y="160"/>
-      <p2 x="660" y="160"/>
+      <p1 x="660" y="160"/>
+      <p2 x="680" y="160"/>
     </wire>
     <wire>
       <p1 x="420" y="160"/>
@@ -127,11 +127,11 @@
     </wire>
     <wire>
       <p1 x="420" y="120"/>
-      <p2 x="660" y="120"/>
+      <p2 x="680" y="120"/>
     </wire>
     <wire>
       <p1 x="540" y="140"/>
-      <p2 x="660" y="140"/>
+      <p2 x="680" y="140"/>
     </wire>
     <wire>
       <p1 x="540" y="220"/>
@@ -142,8 +142,8 @@
       <p2 x="480" y="220"/>
     </wire>
     <wire>
-      <p1 x="640" y="160"/>
-      <p2 x="640" y="240"/>
+      <p1 x="660" y="160"/>
+      <p2 x="660" y="240"/>
     </wire>
     <wire>
       <p1 x="540" y="140"/>
