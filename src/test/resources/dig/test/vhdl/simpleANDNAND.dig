@@ -15,7 +15,7 @@
           <int>1</int>
         </entry>
       </elementAttributes>
-      <pos x="100" y="0"/>
+      <pos x="140" y="0"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -55,7 +55,7 @@
     <visualElement>
       <elementName>NAnd</elementName>
       <elementAttributes/>
-      <pos x="0" y="-20"/>
+      <pos x="20" y="-20"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -81,12 +81,12 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="80" y="0"/>
-      <p2 x="100" y="0"/>
+      <p1 x="120" y="0"/>
+      <p2 x="140" y="0"/>
     </wire>
     <wire>
-      <p1 x="-20" y="-20"/>
-      <p2 x="0" y="-20"/>
+      <p1 x="0" y="-20"/>
+      <p2 x="20" y="-20"/>
     </wire>
     <wire>
       <p1 x="-120" y="-20"/>
@@ -94,19 +94,19 @@
     </wire>
     <wire>
       <p1 x="-120" y="20"/>
-      <p2 x="0" y="20"/>
+      <p2 x="20" y="20"/>
     </wire>
     <wire>
-      <p1 x="-40" y="-40"/>
-      <p2 x="-20" y="-40"/>
+      <p1 x="-20" y="-40"/>
+      <p2 x="0" y="-40"/>
     </wire>
     <wire>
       <p1 x="-120" y="-60"/>
       <p2 x="-100" y="-60"/>
     </wire>
     <wire>
-      <p1 x="-20" y="-40"/>
-      <p2 x="-20" y="-20"/>
+      <p1 x="0" y="-40"/>
+      <p2 x="0" y="-20"/>
     </wire>
   </wires>
 </circuit>
