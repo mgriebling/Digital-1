@@ -15,7 +15,7 @@
     <visualElement>
       <elementName>RS_FF_AS</elementName>
       <elementAttributes/>
-      <pos x="420" y="240"/>
+      <pos x="440" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -52,7 +52,7 @@
           <string>Q</string>
         </entry>
       </elementAttributes>
-      <pos x="500" y="240"/>
+      <pos x="520" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -67,12 +67,12 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="480" y="240"/>
-      <p2 x="500" y="240"/>
+      <p1 x="500" y="240"/>
+      <p2 x="520" y="240"/>
     </wire>
     <wire>
-      <p1 x="400" y="240"/>
-      <p2 x="420" y="240"/>
+      <p1 x="420" y="240"/>
+      <p2 x="440" y="240"/>
     </wire>
     <wire>
       <p1 x="240" y="240"/>
@@ -83,8 +83,8 @@
       <p2 x="320" y="240"/>
     </wire>
     <wire>
-      <p1 x="400" y="260"/>
-      <p2 x="420" y="260"/>
+      <p1 x="420" y="260"/>
+      <p2 x="440" y="260"/>
     </wire>
     <wire>
       <p1 x="280" y="260"/>
@@ -99,24 +99,24 @@
       <p2 x="320" y="200"/>
     </wire>
     <wire>
-      <p1 x="380" y="280"/>
-      <p2 x="400" y="280"/>
+      <p1 x="400" y="280"/>
+      <p2 x="420" y="280"/>
     </wire>
     <wire>
       <p1 x="260" y="300"/>
       <p2 x="300" y="300"/>
     </wire>
     <wire>
-      <p1 x="380" y="220"/>
-      <p2 x="400" y="220"/>
-    </wire>
-    <wire>
       <p1 x="400" y="220"/>
-      <p2 x="400" y="240"/>
+      <p2 x="420" y="220"/>
     </wire>
     <wire>
-      <p1 x="400" y="260"/>
-      <p2 x="400" y="280"/>
+      <p1 x="420" y="220"/>
+      <p2 x="420" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="260"/>
+      <p2 x="420" y="280"/>
     </wire>
     <wire>
       <p1 x="260" y="240"/>

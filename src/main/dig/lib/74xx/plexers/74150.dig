@@ -56,7 +56,7 @@
           <string>10</string>
         </entry>
       </elementAttributes>
-      <pos x="660" y="320"/>
+      <pos x="700" y="320"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -359,7 +359,7 @@
     <visualElement>
       <elementName>Or</elementName>
       <elementAttributes/>
-      <pos x="580" y="300"/>
+      <pos x="600" y="300"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
@@ -406,8 +406,8 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="640" y="320"/>
-      <p2 x="660" y="320"/>
+      <p1 x="680" y="320"/>
+      <p2 x="700" y="320"/>
     </wire>
     <wire>
       <p1 x="440" y="320"/>
@@ -442,8 +442,8 @@
       <p2 x="440" y="680"/>
     </wire>
     <wire>
-      <p1 x="560" y="300"/>
-      <p2 x="580" y="300"/>
+      <p1 x="580" y="300"/>
+      <p2 x="600" y="300"/>
     </wire>
     <wire>
       <p1 x="260" y="300"/>
@@ -478,8 +478,8 @@
       <p2 x="460" y="340"/>
     </wire>
     <wire>
-      <p1 x="560" y="340"/>
-      <p2 x="580" y="340"/>
+      <p1 x="580" y="340"/>
+      <p2 x="600" y="340"/>
     </wire>
     <wire>
       <p1 x="260" y="180"/>
@@ -491,7 +491,7 @@
     </wire>
     <wire>
       <p1 x="260" y="120"/>
-      <p2 x="560" y="120"/>
+      <p2 x="580" y="120"/>
     </wire>
     <wire>
       <p1 x="440" y="440"/>
@@ -526,8 +526,8 @@
       <p2 x="480" y="540"/>
     </wire>
     <wire>
-      <p1 x="560" y="120"/>
-      <p2 x="560" y="300"/>
+      <p1 x="580" y="120"/>
+      <p2 x="580" y="300"/>
     </wire>
     <wire>
       <p1 x="420" y="700"/>

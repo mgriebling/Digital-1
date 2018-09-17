@@ -7,6 +7,10 @@
       <string>A classic muller-C-element
 {{de Ein klassisches muller-c Element.}}</string>
     </entry>
+    <entry>
+      <string>lockedMode</string>
+      <boolean>true</boolean>
+    </entry>
   </attributes>
   <visualElements>
     <visualElement>
@@ -87,7 +91,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="700" y="280"/>
+      <pos x="720" y="280"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -135,7 +139,7 @@
     </wire>
     <wire>
       <p1 x="480" y="240"/>
-      <p2 x="680" y="240"/>
+      <p2 x="700" y="240"/>
     </wire>
     <wire>
       <p1 x="480" y="180"/>
@@ -158,12 +162,12 @@
       <p2 x="560" y="420"/>
     </wire>
     <wire>
-      <p1 x="660" y="280"/>
-      <p2 x="680" y="280"/>
-    </wire>
-    <wire>
       <p1 x="680" y="280"/>
       <p2 x="700" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="280"/>
+      <p2 x="720" y="280"/>
     </wire>
     <wire>
       <p1 x="340" y="200"/>
@@ -246,8 +250,8 @@
       <p2 x="440" y="280"/>
     </wire>
     <wire>
-      <p1 x="680" y="240"/>
-      <p2 x="680" y="280"/>
+      <p1 x="700" y="240"/>
+      <p2 x="700" y="280"/>
     </wire>
     <wire>
       <p1 x="380" y="200"/>

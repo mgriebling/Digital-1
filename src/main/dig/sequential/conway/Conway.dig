@@ -26,7 +26,7 @@
           <string>S</string>
         </entry>
       </elementAttributes>
-      <pos x="-17120" y="-12100"/>
+      <pos x="-17100" y="-12100"/>
     </visualElement>
     <visualElement>
       <elementName>cellLUT.dig</elementName>
@@ -67418,7 +67418,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <int>0</int>
+          <long>0</long>
         </entry>
       </elementAttributes>
       <pos x="-17060" y="-12400"/>
@@ -67457,7 +67457,7 @@
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <int>0</int>
+          <long>0</long>
         </entry>
       </elementAttributes>
       <pos x="-17320" y="-12000"/>
@@ -111327,8 +111327,8 @@
       <p2 x="-16840" y="-10820"/>
     </wire>
     <wire>
-      <p1 x="-17140" y="-12100"/>
-      <p2 x="-17120" y="-12100"/>
+      <p1 x="-17120" y="-12100"/>
+      <p2 x="-17100" y="-12100"/>
     </wire>
     <wire>
       <p1 x="-7500" y="-6220"/>

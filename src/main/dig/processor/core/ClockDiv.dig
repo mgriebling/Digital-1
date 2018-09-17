@@ -38,7 +38,7 @@ dann ausgeführt.}}</string>
           <boolean>false</boolean>
         </entry>
       </elementAttributes>
-      <pos x="440" y="300"/>
+      <pos x="460" y="300"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
@@ -48,12 +48,12 @@ dann ausgeführt.}}</string>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes/>
-      <pos x="560" y="240"/>
+      <pos x="580" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes/>
-      <pos x="560" y="320"/>
+      <pos x="580" y="320"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -70,7 +70,7 @@ eines Befehlswortes konfiguriert.}}</string>
           <string>S_in</string>
         </entry>
       </elementAttributes>
-      <pos x="660" y="300"/>
+      <pos x="700" y="300"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -85,7 +85,7 @@ eines Befehlswortes konfiguriert.}}</string>
           <string>C_in</string>
         </entry>
       </elementAttributes>
-      <pos x="660" y="260"/>
+      <pos x="700" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -101,7 +101,7 @@ steuert.}}</string>
           <string>C</string>
         </entry>
       </elementAttributes>
-      <pos x="660" y="340"/>
+      <pos x="700" y="340"/>
     </visualElement>
     <visualElement>
       <elementName>Data</elementName>
@@ -116,48 +116,52 @@ steuert.}}</string>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="500" y="320"/>
-      <p2 x="560" y="320"/>
+      <p1 x="520" y="320"/>
+      <p2 x="580" y="320"/>
     </wire>
     <wire>
       <p1 x="360" y="240"/>
-      <p2 x="560" y="240"/>
+      <p2 x="580" y="240"/>
     </wire>
     <wire>
-      <p1 x="620" y="260"/>
-      <p2 x="660" y="260"/>
+      <p1 x="660" y="260"/>
+      <p2 x="700" y="260"/>
     </wire>
     <wire>
-      <p1 x="620" y="340"/>
-      <p2 x="660" y="340"/>
+      <p1 x="660" y="340"/>
+      <p2 x="700" y="340"/>
     </wire>
     <wire>
-      <p1 x="540" y="280"/>
-      <p2 x="560" y="280"/>
+      <p1 x="560" y="280"/>
+      <p2 x="580" y="280"/>
     </wire>
     <wire>
       <p1 x="360" y="360"/>
-      <p2 x="560" y="360"/>
+      <p2 x="580" y="360"/>
     </wire>
     <wire>
-      <p1 x="420" y="300"/>
-      <p2 x="440" y="300"/>
+      <p1 x="440" y="300"/>
+      <p2 x="460" y="300"/>
     </wire>
     <wire>
       <p1 x="340" y="300"/>
       <p2 x="360" y="300"/>
     </wire>
     <wire>
-      <p1 x="500" y="300"/>
-      <p2 x="540" y="300"/>
-    </wire>
-    <wire>
-      <p1 x="540" y="300"/>
-      <p2 x="660" y="300"/>
+      <p1 x="520" y="300"/>
+      <p2 x="560" y="300"/>
     </wire>
     <wire>
       <p1 x="360" y="300"/>
       <p2 x="380" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="560" y="300"/>
+      <p2 x="700" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="560" y="280"/>
+      <p2 x="560" y="300"/>
     </wire>
     <wire>
       <p1 x="360" y="240"/>
@@ -166,10 +170,6 @@ steuert.}}</string>
     <wire>
       <p1 x="360" y="300"/>
       <p2 x="360" y="360"/>
-    </wire>
-    <wire>
-      <p1 x="540" y="280"/>
-      <p2 x="540" y="300"/>
     </wire>
   </wires>
   <measurementOrdering>

@@ -342,7 +342,7 @@ DATA Polling for End of Write Detection not implemented!</string>
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="1000" y="-140"/>
+      <pos x="1020" y="-140"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -368,7 +368,7 @@ DATA Polling for End of Write Detection not implemented!</string>
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="1000" y="-100"/>
+      <pos x="1020" y="-100"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -394,7 +394,7 @@ DATA Polling for End of Write Detection not implemented!</string>
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="1000" y="-60"/>
+      <pos x="1020" y="-60"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -420,7 +420,7 @@ DATA Polling for End of Write Detection not implemented!</string>
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="1000" y="-20"/>
+      <pos x="1020" y="-20"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -446,7 +446,7 @@ DATA Polling for End of Write Detection not implemented!</string>
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="1000" y="20"/>
+      <pos x="1020" y="20"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -472,7 +472,7 @@ DATA Polling for End of Write Detection not implemented!</string>
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="1000" y="60"/>
+      <pos x="1020" y="60"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -498,7 +498,7 @@ DATA Polling for End of Write Detection not implemented!</string>
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="1000" y="100"/>
+      <pos x="1020" y="100"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -524,7 +524,7 @@ DATA Polling for End of Write Detection not implemented!</string>
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="1000" y="140"/>
+      <pos x="1020" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>BusSplitter</elementName>
@@ -538,7 +538,7 @@ DATA Polling for End of Write Detection not implemented!</string>
           <int>8</int>
         </entry>
       </elementAttributes>
-      <pos x="940" y="-140"/>
+      <pos x="960" y="-140"/>
     </visualElement>
     <visualElement>
       <elementName>NOr</elementName>
@@ -560,8 +560,8 @@ DATA Polling for End of Write Detection not implemented!</string>
       <p2 x="800" y="-100"/>
     </wire>
     <wire>
-      <p1 x="960" y="-100"/>
-      <p2 x="1000" y="-100"/>
+      <p1 x="980" y="-100"/>
+      <p2 x="1020" y="-100"/>
     </wire>
     <wire>
       <p1 x="660" y="100"/>
@@ -572,16 +572,16 @@ DATA Polling for End of Write Detection not implemented!</string>
       <p2 x="820" y="100"/>
     </wire>
     <wire>
-      <p1 x="960" y="100"/>
-      <p2 x="1000" y="100"/>
+      <p1 x="980" y="100"/>
+      <p2 x="1020" y="100"/>
     </wire>
     <wire>
-      <p1 x="960" y="-140"/>
-      <p2 x="1000" y="-140"/>
+      <p1 x="980" y="-140"/>
+      <p2 x="1020" y="-140"/>
     </wire>
     <wire>
       <p1 x="880" y="-140"/>
-      <p2 x="940" y="-140"/>
+      <p2 x="960" y="-140"/>
     </wire>
     <wire>
       <p1 x="660" y="-140"/>
@@ -600,16 +600,16 @@ DATA Polling for End of Write Detection not implemented!</string>
       <p2 x="780" y="140"/>
     </wire>
     <wire>
-      <p1 x="960" y="140"/>
-      <p2 x="1000" y="140"/>
+      <p1 x="980" y="140"/>
+      <p2 x="1020" y="140"/>
     </wire>
     <wire>
-      <p1 x="900" y="80"/>
-      <p2 x="920" y="80"/>
+      <p1 x="920" y="80"/>
+      <p2 x="940" y="80"/>
     </wire>
     <wire>
-      <p1 x="960" y="-20"/>
-      <p2 x="1000" y="-20"/>
+      <p1 x="980" y="-20"/>
+      <p2 x="1020" y="-20"/>
     </wire>
     <wire>
       <p1 x="660" y="-20"/>
@@ -628,16 +628,16 @@ DATA Polling for End of Write Detection not implemented!</string>
       <p2 x="820" y="-180"/>
     </wire>
     <wire>
-      <p1 x="960" y="20"/>
-      <p2 x="1000" y="20"/>
+      <p1 x="980" y="20"/>
+      <p2 x="1020" y="20"/>
     </wire>
     <wire>
       <p1 x="660" y="20"/>
       <p2 x="700" y="20"/>
     </wire>
     <wire>
-      <p1 x="920" y="-120"/>
-      <p2 x="940" y="-120"/>
+      <p1 x="940" y="-120"/>
+      <p2 x="960" y="-120"/>
     </wire>
     <wire>
       <p1 x="760" y="-120"/>
@@ -648,8 +648,8 @@ DATA Polling for End of Write Detection not implemented!</string>
       <p2 x="1040" y="-280"/>
     </wire>
     <wire>
-      <p1 x="960" y="-60"/>
-      <p2 x="1000" y="-60"/>
+      <p1 x="980" y="-60"/>
+      <p2 x="1020" y="-60"/>
     </wire>
     <wire>
       <p1 x="660" y="-60"/>
@@ -668,8 +668,8 @@ DATA Polling for End of Write Detection not implemented!</string>
       <p2 x="780" y="-380"/>
     </wire>
     <wire>
-      <p1 x="960" y="60"/>
-      <p2 x="1000" y="60"/>
+      <p1 x="980" y="60"/>
+      <p2 x="1020" y="60"/>
     </wire>
     <wire>
       <p1 x="660" y="60"/>
@@ -700,8 +700,8 @@ DATA Polling for End of Write Detection not implemented!</string>
       <p2 x="760" y="100"/>
     </wire>
     <wire>
-      <p1 x="920" y="-120"/>
-      <p2 x="920" y="80"/>
+      <p1 x="940" y="-120"/>
+      <p2 x="940" y="80"/>
     </wire>
     <wire>
       <p1 x="780" y="-100"/>
