@@ -36,13 +36,13 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="340" y="160"/>
+      <pos x="360" y="160"/>
     </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="320" y="160"/>
-      <p2 x="340" y="160"/>
+      <p1 x="340" y="160"/>
+      <p2 x="360" y="160"/>
     </wire>
     <wire>
       <p1 x="200" y="180"/>

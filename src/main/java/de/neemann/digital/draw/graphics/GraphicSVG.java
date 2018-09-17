@@ -24,7 +24,7 @@ public class GraphicSVG implements Graphic {
 
     @Override
     public boolean isFlagSet(String name) {
-        return name.equals(LATEX);
+        return false; // name.equals(LATEX);
     }
 
     /**
