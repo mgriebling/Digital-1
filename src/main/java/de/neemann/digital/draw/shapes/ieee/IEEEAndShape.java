@@ -31,7 +31,7 @@ public class IEEEAndShape extends IEEEGenericShape {
                 .add(new Vector(SIZE * 3, -SIZE2), new Vector(SIZE * 4, 0), new Vector(SIZE * 4 - 1, SIZE))
                 .add(new Vector(SIZE * 4 - 1, SIZE * 2), new Vector(SIZE * 3, SIZE * 2 + SIZE2), new Vector(SIZE*2 + SIZE2, SIZE * 2 + SIZE2));
     }
-    
+
        private final boolean center;
 
     /**
