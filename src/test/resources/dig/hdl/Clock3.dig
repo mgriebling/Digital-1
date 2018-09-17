@@ -15,7 +15,7 @@
           <string>U18</string>
         </entry>
       </elementAttributes>
-      <pos x="360" y="180"/>
+      <pos x="380" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>Clock</elementName>
@@ -47,8 +47,8 @@
       <p2 x="300" y="180"/>
     </wire>
     <wire>
-      <p1 x="340" y="180"/>
-      <p2 x="360" y="180"/>
+      <p1 x="360" y="180"/>
+      <p2 x="380" y="180"/>
     </wire>
   </wires>
   <measurementOrdering/>

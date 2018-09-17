@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>1</version>
+  <attributes/>
   <visualElements>
     <visualElement>
       <elementName>And</elementName>
@@ -25,7 +26,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="520" y="200"/>
+      <pos x="540" y="200"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -44,8 +45,8 @@
       <p2 x="420" y="180"/>
     </wire>
     <wire>
-      <p1 x="480" y="200"/>
-      <p2 x="520" y="200"/>
+      <p1 x="500" y="200"/>
+      <p2 x="540" y="200"/>
     </wire>
     <wire>
       <p1 x="380" y="220"/>

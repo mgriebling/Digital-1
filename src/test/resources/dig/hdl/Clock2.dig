@@ -15,7 +15,7 @@
           <string>U16</string>
         </entry>
       </elementAttributes>
-      <pos x="680" y="-80"/>
+      <pos x="700" y="-80"/>
     </visualElement>
     <visualElement>
       <elementName>Text</elementName>
@@ -79,8 +79,8 @@
       <p2 x="600" y="-60"/>
     </wire>
     <wire>
-      <p1 x="660" y="-80"/>
-      <p2 x="680" y="-80"/>
+      <p1 x="680" y="-80"/>
+      <p2 x="700" y="-80"/>
     </wire>
   </wires>
   <measurementOrdering/>

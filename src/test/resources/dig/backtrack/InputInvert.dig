@@ -24,7 +24,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="500" y="240"/>
+      <pos x="520" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -49,8 +49,8 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="480" y="240"/>
-      <p2 x="500" y="240"/>
+      <p1 x="500" y="240"/>
+      <p2 x="520" y="240"/>
     </wire>
     <wire>
       <p1 x="380" y="260"/>

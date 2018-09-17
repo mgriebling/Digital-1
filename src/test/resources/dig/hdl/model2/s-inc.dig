@@ -53,7 +53,7 @@
           <int>2</int>
         </entry>
       </elementAttributes>
-      <pos x="460" y="140"/>
+      <pos x="480" y="140"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -66,8 +66,8 @@
       <p2 x="380" y="120"/>
     </wire>
     <wire>
-      <p1 x="440" y="140"/>
-      <p2 x="460" y="140"/>
+      <p1 x="460" y="140"/>
+      <p2 x="480" y="140"/>
     </wire>
   </wires>
 </circuit>

@@ -11,7 +11,7 @@
     <visualElement>
       <elementName>Out</elementName>
       <elementAttributes/>
-      <pos x="280" y="260"/>
+      <pos x="300" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -25,8 +25,8 @@
       <p2 x="180" y="240"/>
     </wire>
     <wire>
-      <p1 x="240" y="260"/>
-      <p2 x="280" y="260"/>
+      <p1 x="260" y="260"/>
+      <p2 x="300" y="260"/>
     </wire>
   </wires>
 </circuit>

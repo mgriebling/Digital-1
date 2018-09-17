@@ -49,17 +49,17 @@
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="440" y="180"/>
+      <pos x="460" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>VDD</elementName>
       <elementAttributes/>
-      <pos x="440" y="140"/>
+      <pos x="460" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>Ground</elementName>
       <elementAttributes/>
-      <pos x="440" y="220"/>
+      <pos x="460" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>Text</elementName>
@@ -99,8 +99,8 @@ the error.</string>
       <p2 x="340" y="160"/>
     </wire>
     <wire>
-      <p1 x="400" y="180"/>
-      <p2 x="420" y="180"/>
+      <p1 x="420" y="180"/>
+      <p2 x="440" y="180"/>
     </wire>
     <wire>
       <p1 x="240" y="180"/>
@@ -135,12 +135,12 @@ the error.</string>
       <p2 x="320" y="160"/>
     </wire>
     <wire>
-      <p1 x="440" y="140"/>
-      <p2 x="440" y="160"/>
+      <p1 x="460" y="140"/>
+      <p2 x="460" y="160"/>
     </wire>
     <wire>
-      <p1 x="440" y="200"/>
-      <p2 x="440" y="220"/>
+      <p1 x="460" y="200"/>
+      <p2 x="460" y="220"/>
     </wire>
   </wires>
   <measurementOrdering/>

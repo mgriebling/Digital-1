@@ -36,7 +36,7 @@
           <string>C</string>
         </entry>
       </elementAttributes>
-      <pos x="580" y="220"/>
+      <pos x="600" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -71,7 +71,7 @@
           <string>C</string>
         </entry>
       </elementAttributes>
-      <pos x="580" y="140"/>
+      <pos x="600" y="140"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -92,12 +92,12 @@
       <p2 x="500" y="120"/>
     </wire>
     <wire>
-      <p1 x="560" y="220"/>
-      <p2 x="580" y="220"/>
+      <p1 x="580" y="220"/>
+      <p2 x="600" y="220"/>
     </wire>
     <wire>
-      <p1 x="560" y="140"/>
-      <p2 x="580" y="140"/>
+      <p1 x="580" y="140"/>
+      <p2 x="600" y="140"/>
     </wire>
   </wires>
 </circuit>

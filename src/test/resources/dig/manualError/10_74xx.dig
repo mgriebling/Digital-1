@@ -19,7 +19,7 @@
           <string>27</string>
         </entry>
       </elementAttributes>
-      <pos x="40" y="300"/>
+      <pos x="60" y="300"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -81,8 +81,8 @@
       <p2 x="-40" y="280"/>
     </wire>
     <wire>
-      <p1 x="20" y="300"/>
-      <p2 x="40" y="300"/>
+      <p1 x="40" y="300"/>
+      <p2 x="60" y="300"/>
     </wire>
   </wires>
   <measurementOrdering/>

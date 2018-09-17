@@ -41,14 +41,14 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="400" y="160"/>
+      <pos x="420" y="160"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
       <elementAttributes>
         <entry>
           <string>Value</string>
-          <int>2</int>
+          <long>2</long>
         </entry>
         <entry>
           <string>Bits</string>
@@ -60,8 +60,8 @@
   </visualElements>
   <wires>
     <wire>
-      <p1 x="380" y="160"/>
-      <p2 x="400" y="160"/>
+      <p1 x="400" y="160"/>
+      <p2 x="420" y="160"/>
     </wire>
     <wire>
       <p1 x="300" y="160"/>
