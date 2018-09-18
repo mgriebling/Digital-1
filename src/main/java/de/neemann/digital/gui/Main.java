@@ -152,6 +152,7 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
      */
     private Main(MainBuilder builder) {
         super(Lang.get("digital"));
+
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         setIconImages(IconCreator.createImages("icon32.png", "icon64.png", "icon128.png"));
 
@@ -1732,12 +1733,20 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
     public static void main(String[] args) {
         Thread.setDefaultUncaughtExceptionHandler(new DigitalUncaughtExceptionHandler());
 
+        String lcOSName = System.getProperty("os.name").toLowerCase();
+        boolean isMAC = lcOSName.startsWith("mac os x");
+        if (isMAC) {
+            System.setProperty("apple.laf.useScreenMenuBar", "true");
+            System.setProperty("com.apple.mrj.application.apple.menu.about.name", "LogicBLOX");  // doesn't work, using java argument -Xdock:name="LogicBLOX" instead
+        }
+
         try { // enforce MetalLookAndFeel
-            UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+            //UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (ClassNotFoundException | InstantiationException | UnsupportedLookAndFeelException | IllegalAccessException e) {
             e.printStackTrace();
         }
-//        System.setProperty("apple.laf.useScreenMenuBar", "true");
+
         ToolTipManager.sharedInstance().setDismissDelay(10000);
         URL.setURLStreamHandlerFactory(ElementHelpDialog.createURLStreamHandlerFactory());
         FormatToExpression.setDefaultFormat(Settings.getInstance().get(Keys.SETTINGS_EXPRESSION_FORMAT));
