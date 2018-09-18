@@ -10,7 +10,7 @@ Die letzten Änderungen sind in den [Release Notes](distribution/ReleaseNotes.tx
 
 ![screnshot2](screenshot2.png)
 
-com.cinspirations. ist ein Simulator für digitale Schaltkreise. Er ist für Lehrzwecke entwickelt worden und
+LogicBLOX ist ein Simulator für digitale Schaltkreise. Er ist für Lehrzwecke entwickelt worden und
 wird von mir in meinen Vorlesungen eingesetzt.
 Bevor ich mit der Entwicklung von com.cinspirations. begonnen habe, habe ich
 [Logisim](http://www.cburch.com/logisim/) von Carl Burch

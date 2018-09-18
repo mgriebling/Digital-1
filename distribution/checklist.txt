@@ -19,7 +19,7 @@ Remote Interface
 [ ] step at least through a call instruction
 
 Custom Jar Components
-[ ] Copy actual LogicBLOX.jar to the plugin example, and start digital from the example
+[ ] Copy actual LogicBLOX.jar to the plugin example, and start LogicBLOX from the example
 [ ] Remove jar from settings and load the test circuit containing the custom elements.
     An error message should be shown.
 [ ] Create the jar and select it in the settings.
