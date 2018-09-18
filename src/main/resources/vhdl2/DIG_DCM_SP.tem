@@ -18,7 +18,7 @@ architecture DIG_DCM_SP_arch of DIG_DCM_SP is
 
 begin
 
-    -- DCM_SP: Digital Clock Manager
+    -- DCM_SP: LogicBLOX Clock Manager
     -- Spartan-6
     -- Xilinx HDL Libraries Guide, version 14.1
 

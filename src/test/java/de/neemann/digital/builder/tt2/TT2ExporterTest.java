@@ -30,7 +30,7 @@ public class TT2ExporterTest extends TestCase {
         tt2.writeTo(baos);
 
         assertEquals("#$ TOOL CUPL\r\n" +
-                "# Berkeley PLA format generated using Digital\r\n" +
+                "# Berkeley PLA format generated using LogicBLOX\r\n" +
                 "#$ TITLE  unknown\r\n" +
                 "#$ DEVICE  f1502ispplcc44\r\n" +
                 "#$ PINS 6 A+:4 A1+:5 B+:6 B1+:8 Y+:20 X+:21\r\n" +
@@ -56,7 +56,7 @@ public class TT2ExporterTest extends TestCase {
         tt2.writeTo(baos);
 
         assertEquals("#$ TOOL CUPL\r\n" +
-                "# Berkeley PLA format generated using Digital\r\n" +
+                "# Berkeley PLA format generated using LogicBLOX\r\n" +
                 "#$ TITLE  unknown\r\n" +
                 "#$ DEVICE  f1502ispplcc44\r\n" +
                 "#$ PINS 3 A+:4 CLK+:43 Yn+:5\r\n" +
@@ -83,7 +83,7 @@ public class TT2ExporterTest extends TestCase {
         tt2.writeTo(baos);
 
         assertEquals("#$ TOOL CUPL\r\n" +
-                "# Berkeley PLA format generated using Digital\r\n" +
+                "# Berkeley PLA format generated using LogicBLOX\r\n" +
                 "#$ TITLE  unknown\r\n" +
                 "#$ DEVICE  f1502ispplcc44\r\n" +
                 "#$ PINS 5 A+:4 B+:5 CLK+:43 Yn+:6 Xn+:8\r\n" +
@@ -111,7 +111,7 @@ public class TT2ExporterTest extends TestCase {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         tt2.writeTo(baos);
         assertEquals("#$ TOOL CUPL\r\n" +
-                "# Berkeley PLA format generated using Digital\r\n" +
+                "# Berkeley PLA format generated using LogicBLOX\r\n" +
                 "#$ TITLE  unknown\r\n" +
                 "#$ DEVICE  f1502ispplcc44\r\n" +
                 "#$ PINS 3 CLK+:43 Yn+:6 Xn+:8\r\n" +
@@ -136,7 +136,7 @@ public class TT2ExporterTest extends TestCase {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         tt2.writeTo(baos);
         assertEquals("#$ TOOL CUPL\r\n" +
-                "# Berkeley PLA format generated using Digital\r\n" +
+                "# Berkeley PLA format generated using LogicBLOX\r\n" +
                 "#$ TITLE  unknown\r\n" +
                 "#$ DEVICE  f1502ispplcc44\r\n" +
                 "#$ PINS 2 Yn+:6 Xn+:8\r\n" +

@@ -19,7 +19,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * The Settings of Digital
+ * The Settings of LogicBLOX
  * <p>
  * Created by Helmut.Neemann on 11.05.2016.
  */

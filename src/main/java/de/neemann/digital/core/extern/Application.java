@@ -59,8 +59,8 @@ public interface Application {
      *
      * @param label   the codes label
      * @param code    the code itself
-     * @param inputs  the inputs expected by Digital
-     * @param outputs the outputs expected by Digital
+     * @param inputs  the inputs expected by LogicBLOX
+     * @param outputs the outputs expected by LogicBLOX
      * @return the ProcessInterface
      * @throws IOException IOException
      */
@@ -91,8 +91,8 @@ public interface Application {
      *
      * @param label   the codes label
      * @param code    the code itself
-     * @param inputs  the inputs expected by Digital
-     * @param outputs the outputs expected by Digital
+     * @param inputs  the inputs expected by LogicBLOX
+     * @param outputs the outputs expected by LogicBLOX
      * @return the applications message, maybe null
      * @throws IOException IOException
      */

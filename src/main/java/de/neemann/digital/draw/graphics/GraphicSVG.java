@@ -68,7 +68,7 @@ public class GraphicSVG implements Graphic {
         try {
             w = new BufferedWriter(new OutputStreamWriter(out, "utf-8"));
             w.write("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n"
-                    + "<!-- Created with Digital by H.Neemann -->\n");
+                    + "<!-- Created with LogicBLOX by H.Neemann -->\n");
             w.write("<!-- created: " + new Date() + " -->\n");
             if (source != null) {
                 w.write("<!-- source: " + source.getPath() + " -->\n");

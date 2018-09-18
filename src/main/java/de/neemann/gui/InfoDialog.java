@@ -103,7 +103,7 @@ public final class InfoDialog implements Iterable<InfoDialog.Manifest> {
                 Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
                 if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
                     try {
-                        String name = Preferences.userRoot().node("dig").get("newname", "Digital");
+                        String name = Preferences.userRoot().node("dig").get("newname", "LogicBLOX");
                         URL url = hyperlinkEvent.getURL();
                         url = new URL(url.toString()
                                 .replace("[[version]]", revision)

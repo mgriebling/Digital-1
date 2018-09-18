@@ -76,7 +76,7 @@ public class TT2Exporter implements ExpressionExporter<TT2Exporter> {
 
         this.writer = writer;
         line("#$ TOOL CUPL");
-        line("# Berkeley PLA format generated using Digital");
+        line("# Berkeley PLA format generated using LogicBLOX");
         line("#$ TITLE  " + projectName);
         line("#$ DEVICE  " + device);
         assignPinsAndNodes();

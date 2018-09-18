@@ -7,7 +7,7 @@
     <groupId>de.neemann.digital</groupId>
     <artifactId>digital</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Digital</name>
+    <name>LogicBLOX</name>
     <url>https://github.com/hneemann/Digital</url>
 
     <properties>
@@ -179,7 +179,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
-                    <finalName>Digital</finalName>
+                    <finalName>LogicBLOX</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                     <attach>false</attach>
                     <descriptorRefs>

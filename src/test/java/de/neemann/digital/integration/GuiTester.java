@@ -172,7 +172,7 @@ public class GuiTester {
                         File file = new File(Resources.getRoot(), filename);
                         main = new Main.MainBuilder().setFileToOpen(file).build();
                         if (displayName != null)
-                            SwingUtilities.invokeLater(() -> main.setTitle(displayName + " - Digital"));
+                            SwingUtilities.invokeLater(() -> main.setTitle(displayName + " - LogicBLOX"));
                     } else
                         main = new Main.MainBuilder().setCircuit(new Circuit()).build();
                     main.setVisible(true);

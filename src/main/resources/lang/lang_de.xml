@@ -45,7 +45,7 @@
     <string name="btn_clearRom_tt">Entfernt die hier gespeicherten Daten des ausgewählten ROM. Es wird stattdessen der direkt im ROM gespeicherte Inhalt verwendet.</string>
     <string name="msg_warning">Warnung</string>
     <string name="cancel">Abbrechen</string>
-    <string name="digital">Digital</string>
+    <string name="digital">LogicBLOX</string>
     <string name="expression">Ausdruck</string>
     <string name="elem_Help_inputs">Eingänge</string>
     <string name="elem_Help_outputs">Ausgänge</string>
@@ -111,7 +111,7 @@
     <string name="elem_LookUpTable_pin_out">Gibt den Wert an der ausgewählten Adresse aus.</string>
     <string name="elem_Delay">Verzögerung</string>
     <string name="elem_Delay_tt">Verzögert ein Signal für eine einstellbare Anzahl an Gatterlaufzeiten.
-        Alle übrigen Bauteile in Digital haben genau eine Gatterlaufzeit Verzögerung.
+        Alle übrigen Bauteile in LogicBLOX haben genau eine Gatterlaufzeit Verzögerung.
         Mit diesem Bauteil lassen sich damit beliebige Laufzeiten realisieren.
     </string>
     <string name="elem_Delay_pin_in">Eingang für das zu verzögernde Signal.</string>
@@ -924,10 +924,10 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="err_writingToStdOut_O">Konnte nicht auf stdOut schreiben:
         {0}</string>
     <string name="err_ghdlNotInstalled">
-        Der VHDL Simulator ghdl scheint nicht installiert zu sein. Installieren Sie ghdl (http://ghdl.free.fr/) und versuchen Sie es erneut. Sollte es immer noch Probleme geben, überprüfen Sie den Pfad zur ausfühbaren ghdl-Datei in den Digital-Einstellungen.
+        Der VHDL Simulator ghdl scheint nicht installiert zu sein. Installieren Sie ghdl (http://ghdl.free.fr/) und versuchen Sie es erneut. Sollte es immer noch Probleme geben, überprüfen Sie den Pfad zur ausfühbaren ghdl-Datei in den LogicBLOX-Einstellungen.
     </string>
     <string name="err_iverilogNotInstalled">
-        Der Verilog Simulator Icarus scheint nicht installiert zu sein. Installieren Sie Icarus (http://iverilog.icarus.com/) und versuchen Sie es erneut. Sollte es immer noch Probleme geben, überprüfen Sie den Pfad zur ausfühbaren iverilog-Datei in den Digital-Einstellungen.
+        Der Verilog Simulator Icarus scheint nicht installiert zu sein. Installieren Sie Icarus (http://iverilog.icarus.com/) und versuchen Sie es erneut. Sollte es immer noch Probleme geben, überprüfen Sie den Pfad zur ausfühbaren iverilog-Datei in den LogicBLOX-Einstellungen.
     </string>
     <string name="err_errorAnalysingCircuit_N">Fehler bei der Analyse der Schaltung: {0}</string>
     <string name="err_romNeedsALabelToBeExported">Jedes ROM braucht eine eindeutige Bezeichnung um exportiert zu werden!</string>
@@ -1249,7 +1249,7 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="lib_ram">RAM</string>
     <string name="lib_eeprom">EEPROM</string>
 
-    <string name="menu_about">Über Digital</string>
+    <string name="menu_about">Über LogicBLOX</string>
     <string name="menu_analyse">Analyse</string>
     <string name="menu_analyse_tt">Analyse der aktuellen Schaltung</string>
     <string name="menu_cut">Ausschneiden</string>

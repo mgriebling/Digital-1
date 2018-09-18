@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-    <chapter name="Digital">
+    <chapter name="LogicBLOX">
         <subchapter name="Introduction">
             <par>
-                Digital is a simple simulator used to simulate digital circuits. The logic gates are connected
+                LogicBLOX is a simple simulator used to simulate digital circuits. The logic gates are connected
                 to each other by wires and the behavior of the overall circuit can be simulated.
                 The user can interact with the simulation by either pressing buttons or setting
                 values to the inputs of the circuit.
@@ -313,11 +313,11 @@
             </par>
             <par>
                 Unfortunately, the fuse map details are not publicly available so that no suitable fitter for this chip
-                can be integrated in Digital, as is possible with the <e>GAL16v8</e> and <e>GAL22v10</e> chips.
+                can be integrated in LogicBLOX, as is possible with the <e>GAL16v8</e> and <e>GAL22v10</e> chips.
             </par>
             <par>
                 Therefore, the fitters <e>fit150[x].exe</e> provided by ATMEL must be used. These programs create a
-                <e>JEDEC</e> file from a suitable <e>TT2</e> file which can then be programmed on the chip. Digital
+                <e>JEDEC</e> file from a suitable <e>TT2</e> file which can then be programmed on the chip. LogicBLOX
                 starts the fitter automatically every time a <e>TT2</e> file is created. For this purpose, the path to the
                 <e>fit150[n].exe</e> fitters must be specified in the settings.
                 The created <e>JEDEC</e> file can then be opened and programmed directly with
@@ -326,7 +326,7 @@
                 </a>.
             </par>
             <par>
-                For legal reasons the fitter <e>fit1502.exe</e> can not be distributed with Digital. However, it can be
+                For legal reasons the fitter <e>fit1502.exe</e> can not be distributed with LogicBLOX. However, it can be
                 found in the folder <e>WinCupl\Fitters</e> after installing
                 <a href="https://www.microchip.com/design-centers/programmable-logic/spld-cpld/tools/software/wincupl">
                     <e>WinCupl</e>
@@ -335,7 +335,7 @@
                     <e>WinCupl</e>
                 </a>
                 is available on the ATMEL/Microchip website.
-                On Linux systems, the fitters can also be executed by Digital if <e>wine</e> is installed.
+                On Linux systems, the fitters can also be executed by LogicBLOX if <e>wine</e> is installed.
             </par>
         </subchapter>
         <subchapter name="Export to VHDL or Verilog">
@@ -437,7 +437,7 @@
                 Which of them is the correct one?
             </question>
             <answer>Minimizing a boolean equation can result in many equations, describing the same function.
-                Digital shows all of them and they all create the same truth table.
+                LogicBLOX shows all of them and they all create the same truth table.
                 There may be differences depending on the "don't cares" in the truth table.
             </answer>
         </faq>

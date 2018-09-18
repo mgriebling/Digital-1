@@ -24,7 +24,7 @@ public class DigitalUncaughtExceptionHandler implements Thread.UncaughtException
     public void uncaughtException(Thread thread, Throwable throwable) {
         throwable.printStackTrace();
         File home = new File(System.getProperty("user.home"));
-        File log = new File(home, "Digital_" + formatDate.format(new Date()) + ".log");
+        File log = new File(home, "LogicBLOX_" + formatDate.format(new Date()) + ".log");
         try (BufferedWriter w = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(log), "utf-8"))) {
             writeLog(w, thread, throwable);
         } catch (IOException e) {
@@ -33,7 +33,7 @@ public class DigitalUncaughtExceptionHandler implements Thread.UncaughtException
     }
 
     private void writeLog(BufferedWriter w, Thread thread, Throwable throwable) throws IOException {
-        w.write("This file was created because there was an unexpected exception in Digital.");
+        w.write("This file was created because there was an unexpected exception in LogicBLOX.");
         w.newLine();
         w.write("Please send this file to digital-simulator@web.de or create an issue at");
         w.newLine();

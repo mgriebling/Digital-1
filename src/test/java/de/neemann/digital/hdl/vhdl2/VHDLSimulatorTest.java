@@ -113,7 +113,7 @@ public class VHDLSimulatorTest extends TestCase {
 
         int tested = new FileScanner(f -> {
             checkVHDLExport(f);
-            // check simulation in Digital
+            // check simulation in LogicBLOX
             check(f);
         }).noOutput().scan(source);
         assertEquals(4, tested);

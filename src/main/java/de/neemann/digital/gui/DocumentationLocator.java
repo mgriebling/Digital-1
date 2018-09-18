@@ -33,7 +33,7 @@ public class DocumentationLocator {
             String path = ElementLibrary.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath().replace('\\', '/');
             if (path.endsWith("/target/classes/"))
                 folder = new File(path.substring(0, path.length() - 9) + "/docu");
-            else if (path.endsWith("Digital.jar"))
+            else if (path.endsWith("LogicBLOX.jar"))
                 folder = new File(path.substring(0, path.length() - 12) + "/docu");
         } catch (URISyntaxException e) {
             // do nothing on error

@@ -123,7 +123,7 @@ public class Key<VALUE> {
 
     /**
      * Sets the name of this key.
-     * Is not used in Digital at all.
+     * Is not used in LogicBLOX at all.
      * This method can be used to define custom keys in custom java components.
      *
      * @param name the name of the key
@@ -136,7 +136,7 @@ public class Key<VALUE> {
 
     /**
      * Sets the description of this key.
-     * Is not used in Digital at all.
+     * Is not used in LogicBLOX at all.
      * This method can be used to define custom keys in custom java components.
      *
      * @param description the name of the key

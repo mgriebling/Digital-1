@@ -130,7 +130,7 @@ public class ApplicationVHDLStdIOTest extends TestCase {
                 "\t\t\tend loop;\n" +
                 "\t\t\twait for 1 ns;\n" +
                 "\t\t\tdeallocate(ll);\n" +
-                "\t\t\twrite(ll, \"Digital:\" & string'(str(mainOut)));\n" +
+                "\t\t\twrite(ll, \"LogicBLOX:\" & string'(str(mainOut)));\n" +
                 "\t\t\twriteline(output, ll);\n" +
                 "\t\tend loop;\n" +
                 "\t\twait;\n" +

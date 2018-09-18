@@ -80,7 +80,7 @@ import static de.neemann.digital.draw.shapes.GenericShape.SIZE;
 import static javax.swing.JOptionPane.showInputDialog;
 
 /**
- * The main frame of the Digital Simulator
+ * The main frame of the LogicBLOX Simulator
  * Set log level: -Dorg.slf4j.simpleLogger.defaultLogLevel=debug
  */
 public final class Main extends JFrame implements ClosingWindowListener.ConfirmSave, ErrorStopper, FileHistory.OpenInterface, DigitalRemoteInterface, StatusInterface, Circuit.ChangedListener {

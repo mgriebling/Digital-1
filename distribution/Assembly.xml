@@ -7,15 +7,15 @@
     </formats>
     <files>
         <file>
-            <source>${basedir}/target/Digital.jar</source>
+            <source>${basedir}/target/LogicBLOX.jar</source>
             <outputDirectory>/</outputDirectory>
         </file>
         <file>
-            <source>${basedir}/distribution/Digital.exe</source>
+            <source>${basedir}/distribution/LogicBLOX.exe</source>
             <outputDirectory>/</outputDirectory>
         </file>
         <file>
-            <source>${basedir}/distribution/Digital.sh</source>
+            <source>${basedir}/distribution/LogicBLOX.sh</source>
             <outputDirectory>/</outputDirectory>
         </file>
         <file>

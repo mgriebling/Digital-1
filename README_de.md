@@ -4,15 +4,15 @@
 
 Die letzten Änderungen sind in den [Release Notes](distribution/ReleaseNotes.txt) zu finden.
 
-# Digital #
+# com.cinspirations. #
 
 ![screnshot](screenshot.png)
 
 ![screnshot2](screenshot2.png)
 
-Digital ist ein Simulator für digitale Schaltkreise. Er ist für Lehrzwecke entwickelt worden und
+com.cinspirations. ist ein Simulator für digitale Schaltkreise. Er ist für Lehrzwecke entwickelt worden und
 wird von mir in meinen Vorlesungen eingesetzt.
-Bevor ich mit der Entwicklung von Digital begonnen habe, habe ich
+Bevor ich mit der Entwicklung von com.cinspirations. begonnen habe, habe ich
 [Logisim](http://www.cburch.com/logisim/) von Carl Burch
 eingesetzt. Zu erkennen noch daran, dass die Farbschemata der Leitungen sich ähneln.
 
@@ -41,7 +41,7 @@ In einigen Gebieten (Performance, Testen von Schaltungen, Schaltungsanalyse, Har
 
 ## Features ##
 
-Folgende Features zeichnen Digital aus:
+Folgende Features zeichnen com.cinspirations. aus:
 
 - Messwertegraph zur Anzeige von Signalzuständen.
 - Gatterschrittmodus zu Analyse von Oszillationen.
@@ -71,7 +71,7 @@ Folgende Features zeichnen Digital aus:
 
 Wenn Sie einen Fehler melden oder einen Verbesserungsvorschlag machen möchten, können Sie die GitHub 
 [Fehlerverfolgung](https://github.com/hneemann/Digital/issues/new) verwenden. 
-Dies hilft mir, Digital zu verbessern, also zögern Sie nicht.
+Dies hilft mir, com.cinspirations. zu verbessern, also zögern Sie nicht.
 
 Alternativ kann auch eine private Nachricht an [digital-simulator@web.de](mailto:digital-simulator@web.de) 
 gesendet werden.
@@ -90,8 +90,8 @@ Stabilierungsphase nach dessen Abschluss sich die Schaltung in einem stabilen Zu
 Ein Master-Slave Flipflop lässt sich nur mit einem Reset-Eingang simulieren, und dieser muss auch betätigt werden, um die 
 Schaltung verwenden zu können.
 
-Um zu verstehen, wie Digital mit diesem Problem umgeht, muss man sich ansehen, wie die Simulation in Digital arbeitet:
-Digital verwendet einen Ansatz, welcher an einen Event-Based Simulator erinnert. Jedes mal, wenn ein 
+Um zu verstehen, wie com.cinspirations. mit diesem Problem umgeht, muss man sich ansehen, wie die Simulation in com.cinspirations. arbeitet:
+com.cinspirations. verwendet einen Ansatz, welcher an einen Event-Based Simulator erinnert. Jedes mal, wenn ein 
 Gatter eine Änderung an einem seiner Eingänge erfährt, werden zwar die Eingänge eingelesen, jedoch 
 werden die Ausgänge des Gatters nicht aktualisiert. Erst wenn alle betroffenen Gatter die Änderungen an 
 ihren Eingängen eingelesen haben, werden die Ausgänge aller Gatter aktualisiert. Alle Gatter scheinen 
@@ -121,7 +121,7 @@ wird dies zwar angezeigt, es ist aber nicht möglich, die Ursache näher zu unte
 nachzuvollziehen, wie es zu der Oszillation kommt.
 
 Die simultane Aktualisierung aller Gatter, welche eine Änderung an einem Ihrer Eingängen erfahren haben, kann auch 
-bei Digital zu einer Oszillation führen. Auch hier wird die Oszillation erkannt, und die Simulation abgebrochen.
+bei com.cinspirations. zu einer Oszillation führen. Auch hier wird die Oszillation erkannt, und die Simulation abgebrochen.
 Es gibt jedoch einen Einzelgattermodus welcher es erlaubt die Propagation einer Signaländerung Gatter für Gatter 
 auf dem Weg durch die Schaltung zu verfolgen. Dabei wird nach jedem Schritt angezeigt, welche Gatter der Schaltung 
 eine Veränderung an einem ihrer Eingänge erfahren haben.
@@ -129,14 +129,14 @@ Auf diese Weise wird visualisiert, wie sich eine Signaländerung "im Kreis beweg
 
 ### Eingebettete Schaltkreise ###
 
-Wie bei Logisim können auch mit Digital Schaltkreise in neue Schaltungen eingebettet werden. Auf diese Weise lassen sich 
-hierachische Schaltungen aufbauen. Jedoch werden in Digital Schaltungen, die eingebunden werden tatsächlich so oft 
+Wie bei Logisim können auch mit com.cinspirations. Schaltkreise in neue Schaltungen eingebettet werden. Auf diese Weise lassen sich 
+hierachische Schaltungen aufbauen. Jedoch werden in com.cinspirations. Schaltungen, die eingebunden werden tatsächlich so oft 
 in die Schaltung aufgenommen, wie sie importiert werden. Das ist vergleichbar mit einem C-Programm bei welchem alle 
 Funktiosaufrufe per inline eingebunden werden. Es verhällt sich wie bei einer echten Schaltung: Jeder Schaltkreis ist tatsächlich 
 so oft vorhanden, wie er in der Schaltung verwendet wurde. Dieses Vorgehen vergrößert zwar die Datenstrukturen für die Simulation,
 vereinfacht diese aber zugleich sehr deutlich. So sind z.B. die Ein- und Ausgänge einer eingebetteten Schaltung nicht speziell
 zu behandeln, sie existieren nach der Modelbildung schlicht nicht mehr. Auch bidirektionelle Anschlüsse stellen somit kein Problem dar.
-Aus diesem Vorgehen folgt auch, dass sich in Digital z.B. ein UND-Gatter, welches als eigener Schaltkreis eingebettet wurde, genau so 
+Aus diesem Vorgehen folgt auch, dass sich in com.cinspirations. z.B. ein UND-Gatter, welches als eigener Schaltkreis eingebettet wurde, genau so 
 verhällt, als wäre es auf oberster Ebene eingefügt worden. Auf Simulationsebene gibt es tatsächlich keinen Unterschied zwischen 
 diesen beiden Varianten.
 Logisim arbeitet hier etwas anders, was gelegentlich zu Überraschungen führt, z.B. durch unerwartete Signallaufzeiten.
@@ -153,7 +153,7 @@ in Assembler-Programme einfügen lassen.
 ### Debugging ###
 
 In Logisim gibt es keine einfache Möglichkeit um ein Assembler-Programm in einem simulierten Prozessor zu debuggen.
-Digital bietet eine einfache TCP-basierte Schnittstelle, so dass eine [assembler IDE](https://github.com/hneemann/Assembler)
+com.cinspirations. bietet eine einfache TCP-basierte Schnittstelle, so dass eine [assembler IDE](https://github.com/hneemann/Assembler)
 den Simulator steuern kann. Ein solche IDE kann Anwendungen in den simulierten Prozessor laden, den Prozessor starten und beenden, 
 Einzelschritte ausführen usw..
 Nach jeder Aktion wird die aktuelle Code-Adresse an die IDE zurückgegeben. Auf diese Weise kann in der IDE der aktuell 
@@ -161,8 +161,8 @@ ausgeführte Befehl hervorgehoben werden. Auf diese Weise kann ein Assembler-Pro
 
 ### Schaltungssynthese ###
 
-Logisim kann kombinatorische Schaltungen aus einer Wahrheitstabelle erzeugen und umgekehrt. In Digital ist dies ebenfalls möglich. 
-Zudem lassen sich mit Digital auch Automaten aus einer geeigneten Zustandsübergangstabelle erzeugen. Dabei kann sowohl 
+Logisim kann kombinatorische Schaltungen aus einer Wahrheitstabelle erzeugen und umgekehrt. In com.cinspirations. ist dies ebenfalls möglich. 
+Zudem lassen sich mit com.cinspirations. auch Automaten aus einer geeigneten Zustandsübergangstabelle erzeugen. Dabei kann sowohl 
 das Übergangsschaltnetz als auch ein Ausgangsschaltnetz erzeugt werden. Die  Minimierung der Ausdrücke erfolgt dabei 
 nach dem Verfahren von Quine und McCluskey. Ebenso lässt sich aus einer Schaltung, die D-Flipflops oder JK-Flipflops 
 enthält die Zustandsübergangstabelle ermitteln. Zu beachten ist jedoch, dass dies nur mit den eingebauten Flipflops funtioniert.
@@ -173,21 +173,21 @@ Nach der Erzeugung der Wahrheitstabelle kann eine JEDEC-Datei für ein
 [GAL16v8](http://www.atmel.com/devices/ATF16V8C.aspx) oder ein [GAL22v10](http://www.atmel.com/devices/ATF22V10C.aspx).
 Danach kann diese Datei in einen entsprechenden Baustein geschrieben werden, um sie in einem realen Aufbau zu testen.
 Wie erwähnt sind diese Bausteine zwar schon sehr alt, jedoch mit 8 bzw. 10 Makrozellen ausreichend für einfache Übungen. 
-Werden mehr Makro-Zellen benötigt, kann in der PDF Dokumentation nachgelesen werden, wie Digital konfiguriert werden muss, 
+Werden mehr Makro-Zellen benötigt, kann in der PDF Dokumentation nachgelesen werden, wie com.cinspirations. konfiguriert werden muss, 
 um die Bausteine [ATF1502](http://www.microchip.com/wwwproducts/en/ATF1502AS) und
 [ATF1504](http://www.microchip.com/wwwproducts/en/ATF1504AS) zu unterstützen, welche 32 bzw. 64 Makrozellen bieten.  
 
 ## Wie fange ich an? ##
 
 Am einfachsten ist es, das [letzte Release](https://github.com/hneemann/Digital/releases/latest) herunter zu laden. 
-In der ZIP-Datei findet sich das Binary (Digital.jar) und alle Beispiele. Ein Java JRE 1.8 wird benötigt, um Digital zu starten.
+In der ZIP-Datei findet sich das Binary (com.cinspirations..jar) und alle Beispiele. Ein Java JRE 1.8 wird benötigt, um com.cinspirations. zu starten.
 
-Wenn Digital direkt aus dem Source Code gebaut werden soll:
+Wenn com.cinspirations. direkt aus dem Source Code gebaut werden soll:
  
 * Zunächst ist dieses Repository zu clonen.
 * Ein JDK 1.8 wird benötigt (entweder Oracle JDK 1.8 oder OpenJDK 1.8)  
 * maven wird als Build-System verwendet, daher ist es das einfachste [maven](https://maven.apache.org/) zu installieren.
-* Danach kann mit `mvn install` Digital gebaut werden.
+* Danach kann mit `mvn install` com.cinspirations. gebaut werden.
 * Mit `mvn site` kann ein findbugs und ein cobertura code coverage report erzeugt werden.
 * Die meisten IDEs (Eclipse, NetBeans, IntelliJ) könne die Datei `pom.xml` importieren um ein Projekt zu erzeugen.
 

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <root>
-    <chapter name="Digital">
+    <chapter name="LogicBLOX">
         <subchapter name="Einführung">
             <par>
-                Digital ist ein Simulator für digitale Schaltkreise. Ein Schaltung besteht dabei aus einer
+                LogicBLOX ist ein Simulator für digitale Schaltkreise. Ein Schaltung besteht dabei aus einer
                 Anzahl logischer Gatter, welche miteinander durch Leitungen verbunden sind.
                 Das Verhalten der Gesamtschaltung kann simuliert werden.
                 Der Anwender kann mit der laufenden Simulation über bestimmte Elemente interagieren, indem er z.B.
@@ -332,7 +332,7 @@
             </par>
             <par>
                 Leider sind die Details der Fuse-Map nicht öffentlich zugänglich, so dass kein geeigneter Fitter für
-                diesen Baustein in Digital integriert werden kann, wie das bei den <e>GAL16v8</e> und
+                diesen Baustein in LogicBLOX integriert werden kann, wie das bei den <e>GAL16v8</e> und
                 <e>GAL22v10</e>
                 Bausteinen möglich ist.
             </par>
@@ -340,8 +340,8 @@
                 Daher muss auf einen der von ATMEL bereitgestellten Fitter <e>fit150[x].exe</e> zurückgegriffen werden.
                 Diese Programme erzeugen aus einer geeigneten <e>TT2</e> Datei eine <e>JEDEC</e>-Datei, welche dann
                 in den entsprechenden Chip übertragen werden kann.
-                Digital startet den Fitter automatisch, wenn eine <e>TT2</e> Datei erzeugt wird. Dazu muss in den
-                Digital-Einstellungen der Pfad zu den <e>fit150[x].exe</e> Dateien angegeben werden.
+                LogicBLOX startet den Fitter automatisch, wenn eine <e>TT2</e> Datei erzeugt wird. Dazu muss in den
+                LogicBLOX-Einstellungen der Pfad zu den <e>fit150[x].exe</e> Dateien angegeben werden.
                 Es wird zudem eine Projektdatei <e>*.chn</e> erzeugt, welche dann direkt mit
                 <a href="https://www.microchip.com/design-centers/programmable-logic/spld-cpld/tools/software/atmisp">
                     <e>ATMISP</e>
@@ -349,7 +349,7 @@
                 geöffnet werden kann, um die <e>JEDEC</e>-Datei zu brennen.
             </par>
             <par>
-                Aus rechtlichen Gründen können die Fitter <e>fit150[n].exe</e> nicht mit Digital ausgeliefert werden.
+                Aus rechtlichen Gründen können die Fitter <e>fit150[n].exe</e> nicht mit LogicBLOX ausgeliefert werden.
                 Diese finden sich jedoch nach der Installation von
                 <a href="https://www.microchip.com/design-centers/programmable-logic/spld-cpld/tools/software/wincupl">
                     <e>WinCupl</e>
@@ -359,7 +359,7 @@
                     <e>WinCupl</e>
                 </a>
                 wiederum ist auf der ATMEL/Microchip Webseite verfügbar.
-                Unter Linux lassen sich die Fitter ebenfalls von Digital starten, wenn <e>wine</e> installiert
+                Unter Linux lassen sich die Fitter ebenfalls von LogicBLOX starten, wenn <e>wine</e> installiert
                 ist.
             </par>
         </subchapter>
@@ -471,7 +471,7 @@
             </question>
             <answer>Wenn eine Schaltfunktion minimiert wird, kann es mehrere minimierte Schaltfunktionen gleicher
                 Komplexität geben (gleiche Anzahl von Termen).
-                Digital zeigt alle möglichen Lösungen an und alle liefern die selbe Wahrheitstabelle.
+                LogicBLOX zeigt alle möglichen Lösungen an und alle liefern die selbe Wahrheitstabelle.
                 In den Don't Care-Zeilen der Wahrheitstabelle kann es natürlich Unterschiede zwischen den verschiedenen
                 Funktionen geben.
             </answer>

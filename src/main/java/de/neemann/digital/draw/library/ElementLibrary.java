@@ -68,9 +68,9 @@ public class ElementLibrary implements Iterable<ElementLibrary.ElementContainer>
         }
         if (path.endsWith("/target/classes/"))
             return new File(path.substring(0, path.length() - 16) + "/src/main/dig/lib");
-        if (path.endsWith("/target/Digital.jar"))
+        if (path.endsWith("/target/LogicBLOX.jar"))
             return new File(path.substring(0, path.length() - 19) + "/src/main/dig/lib");
-        if (path.endsWith("Digital.jar"))
+        if (path.endsWith("LogicBLOX.jar"))
             return new File(path.substring(0, path.length() - 12) + "/examples/lib");
 
         return new File("noLibFound");
@@ -235,7 +235,7 @@ public class ElementLibrary implements Iterable<ElementLibrary.ElementContainer>
     }
 
     /**
-     * registers a component source to Digital
+     * registers a component source to LogicBLOX
      *
      * @param source the source
      * @return this for chained calls

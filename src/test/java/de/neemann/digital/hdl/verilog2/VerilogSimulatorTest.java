@@ -106,7 +106,7 @@ public class VerilogSimulatorTest extends TestCase {
 
             int tested = new FileScanner(f -> {
                 checkVerilogExport(f);
-                // check simulation in Digital
+                // check simulation in LogicBLOX
                 check(f);
             }).scan(source);
             assertEquals(4, tested);

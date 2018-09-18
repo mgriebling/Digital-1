@@ -5,7 +5,7 @@
  */
 
 /**
- * Digital is build from several packages:
+ * LogicBLOX is build from several packages:
  * <p>
  * The package gui contains all the GUI classes. The class {@link de.neemann.digital.gui.Main} contains the
  * main method and the generation of the main frame. One of the more important class is

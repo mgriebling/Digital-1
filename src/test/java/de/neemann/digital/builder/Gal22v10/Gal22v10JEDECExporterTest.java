@@ -76,7 +76,7 @@ public class Gal22v10JEDECExporterTest extends TestCase {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         gal.writeTo(baos);
 
-        assertEquals("\u0002Digital GAL22v10 assembler*\r\n" +
+        assertEquals("\u0002LogicBLOX GAL22v10 assembler*\r\n" +
                 "QF5892*\r\n" +
                 "G0*\r\n" +
                 "F0*\r\n" +
@@ -167,7 +167,7 @@ public class Gal22v10JEDECExporterTest extends TestCase {
         gal.writeTo(baos);
 
 
-        assertEquals("\u0002Digital GAL22v10 assembler*\r\n" +
+        assertEquals("\u0002LogicBLOX GAL22v10 assembler*\r\n" +
                 "QF5892*\r\n" +
                 "G0*\r\n" +
                 "F0*\r\n" +

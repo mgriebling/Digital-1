@@ -19,13 +19,13 @@ import java.util.LinkedList;
  * All bits of all values are send as a stream of '0', '1' or 'Z'. The lsb is send first.
  * The last bit is followed by an end of line character.
  * <p>
- * If the application wants to send values back, a new line needs to start with the string "Digital:".
+ * If the application wants to send values back, a new line needs to start with the string "LogicBLOX:".
  * After that all bit of all values needs to be send. The lsb needs to be send first.
  * The last bit needs to be followed by an end of line character.
  */
 public class StdIOInterface implements ProcessInterface {
     private static final Logger LOGGER = LoggerFactory.getLogger(StdIOInterface.class);
-    private static final String PREFIX = "Digital:";
+    private static final String PREFIX = "LogicBLOX:";
     private static final int MAX_CONSOLE_LINES = 30;
     private static final long TIMEOUT = 5000;
     private final Process process;

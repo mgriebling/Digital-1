@@ -109,7 +109,7 @@ public class Vivado implements BoardInterface {
 
     private void writeVivadoProject(BufferedWriter w, File project, File vhdl, File constraints) throws IOException {
         w.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-                + "<!-- Created by Digital -->\n"
+                + "<!-- Created by LogicBLOX -->\n"
                 + "\n"
                 + "<Project Version=\"7\" Minor=\"20\" Path=\"" + project.getPath() + "\">\n"
                 + "  <DefaultLaunch Dir=\"$PRUNDIR\"/>\n"

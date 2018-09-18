@@ -45,7 +45,7 @@
     <string name="btn_clearRom_tt">Removes the stored data for the selected ROM. The content which is stored in the ROM directly is used instead.</string>
     <string name="msg_warning">Warning</string>
     <string name="cancel">Cancel</string>
-    <string name="digital">Digital</string>
+    <string name="digital">LogicBLOX</string>
     <string name="expression">Expression</string>
     <string name="elem_Help_inputs">Inputs</string>
     <string name="elem_Help_outputs">Outputs</string>
@@ -113,7 +113,7 @@
     <string name="elem_Delay">Delay</string>
     <string name="elem_Delay_tt">Delays the signal by on propagation delay time.
         Delays a signal for an adjustable number of gate delays.
-        All other components in Digital have a gate delay of on propagation delay time.
+        All other components in LogicBLOX have a gate delay of on propagation delay time.
         This component can be used to realize any necessary propagation delay.
     </string>
     <string name="elem_Delay_pin_in">Input of the signal to be delayed.</string>
@@ -917,10 +917,10 @@
     <string name="err_writingToStdOut_O">Could not write to stdOut:
         {0}</string>
     <string name="err_ghdlNotInstalled">
-        The VHDL simulator ghdl does not seem to be installed. Install ghdl (http://ghdl.free.fr/) and try again. If there are still problems, check the path to the ghdl executable in the Digital settings.
+        The VHDL simulator ghdl does not seem to be installed. Install ghdl (http://ghdl.free.fr/) and try again. If there are still problems, check the path to the ghdl executable in the LogicBLOX settings.
     </string>
     <string name="err_iverilogNotInstalled">
-        The Verilog simulator Icarus does not seem to be installed. Install ghdl (http://iverilog.icarus.com/) and try again. If there are still problems, check the path to the iverilog executable in the Digital settings.
+        The Verilog simulator Icarus does not seem to be installed. Install ghdl (http://iverilog.icarus.com/) and try again. If there are still problems, check the path to the iverilog executable in the LogicBLOX settings.
     </string>
     <string name="err_errorAnalysingCircuit_N">Error analysing the circuit: {0}</string>
     <string name="err_romNeedsALabelToBeExported">Every ROM needs a unique label to be exported!</string>
@@ -1252,7 +1252,7 @@
     <string name="menu_editAttributes">Edit circuit attributes</string>
     <string name="menu_editAttributes_tt">These attributes effect the behavior if the circuit is included in other circuits.</string>
     <string name="menu_editSettings">Settings</string>
-    <string name="menu_editSettings_tt">Edits Digitals preferences</string>
+    <string name="menu_editSettings_tt">Edits LogicBLOX's preferences</string>
     <string name="menu_element">Stop Simulation</string>
     <string name="menu_element_tt">Stops the simulation and allows to edits the circuit.</string>
     <string name="menu_elements">Components</string>

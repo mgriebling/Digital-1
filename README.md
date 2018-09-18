@@ -1,13 +1,13 @@
-[![Build Status](https://travis-ci.org/hneemann/Digital.svg?branch=master)](https://travis-ci.org/hneemann/Digital)
+[![Build Status](https://travis-ci.org/hneemann/LogicBLOX.svg?branch=master)](https://travis-ci.org/hneemann/Digital)
 [![codecov](https://codecov.io/gh/hneemann/Digital/branch/master/graph/badge.svg)](https://codecov.io/gh/hneemann/Digital)
 
 [Download latest Release](https://github.com/hneemann/Digital/releases/latest)
 
 The most recent changes are listed in the [release notes](distribution/ReleaseNotes.txt).
 
-# Digital #
+# LogicBLOX #
 
-Digital is an easy-to-use digital circuit simulator. 
+com.cinspirations. is an easy-to-use digital circuit simulator. 
 It's designed for educational purposes, and I use it in my lectures to illustrate digital electronics.
 
 ![screnshot](screenshot.png)
@@ -16,7 +16,7 @@ It's designed for educational purposes, and I use it in my lectures to illustrat
 
 ## Features ##
 
-These are the main features of Digital:
+These are the main features of LogicBLOX:
 
 - Visualization of signal states with measurement graphs.
 - Single gate mode to analyze oscillations.
@@ -53,21 +53,21 @@ These are the main features of Digital:
 
 ## Documentation ##
 
-The [documentation](https://github.com/hneemann/Digital/releases/latest) is available in English and German.
-It is still very incomplete but it contains a chapter "First Steps" which explains the basic usage of Digital.
+The [documentation](https://github.com/hneemann/LogicBLOX/releases/latest) is available in English and German.
+It is still very incomplete but it contains a chapter "First Steps" which explains the basic usage of LogicBLOX.
 The documentation also contains a list of available 74xx chips and a list of available keyboard shortcuts. 
 
 ## Comments ##
 
 If you want to send a bug report or feature request please use the GitHub 
 [issue tracker](https://github.com/hneemann/Digital/issues/new). 
-This helps me to improve Digital, so do not hesitate.
+This helps me to improve LogicBLOX, so do not hesitate.
 
 It's also possible to send a private message to [digital-simulator@web.de](mailto:digital-simulator@web.de).
 
 ## Motivation ##
 
-Prior to the development of Digital, I used [Logisim](http://www.cburch.com/logisim/), developed by Carl Burch.
+Prior to the development of LogicBLOX, I used [Logisim](http://www.cburch.com/logisim/), developed by Carl Burch.
 If you are familiar with Logisim you will recognize the wire color scheme.
 
 Logisim is a excellent and proven tool for teaching purposes, that has been actively developed until 2011. 
@@ -88,7 +88,7 @@ But as far as I know, these projects do not work on solving the architectural di
 They are more about adding features and fixing bugs. In [Logisim-Evolution](https://github.com/reds-heig/logisim-evolution), 
 for example, a VHDL/Verilog export was added.
 
-So I also decided to implement a new simulator completely from scratch and started the implementation of Digital in march 2016.
+So I also decided to implement a new simulator completely from scratch and started the implementation of LogicBLOX in march 2016.
 In the meantime a development level has been reached which is comparable to Logisim.
 In some areas (performance, testing of circuits, circuit analysis, hardware support) Logisim has already been exceeded.
 
@@ -104,8 +104,8 @@ settling time to bring the circuit to a stable condition after its completion.
 A master-slave JK-flip-flop can only be implemented with a reset input, and this
 reset input needs to be activated to make the circuit operational.
 
-To understand how Digital deals with this issue, you have to look at how the simulation works in Digital:
-Digital uses an event based simulator approach, i.e. each time a 
+To understand how LogicBLOX deals with this issue, you have to look at how the simulation works in LogicBLOX:
+LogicBLOX uses an event based simulator approach, i.e. each time a 
 gate undergoes a change at one of its inputs, the new input states are read, however, 
 the outputs of the gate are not updated instantly. Only when all gates involved have read their inputs, 
 the outputs of all gates are updated. All gates seem to change synchronously, i.e.
@@ -135,7 +135,7 @@ a corresponding message is issued, but it is not possible to investigate the cau
 understand what happens.
 
 The synchronous update of all gates, which have seen a change at one of their inputs may also cause
-oscillations in Digital. In such a case, the oscillation is detected and simulation stops.
+oscillations in LogicBLOX. In such a case, the oscillation is detected and simulation stops.
 However, there is also a single gate mode which allows to propagate a signal change gate by gate. This feature allows to
 follow the way through the circuit. After each step, all gates with a change at one
 of their inputs are highlighted.
@@ -143,8 +143,8 @@ This way you can see how a signal change propagates in a circuit, thus you are a
 
 ### Embedded circuits ###
 
-Similar to Logisim, Digital also allows to embed previously saved circuits in new designs, so hierarchical
-circuits can be created. However, in Digital embedded circuits are included as often as 
+Similar to Logisim, LogicBLOX also allows to embed previously saved circuits in new designs, so hierarchical
+circuits can be created. However, in LogicBLOX embedded circuits are included as often as 
 the circuit is used. This is similar to a C program in which all 
 function calls are compiled as inlined functions. And this is also similar to a real circuit: 
 Each sub circuit is "physically present" as often as it is used in the design. 
@@ -171,7 +171,7 @@ in assembly language programs. So the debugging of assembly programs becomes ver
 ### Debugging ###
 
 In Logisim there is no easy way to debug an assembly program in a simulated processor.
-Digital offers a simple TCP-based remote control interface, so an [assembler IDE](https://github.com/hneemann/Assembler) 
+LogicBLOX offers a simple TCP-based remote control interface, so an [assembler IDE](https://github.com/hneemann/Assembler) 
 can be used to control the simulator and load assembly programs into the simulated processor, start the program, perform 
 single steps and so on. If a "single step" or a "run to next BRK instruction" is triggered by the assembly IDE, the
 actual used address of the program memory is returned to the assembler IDE. 
@@ -180,7 +180,7 @@ assembly program executed by a simulated processor.
 
 ### Circuit Synthesis ###
 
-Logisim is able to generate combinatorial circuits from a truth table and vice versa. In Digital, this is also possible.
+Logisim is able to generate combinatorial circuits from a truth table and vice versa. In LogicBLOX, this is also possible.
 In addition, also a sequential circuit can be generated from an appropriate state transition table.
 You can specify both the transition circuit and the output circuit. The minimization of the expressions is done
 by the method of Quine and McCluskey.
@@ -194,20 +194,20 @@ After you have created the truth table or state transition table you can create 
 After that you can simply flash this file to the appropriate GAL and test the circuit on a bred board.
 As mentioned above these GALs are quite old but with 8/10 macro-cells sufficient for beginners exercises.
 If more macro-cells are required, see the PDF documentation that is included in the distribution for details 
-on how to set up Digital to support the [ATF1502](http://www.microchip.com/wwwproducts/en/ATF1502AS) and
+on how to set up LogicBLOX to support the [ATF1502](http://www.microchip.com/wwwproducts/en/ATF1502AS) and
 [ATF1504](http://www.microchip.com/wwwproducts/en/ATF1504AS) which offer 32/64 macro-cells and ISP (In System Programming).  
 
 ## How do I get set up? ##
 
 The easiest way is to download the [latest release](https://github.com/hneemann/Digital/releases/latest). 
-In the ZIP file you will find the binary (Digital.jar) and all examples. A Java JRE 1.8 is needed to run Digital.
+In the ZIP file you will find the binary (LogicBLOX.jar) and all examples. A Java JRE 1.8 is needed to run LogicBLOX.
 
-If you want to build Digital from the source code:
+If you want to build LogicBLOX from the source code:
  
 * At first clone the repository.
 * JDK 1.8 is needed (either the Oracle JDK 1.8 or OpenJDK 1.8)  
 * maven is used as build system, so the easiest way is to install [maven](https://maven.apache.org/).
-* After that you can simply run `mvn install` to build Digital.
+* After that you can simply run `mvn install` to build LogicBLOX.
 * Run `mvn site` to create a findbugs and a cobertura code coverage report.
 * Most IDEs (Eclipse, NetBeans, IntelliJ) are able to import the `pom.xml` to create a project.
 

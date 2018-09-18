@@ -89,7 +89,7 @@ public class Gal22v10JEDECExporter implements ExpressionExporter<Gal22v10JEDECEx
         }
 
         try (JedecWriter w=new JedecWriter(out)) {
-            w.println("Digital GAL22v10 assembler*").write(map);
+            w.println("LogicBLOX GAL22v10 assembler*").write(map);
         }
     }
 

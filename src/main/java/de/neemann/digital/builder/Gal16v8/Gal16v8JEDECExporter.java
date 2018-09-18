@@ -113,7 +113,7 @@ public class Gal16v8JEDECExporter implements ExpressionExporter<Gal16v8JEDECExpo
         }
 
         try (JedecWriter w=new JedecWriter(out)) {
-            w.println("Digital GAL16v8 assembler*").write(map);
+            w.println("LogicBLOX GAL16v8 assembler*").write(map);
         }
     }
 

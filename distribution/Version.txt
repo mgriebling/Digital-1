@@ -1,4 +1,4 @@
-Digital
+LogicBLOX
 
 POM-Version:       ${project.version}
 Build Git Version: ${git.commit.id.describe}

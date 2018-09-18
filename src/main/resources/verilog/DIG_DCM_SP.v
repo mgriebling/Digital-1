@@ -12,7 +12,7 @@ module DIG_DCM_SP #(
     input cin,
     output cout
 );
-    // DCM_SP: Digital Clock Manager
+    // DCM_SP: LogicBLOX Clock Manager
     // Spartan-6
     // Xilinx HDL Libraries Guide, version 14.1
 

@@ -11,7 +11,7 @@ package de.neemann.digital.draw.library;
 public interface ComponentSource {
 
     /**
-     * User has to implement this interface in order to add components to Digital
+     * User has to implement this interface in order to add components to LogicBLOX
      *
      * @param adder the ComponentManager
      * @throws InvalidNodeException thrown if node is invalid

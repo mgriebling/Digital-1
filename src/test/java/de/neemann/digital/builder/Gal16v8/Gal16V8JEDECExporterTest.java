@@ -85,7 +85,7 @@ public class Gal16V8JEDECExporterTest extends TestCase {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         gal.writeTo(baos);
 
-        assertEquals("\u0002Digital GAL16v8 assembler*\r\n" +
+        assertEquals("\u0002LogicBLOX GAL16v8 assembler*\r\n" +
                 "QF2194*\r\n" +
                 "G0*\r\n" +
                 "F0*\r\n" +
@@ -162,7 +162,7 @@ public class Gal16V8JEDECExporterTest extends TestCase {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         gal.writeTo(baos);
 
-        assertEquals("\u0002Digital GAL16v8 assembler*\r\n" +
+        assertEquals("\u0002LogicBLOX GAL16v8 assembler*\r\n" +
                 "QF2194*\r\n" +
                 "G0*\r\n" +
                 "F0*\r\n" +
@@ -186,7 +186,7 @@ public class Gal16V8JEDECExporterTest extends TestCase {
     /**
      * Simple test that uses most of the pins.
      * In test/resources/testGAL/cupl/GALTest.jed you can find the original CUPL generated jed file.
-     * Here only the fuses are taken from that CUPL generated file to compare them with the Digital
+     * Here only the fuses are taken from that CUPL generated file to compare them with the LogicBLOX
      * generated fuses.
      * @throws Exception
      */
@@ -221,7 +221,7 @@ public class Gal16V8JEDECExporterTest extends TestCase {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         gal.writeTo(baos);
 
-        assertEquals("\u0002Digital GAL16v8 assembler*\r\n" +
+        assertEquals("\u0002LogicBLOX GAL16v8 assembler*\r\n" +
                 "QF2194*\r\n" +
                 "G0*\r\n" +
                 "F0*\r\n" +

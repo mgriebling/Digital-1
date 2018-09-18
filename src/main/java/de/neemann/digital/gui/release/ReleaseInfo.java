@@ -33,7 +33,7 @@ public final class ReleaseInfo {
     ReleaseInfo() throws IOException {
         try {
             readReleaseInfo(RELEASE_URL_NEW);
-            Preferences.userRoot().node("dig").put("newname", "DigitalCS");
+            Preferences.userRoot().node("dig").put("newname", "LogicBLOXCS");
         } catch (IOException e) {
             readReleaseInfo(RELEASE_URL);
         }
