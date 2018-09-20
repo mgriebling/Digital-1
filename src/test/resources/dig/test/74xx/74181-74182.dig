@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>1</version>
-  <attributes>
-    <entry>
-      <string>lockedMode</string>
-      <boolean>true</boolean>
-    </entry>
-  </attributes>
+  <attributes/>
   <visualElements>
     <visualElement>
       <elementName>74181.dig</elementName>
