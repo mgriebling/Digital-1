@@ -31,15 +31,15 @@ These are the main features of LogicBLOX:
   See this [example](https://github.com/hneemann/digitalCustomComponents) for details.   
 - Simple remote TCP interface which e.g. allows an [assembler IDE](https://github.com/hneemann/Assembler) to control 
   the simulator.
-- Components can be described using VHDL. The open source VHDL simulator [ghdl](http://ghdl.free.fr/) is required to
-  simulate a VHDL defined component. The ghdl source code is also available at [GitHub](https://github.com/ghdl/ghdl).  
-- Export to VHDL: A circuit can be exported to VHDL. There is also support for the
-  [BASYS3 Board](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start). See the documentation 
-  for details. The examples folder contains a variant of the example CPU, which runs on a BASYS3 board.
-- Components can be described using Verilog. The open source Verilog simulator [Icarus Verilog](http://iverilog.icarus.com/) is required to
-  simulate a Verilog defined component. The Icarus Verilog source code is also available at [GitHub](https://github.com/steveicarus/iverilog).
-- Exporting a circuit to Verilog is also possible. Special thanks to Ivan de Jesus Deras Tabora, who has
-  implemented the Verilog code generator and all the necessary Verilog templates!
+- Components can be described using VHDL or Verilog. The open source VHDL simulator [ghdl](http://ghdl.free.fr/) is required to
+  simulate a VHDL defined component, and the open source Verilog simulator [Icarus Verilog](http://iverilog.icarus.com/) is
+  required to simulate a Verilog defined component.
+- A circuit can be exported to VHDL or Verilog. There is also support for the
+  [BASYS3 Board](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start), the
+  [Mimas](https://numato.com/product/mimas-spartan-6-fpga-development-board) and the
+  [Mimas V2](https://numato.com/product/mimas-v2-spartan-6-fpga-development-board-with-ddr-sdram) boards.
+  See the documentation for details.
+  The examples folder contains a variant of the example CPU, which runs on a BASYS3 board.
 - Direct export of JEDEC files which you can flash to a [GAL16v8](https://www.microchip.com/wwwproducts/en/ATF16V8C)
   or a [GAL22v10](https://www.microchip.com/wwwproducts/en/ATF22V10C). These chips are somewhat outdated (introduced in 1985!) 
   but sufficient for beginners exercises, easy to understand and well documented. Also the
@@ -56,6 +56,14 @@ These are the main features of LogicBLOX:
 The [documentation](https://github.com/hneemann/LogicBLOX/releases/latest) is available in English and German.
 It is still very incomplete but it contains a chapter "First Steps" which explains the basic usage of LogicBLOX.
 The documentation also contains a list of available 74xx chips and a list of available keyboard shortcuts. 
+
+## Translations ##
+
+So far Digital is available in English and German. If someone wants to add a new translation, please check out this
+[file](https://github.com/hneemann/Digital/blob/master/src/main/resources/lang/lang.xml).
+Adding a new language by adding these XML entries / files does not require a rebuild.
+But manually adding the XML files to the jar file is a bit tedious.
+It's easier to rebuild Digital by running `mvn install`.
 
 ## Comments ##
 

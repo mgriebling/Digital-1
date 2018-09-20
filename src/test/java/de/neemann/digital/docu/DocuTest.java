@@ -140,8 +140,6 @@ public class DocuTest extends TestCase {
 
     private void writeSVG(File imageFile, VisualElement ve) throws IOException {
         try (FileOutputStream out = new FileOutputStream(imageFile)) {
-            System.out.print("Wrting ");  
-            System.out.println(imageFile.getName());
             try (GraphicSVG svg = new GraphicSVGIndex(out, null, 20)) {
                 GraphicMinMax minMax = new GraphicMinMax(true, svg);
                 ve.drawTo(minMax, null);

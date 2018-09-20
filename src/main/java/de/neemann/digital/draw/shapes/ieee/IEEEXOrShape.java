@@ -64,10 +64,10 @@ public class IEEEXOrShape extends IEEEGenericShape {
 
     @Override
     protected void drawIEEE(Graphic graphic) {
-        graphic.drawLine(new Vector(0, 0), new Vector(3 + SIZE2, 0), Style.WIRE);
-        graphic.drawLine(new Vector(0, SIZE * 2), new Vector(3 + SIZE2, SIZE * 2), Style.WIRE);
+        graphic.drawLine(new Vector(0, 0), new Vector(5 + SIZE2, 0), Style.WIRE);
+        graphic.drawLine(new Vector(0, SIZE * 2), new Vector(5 + SIZE2, SIZE * 2), Style.WIRE);
         if (center)
-            graphic.drawLine(new Vector(0, SIZE), new Vector(SIZE2+6, SIZE), Style.WIRE);
+            graphic.drawLine(new Vector(0, SIZE), new Vector(7 + SIZE2, SIZE), Style.WIRE);
         graphic.drawPolygon(POLYGON, Style.NORMAL);
         graphic.drawPolygon(POLYGON2, Style.NORMAL);
     }

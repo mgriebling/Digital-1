@@ -79,6 +79,8 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import static de.neemann.digital.draw.shapes.GenericShape.SIZE;
 import static javax.swing.JOptionPane.showInputDialog;
 
+import net.roydesign.mac.SystemAnalyzer;
+
 /**
  * The main frame of the LogicBLOX Simulator
  * Set log level: -Dorg.slf4j.simpleLogger.defaultLogLevel=debug
@@ -208,11 +210,10 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
         save = createFileMenu(menuBar, toolBar, builder.allowAllFileActions);
         toolBar.addSeparator();
 
+        createEditMenu(menuBar);
         createViewMenu(menuBar, toolBar);
 
         toolBar.addSeparator();
-
-        createEditMenu(menuBar);
 
         toolBar.add(circuitComponent.getUndoAction().createJButtonNoText());
         toolBar.add(circuitComponent.getRedoAction().createJButtonNoText());
@@ -246,7 +247,6 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
         helpMenu.addSeparator();
         helpMenu.add(InfoDialog.getInstance().createMenuItem(this, MESSAGE));
         menuBar.add(helpMenu);
-
         setJMenuBar(menuBar);
 
         addWindowListener(new ClosingWindowListener(this, this));
@@ -1239,14 +1239,14 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
             if (!realTimeClockRunning && updateEvent == ModelEvent.MICROSTEP) {
                 // no real clock
                 AsyncSeq ai = model.getAsyncInfos();
-                if (ai != null && ai.getFrequency() > 0) {
-
-                    if (!model.getClocks().isEmpty())
-                        throw new RuntimeException(Lang.get("err_clocksNotAllowedInAsyncMode"));
-
-                    model.addObserver(
-                            new AsyncSequentialClock(model, ai, timerExecutor, this));
-                    realTimeClockRunning = true;
+                if (ai != null) {
+                    if (ai.getFrequency() > 0) {
+                        if (!model.getClocks().isEmpty())
+                            throw new RuntimeException(Lang.get("err_clocksNotAllowedInAsyncMode"));
+                        model.addObserver(
+                                new AsyncSequentialClock(model, ai, timerExecutor, this));
+                        realTimeClockRunning = true;
+                    }
                     model.setAsyncMode();
                 }
             }
@@ -1284,6 +1284,9 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
             }
 
             model.init();
+
+            if (updateEvent == ModelEvent.MICROSTEP)
+                doStep.setEnabled(model.needsUpdate());
 
             return true;
         } catch (NodeException | PinException | RuntimeException | ElementNotFoundException e) {
@@ -1733,16 +1736,14 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
     public static void main(String[] args) {
         Thread.setDefaultUncaughtExceptionHandler(new DigitalUncaughtExceptionHandler());
 
-        String lcOSName = System.getProperty("os.name").toLowerCase();
-        boolean isMAC = lcOSName.startsWith("mac os x");
-        if (isMAC) {
-            System.setProperty("apple.laf.useScreenMenuBar", "true");
-            System.setProperty("com.apple.mrj.application.apple.menu.about.name", "LogicBLOX");  // doesn't work, using java argument -Xdock:name="LogicBLOX" instead
-        }
-
-        try { // enforce MetalLookAndFeel
-            //UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        try { // enforce MetalLookAndFeel for non-Mac applications
+            if (SystemAnalyzer.isMacOSX()) {
+                System.setProperty("apple.laf.useScreenMenuBar", "true");
+                System.setProperty("com.apple.mrj.application.apple.menu.about.name", "LogicBLOX");  // doesn't work, using java argument -Xdock:name="LogicBLOX" instead
+                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            } else {
+                UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+            }
         } catch (ClassNotFoundException | InstantiationException | UnsupportedLookAndFeelException | IllegalAccessException e) {
             e.printStackTrace();
         }
@@ -1754,7 +1755,8 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
         MainBuilder builder = new MainBuilder();
         for (String s : args) {
             if (s.equals("experimental")) experimental = true;
-            else builder.setFileToOpen(new File(s));
+            else if (s.trim().length() > 0)
+                builder.setFileToOpen(new File(s));
         }
         SwingUtilities.invokeLater(() -> {
             Main main = builder.build();

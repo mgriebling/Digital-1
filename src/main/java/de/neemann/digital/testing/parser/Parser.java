@@ -9,6 +9,7 @@ import de.neemann.digital.core.Bits;
 import de.neemann.digital.lang.Lang;
 import de.neemann.digital.data.Value;
 import de.neemann.digital.testing.parser.functions.Function;
+import de.neemann.digital.testing.parser.functions.IfThenElse;
 import de.neemann.digital.testing.parser.functions.Random;
 import de.neemann.digital.testing.parser.functions.SignExtend;
 
@@ -43,6 +44,7 @@ public class Parser {
     public Parser(String data) {
         functions.put("signExt", new SignExtend());
         functions.put("random", new Random());
+        functions.put("ite", new IfThenElse());
         names = new ArrayList<>();
         tok = new Tokenizer(new BufferedReader(new StringReader(data)));
     }
@@ -273,11 +275,22 @@ public class Parser {
     }
 
     private Expression parseEquals() throws IOException, ParserException {
-        Expression ac = parseOR();
+        Expression ac = parseNotEquals();
         while (isToken(Tokenizer.Token.EQUAL)) {
             Expression a = ac;
-            Expression b = parseOR();
+            Expression b = parseNotEquals();
             ac = (c) -> a.value(c) == b.value(c) ? 1 : 0;
+        }
+        return ac;
+    }
+
+    private Expression parseNotEquals() throws IOException, ParserException {
+        Expression ac = parseOR();
+        while (isToken(Tokenizer.Token.LOG_NOT)) {
+            expect(Tokenizer.Token.EQUAL);
+            Expression a = ac;
+            Expression b = parseOR();
+            ac = (c) -> a.value(c) == b.value(c) ? 0 : 1;
         }
         return ac;
     }
@@ -403,9 +416,12 @@ public class Parser {
             case SUB:
                 Expression negExp = parseIdent();
                 return (c) -> -negExp.value(c);
-            case NOT:
+            case BIN_NOT:
                 Expression notExp = parseIdent();
                 return (c) -> ~notExp.value(c);
+            case LOG_NOT:
+                Expression boolNotExp = parseIdent();
+                return (c) -> boolNotExp.value(c)==0?1:0;
             case OPEN:
                 Expression exp = parseExpression();
                 expect(Tokenizer.Token.CLOSE);
