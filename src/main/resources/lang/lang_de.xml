@@ -1439,7 +1439,7 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
 
     <string name="message">&lt;h1&gt;LogicBLOX&lt;/h1&gt;Ein einfacher Simulator für digitale Schaltkreise.
 Geschrieben von H. Neemann 2016-2018
-Überarbeitete IEEE-Gatter von M. Griebling 2018.
+Überarbeitete IEEE-Gatter &amp; OSX-Unterstützung von M. Griebling 2018.
 
 Die Icons stammen aus dem &lt;a href=&quot;http://tango.freedesktop.org&quot;&gt;Tango Desktop Project&lt;/a&gt;.
 
