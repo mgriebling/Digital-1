@@ -1741,6 +1741,7 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
                 System.setProperty("apple.laf.useScreenMenuBar", "true");
                 System.setProperty("com.apple.mrj.application.apple.menu.about.name", "LogicBLOX");  // doesn't work, using java argument -Xdock:name="LogicBLOX" instead
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+ //             UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
             } else {
                 UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
             }

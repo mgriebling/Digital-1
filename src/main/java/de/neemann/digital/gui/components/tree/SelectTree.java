@@ -40,6 +40,7 @@ public class SelectTree extends JTree {
      */
     public SelectTree(LibraryTreeModel model, CircuitComponent component, ShapeFactory shapeFactory, InsertHistory insertHistory) {
         super(model);
+        this.setRowHeight(0);
         this.shapeFactory = shapeFactory;
         setSelectionModel(null);
         addMouseListener(new MouseAdapter() {
@@ -90,9 +91,9 @@ public class SelectTree extends JTree {
                                                       boolean hasFocus) {
             JLabel comp = (JLabel) super.getTreeCellRendererComponent(tree, value, selected, expanded, leaf, row, hasFocus);
 
-            if (leaf)
+            if (leaf) {
                 comp.setIcon(((LibraryNode) value).getIconOrNull(shapeFactory));
-            else
+            } else
                 comp.setIcon(null);
 
             return comp;
