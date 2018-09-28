@@ -164,6 +164,7 @@ public abstract class ToolTipAction extends AbstractAction {
             };
             ToolTipManager.sharedInstance().registerComponent(b);
         }
+        b.putClientProperty("JButton.buttonType", "toolbar");
         b.setText(null);
         return b;
     }

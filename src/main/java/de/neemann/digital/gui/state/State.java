@@ -37,7 +37,7 @@ public class State implements StateInterface {
      */
     public <C extends JComponent> C setIndicator(C indicator) {
         this.indicator = indicator;
-        indicator.setBorder(DISABLED_BORDER);
+//        indicator.setBorder(DISABLED_BORDER);
         return indicator;
     }
 
@@ -50,14 +50,14 @@ public class State implements StateInterface {
      */
     public void enter() {
         stateManager.leaveActualStateAndSet(this);
-        if (indicator != null)
-            indicator.setBorder(ENABLED_BORDER);
+//        if (indicator != null)
+//            indicator.setBorder(ENABLED_BORDER);
     }
 
     @Override
     public void leave() {
-        if (indicator != null)
-            indicator.setBorder(DISABLED_BORDER);
+//        if (indicator != null)
+//            indicator.setBorder(DISABLED_BORDER);
     }
 
     /**
