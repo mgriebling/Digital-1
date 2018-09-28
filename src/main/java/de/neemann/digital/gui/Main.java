@@ -79,8 +79,6 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import static de.neemann.digital.draw.shapes.GenericShape.SIZE;
 import static javax.swing.JOptionPane.showInputDialog;
 
-import net.roydesign.mac.SystemAnalyzer;
-
 /**
  * The main frame of the LogicBLOX Simulator
  * Set log level: -Dorg.slf4j.simpleLogger.defaultLogLevel=debug
@@ -1737,7 +1735,7 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
         Thread.setDefaultUncaughtExceptionHandler(new DigitalUncaughtExceptionHandler());
 
         try { // enforce MetalLookAndFeel for non-Mac applications
-            if (SystemAnalyzer.isMacOSX()) {
+            if (Screen.isMac()) {
                 System.setProperty("apple.laf.useScreenMenuBar", "true");
                 System.setProperty("com.apple.mrj.application.apple.menu.about.name", "LogicBLOX");  // doesn't work, using java argument -Xdock:name="LogicBLOX" instead
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
