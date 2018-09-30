@@ -152,7 +152,9 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
      */
     private Main(MainBuilder builder) {
         super(Lang.get("digital"));
-
+      
+        getRootPane().putClientProperty("Aqua.windowStyle", "unifiedToolBar");
+        
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         setIconImages(IconCreator.createImages("icon32.png", "icon64.png", "icon128.png"));
 
@@ -1737,8 +1739,11 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
         try { // enforce MetalLookAndFeel for non-Mac applications
             if (Screen.isMac()) {
                 System.setProperty("apple.laf.useScreenMenuBar", "true");
-                System.setProperty("com.apple.mrj.application.apple.menu.about.name", "LogicBLOX");  // doesn't work, using java argument -Xdock:name="LogicBLOX" instead
-                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+//                UIManager.setLookAndFeel(QuaquaManager.getLookAndFeel());
+//                String version = QuaquaManager.getVersion();
+//                System.out.print("Quaqua V" + version);
+//               UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                UIManager.setLookAndFeel("org.violetlib.aqua.AquaLookAndFeel");
             } else {
                 UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
             }
