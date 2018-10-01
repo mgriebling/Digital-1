@@ -1393,8 +1393,13 @@ repeat(16) bits(4,n)    0  x    0
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
-      <elementAttributes/>
-      <pos x="320" y="860"/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="860"/>
     </visualElement>
     <visualElement>
       <elementName>Driver</elementName>
@@ -1513,6 +1518,22 @@ repeat(16) bits(4,n)    0  x    0
     <wire>
       <p1 x="280" y="260"/>
       <p2 x="300" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="900"/>
+      <p2 x="660" y="900"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="900"/>
+      <p2 x="1540" y="900"/>
+    </wire>
+    <wire>
+      <p1 x="1540" y="900"/>
+      <p2 x="1980" y="900"/>
+    </wire>
+    <wire>
+      <p1 x="660" y="900"/>
+      <p2 x="1100" y="900"/>
     </wire>
     <wire>
       <p1 x="460" y="520"/>
@@ -1715,10 +1736,6 @@ repeat(16) bits(4,n)    0  x    0
       <p2 x="880" y="-220"/>
     </wire>
     <wire>
-      <p1 x="1540" y="-220"/>
-      <p2 x="1760" y="-220"/>
-    </wire>
-    <wire>
       <p1 x="880" y="-220"/>
       <p2 x="1080" y="-220"/>
     </wire>
@@ -1732,7 +1749,7 @@ repeat(16) bits(4,n)    0  x    0
     </wire>
     <wire>
       <p1 x="1520" y="-220"/>
-      <p2 x="1540" y="-220"/>
+      <p2 x="1760" y="-220"/>
     </wire>
     <wire>
       <p1 x="220" y="540"/>
@@ -1844,11 +1861,15 @@ repeat(16) bits(4,n)    0  x    0
     </wire>
     <wire>
       <p1 x="160" y="860"/>
-      <p2 x="300" y="860"/>
+      <p2 x="280" y="860"/>
     </wire>
     <wire>
       <p1 x="360" y="860"/>
       <p2 x="380" y="860"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="860"/>
+      <p2 x="300" y="860"/>
     </wire>
     <wire>
       <p1 x="380" y="860"/>
@@ -1857,10 +1878,6 @@ repeat(16) bits(4,n)    0  x    0
     <wire>
       <p1 x="820" y="860"/>
       <p2 x="1260" y="860"/>
-    </wire>
-    <wire>
-      <p1 x="300" y="860"/>
-      <p2 x="320" y="860"/>
     </wire>
     <wire>
       <p1 x="1260" y="860"/>
@@ -2089,22 +2106,6 @@ repeat(16) bits(4,n)    0  x    0
     <wire>
       <p1 x="1860" y="300"/>
       <p2 x="1880" y="300"/>
-    </wire>
-    <wire>
-      <p1 x="300" y="880"/>
-      <p2 x="660" y="880"/>
-    </wire>
-    <wire>
-      <p1 x="1100" y="880"/>
-      <p2 x="1540" y="880"/>
-    </wire>
-    <wire>
-      <p1 x="1540" y="880"/>
-      <p2 x="1980" y="880"/>
-    </wire>
-    <wire>
-      <p1 x="660" y="880"/>
-      <p2 x="1100" y="880"/>
     </wire>
     <wire>
       <p1 x="280" y="240"/>
@@ -2436,11 +2437,11 @@ repeat(16) bits(4,n)    0  x    0
     </wire>
     <wire>
       <p1 x="1540" y="840"/>
-      <p2 x="1540" y="880"/>
+      <p2 x="1540" y="900"/>
     </wire>
     <wire>
       <p1 x="1540" y="-360"/>
-      <p2 x="1540" y="-60"/>
+      <p2 x="1540" y="-220"/>
     </wire>
     <wire>
       <p1 x="1540" y="540"/>
@@ -2449,6 +2450,10 @@ repeat(16) bits(4,n)    0  x    0
     <wire>
       <p1 x="1540" y="760"/>
       <p2 x="1540" y="800"/>
+    </wire>
+    <wire>
+      <p1 x="1540" y="-220"/>
+      <p2 x="1540" y="-60"/>
     </wire>
     <wire>
       <p1 x="1540" y="-60"/>
@@ -2732,7 +2737,7 @@ repeat(16) bits(4,n)    0  x    0
     </wire>
     <wire>
       <p1 x="1100" y="840"/>
-      <p2 x="1100" y="880"/>
+      <p2 x="1100" y="900"/>
     </wire>
     <wire>
       <p1 x="1100" y="-360"/>
@@ -2756,7 +2761,7 @@ repeat(16) bits(4,n)    0  x    0
     </wire>
     <wire>
       <p1 x="660" y="840"/>
-      <p2 x="660" y="880"/>
+      <p2 x="660" y="900"/>
     </wire>
     <wire>
       <p1 x="660" y="-360"/>
@@ -2825,6 +2830,10 @@ repeat(16) bits(4,n)    0  x    0
     <wire>
       <p1 x="980" y="240"/>
       <p2 x="980" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="860"/>
+      <p2 x="280" y="900"/>
     </wire>
     <wire>
       <p1 x="540" y="140"/>
@@ -3141,10 +3150,6 @@ repeat(16) bits(4,n)    0  x    0
     <wire>
       <p1 x="300" y="-220"/>
       <p2 x="300" y="200"/>
-    </wire>
-    <wire>
-      <p1 x="300" y="860"/>
-      <p2 x="300" y="880"/>
     </wire>
     <wire>
       <p1 x="1900" y="200"/>
@@ -3511,6 +3516,26 @@ repeat(16) bits(4,n)    0  x    0
       <p2 x="1400" y="820"/>
     </wire>
     <wire>
+      <p1 x="380" y="840"/>
+      <p2 x="380" y="860"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="-360"/>
+      <p2 x="380" y="-60"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="540"/>
+      <p2 x="380" y="800"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="-60"/>
+      <p2 x="380" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="240"/>
+      <p2 x="380" y="540"/>
+    </wire>
+    <wire>
       <p1 x="1340" y="160"/>
       <p2 x="1340" y="220"/>
     </wire>
@@ -3560,7 +3585,7 @@ repeat(16) bits(4,n)    0  x    0
     </wire>
     <wire>
       <p1 x="1980" y="840"/>
-      <p2 x="1980" y="880"/>
+      <p2 x="1980" y="900"/>
     </wire>
     <wire>
       <p1 x="1980" y="-360"/>
@@ -3645,26 +3670,6 @@ repeat(16) bits(4,n)    0  x    0
     <wire>
       <p1 x="1020" y="-80"/>
       <p2 x="1020" y="-40"/>
-    </wire>
-    <wire>
-      <p1 x="380" y="840"/>
-      <p2 x="380" y="860"/>
-    </wire>
-    <wire>
-      <p1 x="380" y="-360"/>
-      <p2 x="380" y="-60"/>
-    </wire>
-    <wire>
-      <p1 x="380" y="540"/>
-      <p2 x="380" y="800"/>
-    </wire>
-    <wire>
-      <p1 x="380" y="-60"/>
-      <p2 x="380" y="240"/>
-    </wire>
-    <wire>
-      <p1 x="380" y="240"/>
-      <p2 x="380" y="540"/>
     </wire>
   </wires>
 </circuit>

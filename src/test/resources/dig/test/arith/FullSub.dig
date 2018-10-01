@@ -64,7 +64,12 @@
     </visualElement>
     <visualElement>
       <elementName>Or</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="460" y="120"/>
     </visualElement>
     <visualElement>

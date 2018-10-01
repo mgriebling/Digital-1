@@ -143,7 +143,12 @@
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="600" y="420"/>
     </visualElement>
     <visualElement>
@@ -176,7 +181,12 @@
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="360" y="380"/>
     </visualElement>
     <visualElement>

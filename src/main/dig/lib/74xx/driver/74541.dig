@@ -314,7 +314,12 @@
     </visualElement>
     <visualElement>
       <elementName>NOr</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="220" y="80"/>
     </visualElement>
     <visualElement>

@@ -39,7 +39,12 @@
     </visualElement>
     <visualElement>
       <elementName>XOr</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="480" y="120"/>
     </visualElement>
     <visualElement>
@@ -64,7 +69,12 @@
     </visualElement>
     <visualElement>
       <elementName>XOr</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="240" y="120"/>
     </visualElement>
     <visualElement>
@@ -79,7 +89,12 @@
     </visualElement>
     <visualElement>
       <elementName>XOr</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="0" y="120"/>
     </visualElement>
     <visualElement>

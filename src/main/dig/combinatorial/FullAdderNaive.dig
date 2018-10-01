@@ -70,12 +70,20 @@
           <string>rotation</string>
           <rotation rotation="3"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="520" y="160"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>3</int>
@@ -90,6 +98,10 @@
           <string>rotation</string>
           <rotation reference="../../../../visualElement[6]/elementAttributes/entry/rotation"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="600" y="160"/>
     </visualElement>
@@ -100,12 +112,20 @@
           <string>rotation</string>
           <rotation reference="../../../../visualElement[6]/elementAttributes/entry/rotation"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="680" y="160"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>3</int>
@@ -117,6 +137,10 @@
       <elementName>And</elementName>
       <elementAttributes>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Inputs</string>
           <int>3</int>
         </entry>
@@ -126,6 +150,10 @@
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>3</int>
@@ -137,6 +165,10 @@
       <elementName>Or</elementName>
       <elementAttributes>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Inputs</string>
           <int>4</int>
         </entry>
@@ -145,22 +177,41 @@
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="700" y="580"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="700" y="660"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="700" y="740"/>
     </visualElement>
     <visualElement>
       <elementName>Or</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>3</int>

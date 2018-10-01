@@ -209,7 +209,12 @@ dem Takt weiter geschaltet wird.}}</string>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="180" y="160"/>
     </visualElement>
     <visualElement>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>1</version>
+  <attributes/>
   <visualElements>
     <visualElement>
       <elementName>cross.dig</elementName>
@@ -37,7 +38,12 @@
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="560" y="220"/>
     </visualElement>
     <visualElement>
@@ -48,7 +54,7 @@
           <string>Y</string>
         </entry>
       </elementAttributes>
-      <pos x="640" y="240"/>
+      <pos x="660" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>Testcase</elementName>
@@ -72,8 +78,8 @@
       <p2 x="460" y="240"/>
     </wire>
     <wire>
-      <p1 x="620" y="240"/>
-      <p2 x="640" y="240"/>
+      <p1 x="640" y="240"/>
+      <p2 x="660" y="240"/>
     </wire>
     <wire>
       <p1 x="460" y="240"/>

@@ -154,12 +154,22 @@ fe0,fc0,0,7c0,fe0,820,820,820,fe0,7c0,0,4020,7fe0,7fc0,4820,820,fe0,7c0,0,7c0,fe
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="500" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="500" y="300"/>
     </visualElement>
     <visualElement>
@@ -190,6 +200,10 @@ fe0,fc0,0,7c0,fe0,820,820,820,fe0,7c0,0,4020,7fe0,7fc0,4820,820,fe0,7c0,0,7c0,fe
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>inverterConfig</string>
           <inverterConfig>

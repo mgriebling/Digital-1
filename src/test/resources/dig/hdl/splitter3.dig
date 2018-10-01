@@ -48,6 +48,10 @@
           <string>Bits</string>
           <int>8</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="340" y="200"/>
     </visualElement>

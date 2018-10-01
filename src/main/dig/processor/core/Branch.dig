@@ -78,7 +78,12 @@ nicht.}}</string>
     </visualElement>
     <visualElement>
       <elementName>XOr</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="620" y="140"/>
     </visualElement>
     <visualElement>

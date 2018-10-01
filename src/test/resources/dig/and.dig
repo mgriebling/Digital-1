@@ -5,7 +5,12 @@
   <visualElements>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="720" y="340"/>
     </visualElement>
     <visualElement>

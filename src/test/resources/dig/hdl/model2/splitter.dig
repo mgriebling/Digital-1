@@ -57,6 +57,10 @@
           <int>2</int>
         </entry>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>inverterConfig</string>
           <inverterConfig>
             <string>In_2</string>

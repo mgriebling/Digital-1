@@ -11,6 +11,10 @@
           <int>2</int>
         </entry>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>inverterConfig</string>
           <inverterConfig>
             <string>In_1</string>
@@ -27,6 +31,10 @@
           <int>2</int>
         </entry>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>inverterConfig</string>
           <inverterConfig>
             <string>In_2</string>
@@ -41,6 +49,10 @@
         <entry>
           <string>Bits</string>
           <int>2</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="500" y="240"/>

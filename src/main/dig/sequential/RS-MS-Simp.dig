@@ -98,7 +98,12 @@ Inverter.}}</string>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="1360" y="540"/>
     </visualElement>
     <visualElement>

@@ -33,6 +33,10 @@ Zur Vereinfachung können die FG-Fets mit der Taste
           <string>rotation</string>
           <rotation rotation="3"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="360" y="120"/>
     </visualElement>
@@ -101,6 +105,10 @@ Zur Vereinfachung können die FG-Fets mit der Taste
         <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="480" y="120"/>
@@ -171,6 +179,10 @@ Zur Vereinfachung können die FG-Fets mit der Taste
           <string>rotation</string>
           <rotation rotation="3"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="620" y="120"/>
     </visualElement>
@@ -212,6 +224,10 @@ Zur Vereinfachung können die FG-Fets mit der Taste
     <visualElement>
       <elementName>Or</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>5</int>
@@ -466,6 +482,10 @@ Zur Vereinfachung können die FG-Fets mit der Taste
           <string>rotation</string>
           <rotation rotation="3"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="740" y="120"/>
     </visualElement>
@@ -585,6 +605,10 @@ Zur Vereinfachung können die FG-Fets mit der Taste
         <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="860" y="120"/>
@@ -946,6 +970,10 @@ Zur Vereinfachung können die FG-Fets mit der Taste
     <visualElement>
       <elementName>Or</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>5</int>
@@ -1630,6 +1658,10 @@ Zur Vereinfachung können die FG-Fets mit der Taste
     <visualElement>
       <elementName>Or</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>5</int>

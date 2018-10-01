@@ -30,6 +30,10 @@
           <string>rotation</string>
           <rotation rotation="2"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="600" y="220"/>
     </visualElement>
@@ -39,6 +43,10 @@
         <entry>
           <string>rotation</string>
           <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="460" y="200"/>
@@ -55,6 +63,10 @@
           <string>rotation</string>
           <rotation rotation="2"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="320" y="220"/>
     </visualElement>
@@ -64,6 +76,10 @@
         <entry>
           <string>rotation</string>
           <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="740" y="200"/>
@@ -94,7 +110,12 @@
     </visualElement>
     <visualElement>
       <elementName>Or</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="160" y="260"/>
     </visualElement>
     <visualElement>

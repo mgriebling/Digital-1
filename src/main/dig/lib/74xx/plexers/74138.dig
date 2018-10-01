@@ -285,6 +285,10 @@
       <elementName>NAnd</elementName>
       <elementAttributes>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>inverterConfig</string>
           <inverterConfig>
             <string>In_2</string>

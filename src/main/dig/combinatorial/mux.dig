@@ -51,6 +51,10 @@ legen die beiden Eingänge A_0 und A_1 fest.}}</string>
           <string>rotation</string>
           <rotation rotation="3"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="220" y="140"/>
     </visualElement>
@@ -61,12 +65,20 @@ legen die beiden Eingänge A_0 und A_1 fest.}}</string>
           <string>rotation</string>
           <rotation reference="../../../../visualElement[3]/elementAttributes/entry/rotation"/>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="300" y="120"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>3</int>
@@ -93,6 +105,10 @@ legen die beiden Eingänge A_0 und A_1 fest.}}</string>
       <elementName>And</elementName>
       <elementAttributes>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Inputs</string>
           <int>3</int>
         </entry>
@@ -117,6 +133,10 @@ legen die beiden Eingänge A_0 und A_1 fest.}}</string>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>3</int>
@@ -143,6 +163,10 @@ legen die beiden Eingänge A_0 und A_1 fest.}}</string>
       <elementName>And</elementName>
       <elementAttributes>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Inputs</string>
           <int>3</int>
         </entry>
@@ -167,6 +191,10 @@ legen die beiden Eingänge A_0 und A_1 fest.}}</string>
     <visualElement>
       <elementName>Or</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>4</int>

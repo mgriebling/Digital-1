@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>1</version>
+  <attributes/>
   <visualElements>
     <visualElement>
       <elementName>And</elementName>
       <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
         <entry>
           <string>Inputs</string>
           <int>3</int>
@@ -83,7 +88,7 @@
       <p2 x="360" y="200"/>
     </wire>
     <wire>
-      <p1 x="420" y="200"/>
+      <p1 x="440" y="200"/>
       <p2 x="460" y="200"/>
     </wire>
   </wires>

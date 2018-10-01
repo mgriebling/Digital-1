@@ -42,6 +42,10 @@ Interrupt-Controller wieder frei.}}</string>
       <elementName>And</elementName>
       <elementAttributes>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Inputs</string>
           <int>5</int>
         </entry>
@@ -96,7 +100,12 @@ Interrupt-Controller wieder frei.}}</string>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="300" y="140"/>
     </visualElement>
     <visualElement>
@@ -154,7 +163,12 @@ Wenn gesetzt, wird Interrupt verhindert.}}</string>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="280" y="180"/>
     </visualElement>
     <visualElement>
@@ -176,7 +190,12 @@ Wenn gesetzt, wird Interrupt verhindert.}}</string>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="280" y="100"/>
     </visualElement>
     <visualElement>

@@ -18,7 +18,12 @@ gesetzt wird.}}</string>
   <visualElements>
     <visualElement>
       <elementName>Or</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="400" y="160"/>
     </visualElement>
     <visualElement>
@@ -38,7 +43,12 @@ gesetzt wird.}}</string>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="580" y="180"/>
     </visualElement>
     <visualElement>
@@ -58,7 +68,12 @@ gesetzt wird.}}</string>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="500" y="220"/>
     </visualElement>
     <visualElement>

@@ -190,6 +190,10 @@ bei der Speicheradressierung verwendet.}}</string>
           <string>Bits</string>
           <int>16</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="240" y="320"/>
     </visualElement>
@@ -200,6 +204,10 @@ bei der Speicheradressierung verwendet.}}</string>
           <string>Bits</string>
           <int>16</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="240" y="420"/>
     </visualElement>
@@ -209,6 +217,10 @@ bei der Speicheradressierung verwendet.}}</string>
         <entry>
           <string>Bits</string>
           <int>16</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="240" y="520"/>
@@ -258,7 +270,12 @@ bei der Speicheradressierung verwendet.}}</string>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
       <pos x="60" y="700"/>
     </visualElement>
     <visualElement>

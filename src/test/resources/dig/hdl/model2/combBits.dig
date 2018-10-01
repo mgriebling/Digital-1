@@ -29,6 +29,10 @@
           <int>2</int>
         </entry>
         <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Inputs</string>
           <int>5</int>
         </entry>
@@ -42,6 +46,10 @@
           <string>Bits</string>
           <int>2</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="20" y="20"/>
     </visualElement>
@@ -52,6 +60,10 @@
           <string>Bits</string>
           <int>2</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="20" y="100"/>
     </visualElement>
@@ -61,6 +73,10 @@
         <entry>
           <string>Bits</string>
           <int>2</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="20" y="260"/>
@@ -93,6 +109,10 @@
         <entry>
           <string>Bits</string>
           <int>2</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="-100" y="-60"/>
@@ -144,6 +164,10 @@
           <string>Bits</string>
           <int>2</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="-20" y="-60"/>
     </visualElement>
@@ -153,6 +177,10 @@
         <entry>
           <string>Bits</string>
           <int>2</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="20" y="180"/>

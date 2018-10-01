@@ -64,6 +64,10 @@
           <string>Bits</string>
           <int>8</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="540" y="320"/>
     </visualElement>
@@ -73,6 +77,10 @@
         <entry>
           <string>Bits</string>
           <int>8</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="540" y="400"/>
@@ -84,6 +92,10 @@
           <string>Bits</string>
           <int>8</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="540" y="480"/>
     </visualElement>
@@ -93,6 +105,10 @@
         <entry>
           <string>Bits</string>
           <int>8</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="540" y="560"/>
@@ -104,6 +120,10 @@
           <string>Bits</string>
           <int>8</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="540" y="640"/>
     </visualElement>
@@ -113,6 +133,10 @@
         <entry>
           <string>Bits</string>
           <int>8</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="540" y="720"/>
@@ -124,6 +148,10 @@
           <string>Bits</string>
           <int>8</int>
         </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="540" y="800"/>
     </visualElement>
@@ -133,6 +161,10 @@
         <entry>
           <string>Bits</string>
           <int>8</int>
+        </entry>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="540" y="880"/>
