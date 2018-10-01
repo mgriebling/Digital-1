@@ -14,6 +14,7 @@ import de.neemann.digital.core.element.Keys;
 import de.neemann.digital.draw.elements.Circuit;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -45,6 +46,7 @@ public final class Settings implements AttributeListener {
     private Settings() {
         List<Key> intList = new ArrayList<>();
         intList.add(Keys.SETTINGS_IEEE_SHAPES);
+        intList.add(Keys.SETTINGS_USE_WIDE_SHAPES);
         intList.add(Keys.SETTINGS_LANGUAGE);
         intList.add(Keys.SETTINGS_EXPRESSION_FORMAT);
         intList.add(Keys.SETTINGS_DEFAULT_TREESELECT);
@@ -105,7 +107,7 @@ public final class Settings implements AttributeListener {
     @Override
     public void attributeChanged() {
         XStream xStream = Circuit.getxStream();
-        try (Writer out = new OutputStreamWriter(new FileOutputStream(filename), "utf-8")) {
+        try (Writer out = new OutputStreamWriter(new FileOutputStream(filename), StandardCharsets.UTF_8)) {
             out.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
             xStream.marshal(attributes, new PrettyPrintWriter(out));
         } catch (Exception e) {
@@ -118,6 +120,20 @@ public final class Settings implements AttributeListener {
      */
     public List<Key> getKeys() {
         return settingsKeys;
+    }
+
+    /**
+     * Returns true if the given modification requires a restart.
+     *
+     * @param modified the modified settings
+     * @return true if the modification requires a restart
+     */
+    public boolean requiresRestart(ElementAttributes modified) {
+        for (Key<?> key : settingsKeys)
+            if (key.getRequiresRestart() && !attributes.equalsKey(key, modified))
+                return true;
+
+        return false;
     }
 
 }

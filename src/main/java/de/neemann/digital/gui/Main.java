@@ -152,6 +152,7 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
      */
     private Main(MainBuilder builder) {
         super(Lang.get("digital"));
+        getRootPane().putClientProperty("Aqua.windowStyle", "unifiedToolBar");
 
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         setIconImages(IconCreator.createImages("icon32.png", "icon64.png", "icon128.png"));
@@ -680,16 +681,14 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
                 ElementAttributes modified = new AttributeDialog(Main.this, Settings.getInstance().getKeys(), Settings.getInstance().getAttributes()).showDialog();
                 if (modified != null) {
                     FormatToExpression.setDefaultFormat(modified.get(Keys.SETTINGS_EXPRESSION_FORMAT));
-                    if (!Settings.getInstance().getAttributes().equalsKey(Keys.SETTINGS_LANGUAGE, modified)
-                            || !Settings.getInstance().getAttributes().equalsKey(Keys.SETTINGS_IEEE_SHAPES, modified)
-                            || !Settings.getInstance().getAttributes().equalsKey(Keys.SETTINGS_FONT_SCALING, modified)
-                            || !Settings.getInstance().getAttributes().equalsKey(Keys.SETTINGS_MAC_MOUSE, modified)
-                            || !Settings.getInstance().getAttributes().equalsKey(Keys.SETTINGS_JAR_PATH, modified)) {
+
+                    if (Settings.getInstance().requiresRestart(modified)) {
                         Lang.setLanguage(modified.get(Keys.SETTINGS_LANGUAGE));
                         JOptionPane.showMessageDialog(Main.this, Lang.get("msg_restartNeeded"));
                     }
                     if (!Settings.getInstance().getAttributes().equalsKey(Keys.SETTINGS_GRID, modified))
                         circuitComponent.repaintNeeded();
+
                     Settings.getInstance().getAttributes().getValuesFrom(modified);
                 }
             }
@@ -1737,8 +1736,11 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
         try { // enforce MetalLookAndFeel for non-Mac applications
             if (Screen.isMac()) {
                 System.setProperty("apple.laf.useScreenMenuBar", "true");
-                System.setProperty("com.apple.mrj.application.apple.menu.about.name", "LogicBLOX");  // doesn't work, using java argument -Xdock:name="LogicBLOX" instead
-                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+//                UIManager.setLookAndFeel(QuaquaManager.getLookAndFeel());
+//                String version = QuaquaManager.getVersion();
+//                System.out.print("Quaqua V" + version);
+//               UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                UIManager.setLookAndFeel("org.violetlib.aqua.AquaLookAndFeel");
             } else {
                 UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
             }

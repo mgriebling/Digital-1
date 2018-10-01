@@ -191,7 +191,8 @@ public abstract class ToolTipAction extends AbstractAction {
             i = new JMenuItem(this) {
                 @Override
                 public String getToolTipText() {
-                    return toolTipProvider.getToolTip();
+                    String str = toolTipProvider.getToolTip();
+                    return str;
                 }
             };
             ToolTipManager.sharedInstance().registerComponent(i);
