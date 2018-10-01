@@ -45,7 +45,7 @@ public abstract class IEEEGenericShape implements Shape {
         this.inputs = inputs;
         this.outputs = outputs;
         this.invert = invert;
-        this.wideShape = attr.get(Keys.WIDE_SHAPE);
+        this.wideShape = true;  // attr.get(Keys.WIDE_SHAPE);
         inverterConfig = attr.get(Keys.INVERTER_CONFIG);
     }
 
@@ -96,6 +96,7 @@ public abstract class IEEEGenericShape implements Shape {
      * @return true is a wide shape is selected
      */
     public boolean isWideShape() {
-        return wideShape;
+        return true;   // temporary
+        // return wideShape;
     }
 }

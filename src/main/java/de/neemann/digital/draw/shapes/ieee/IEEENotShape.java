@@ -7,7 +7,7 @@ package de.neemann.digital.draw.shapes.ieee;
 
 import de.neemann.digital.core.Observer;
 import de.neemann.digital.core.element.ElementAttributes;
-import de.neemann.digital.core.element.Keys;
+//import de.neemann.digital.core.element.Keys;
 import de.neemann.digital.core.element.PinDescriptions;
 import de.neemann.digital.draw.elements.IOState;
 import de.neemann.digital.draw.elements.Pin;
@@ -41,7 +41,7 @@ public class IEEENotShape implements Shape {
     public IEEENotShape(PinDescriptions inputs, PinDescriptions outputs, ElementAttributes attributes) {
         this.inputs = inputs;
         this.outputs = outputs;
-        wideShape = attributes.get(Keys.WIDE_SHAPE);
+        wideShape = true; // attributes.get(Keys.WIDE_SHAPE);
     }
 
     @Override
