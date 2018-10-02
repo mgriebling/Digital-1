@@ -41,7 +41,7 @@ public class IEEENotShape implements Shape {
     public IEEENotShape(PinDescriptions inputs, PinDescriptions outputs, ElementAttributes attributes) {
         this.inputs = inputs;
         this.outputs = outputs;
-        wideShape = attributes.get(Keys.WIDE_SHAPE);
+        this.wideShape = attributes.get(Keys.WIDE_SHAPE);
     }
 
     @Override

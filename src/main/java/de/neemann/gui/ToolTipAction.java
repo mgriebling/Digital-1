@@ -164,7 +164,7 @@ public abstract class ToolTipAction extends AbstractAction {
             };
             ToolTipManager.sharedInstance().registerComponent(b);
         }
-        b.putClientProperty("JButton.buttonType", "toolbar");
+//        b.putClientProperty("JButton.buttonType", "toolbar");
         b.setText(null);
         return b;
     }
@@ -191,8 +191,7 @@ public abstract class ToolTipAction extends AbstractAction {
             i = new JMenuItem(this) {
                 @Override
                 public String getToolTipText() {
-                    String str = toolTipProvider.getToolTip();
-                    return str;
+                    return  toolTipProvider.getToolTip();
                 }
             };
             ToolTipManager.sharedInstance().registerComponent(i);
