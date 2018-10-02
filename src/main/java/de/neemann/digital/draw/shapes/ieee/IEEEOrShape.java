@@ -25,10 +25,10 @@ public class IEEEOrShape extends IEEEGenericShape {
 
     private static Polygon createPoly() {
         return new Polygon(true)
-                .add(SIZE+SIZE2, SIZE * 2 + SIZE2)
+                .add(SIZE2, SIZE * 2 + SIZE2)
                 .add(0, SIZE * 2 + SIZE2)
-                .add(new Vector(SIZE2, SIZE2*3+4),
-                        new Vector(SIZE2, 6),
+                .add(new Vector(SIZE2, SIZE * 2),
+                        new Vector(SIZE2, 0),
                         new Vector(0, -SIZE2))
                 .add(SIZE2, -SIZE2)
                 .add(new Vector(SIZE, -SIZE2),

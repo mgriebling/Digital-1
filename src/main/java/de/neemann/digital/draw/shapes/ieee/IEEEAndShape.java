@@ -25,7 +25,7 @@ public class IEEEAndShape extends IEEEGenericShape {
 
     private static Polygon createPoly() {
         return new Polygon(true)
-                .add(SIZE*2 + SIZE2, SIZE * 2 + SIZE2)
+                .add(SIZE + SIZE2, SIZE * 2 + SIZE2)
                 .add(1, SIZE * 2 + SIZE2)
                 .add(1, -SIZE2)
                 .add(SIZE + SIZE2, -SIZE2)
