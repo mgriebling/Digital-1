@@ -52,7 +52,8 @@ public class SelectTree extends JTree {
                     if (node.isLeaf() && node.isUnique()) {
                         try {
                             ElementTypeDescription d = node.getDescription();
-                            component.setPartToInsert(new VisualElement(d.getName()).setShapeFactory(shapeFactory));
+                            final VisualElement element = node.setWideShapeFlagTo(new VisualElement(d.getName()).setShapeFactory(shapeFactory));
+                            component.setPartToInsert(element);
                             insertHistory.add(new InsertAction(node, insertHistory, component, shapeFactory));
                         } catch (IOException e) {
                             SwingUtilities.invokeLater(new ErrorMessage(Lang.get("msg_errorImportingModel_N0", node.getName())).addCause(e));
